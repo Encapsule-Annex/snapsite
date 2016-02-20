@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-----------------------------------------------------------------------
+    {{site.title}} :: {{page.title}}
+    {{site.copyright}}, {{org.location}}
+
+    Built with Encapsule/{{generator.agent.name}} v{{generator.agent.version}}
+    {{generator.build.date}}
+    {{generator.build.time}} {{generator.build.hash}}
+    ----------------------------------------------------------------------->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>{{site.title}} :: {{page.title}}</title>
+    <meta name="description" content="{{page.description}}" />
+  </head>
+  <body>
+    <!-- {{site.title}} :: {{page.title}} content formatted w/React JS. -->
+    <div id="content">
+      {{{contentHtml}}}
+    </div>
+    <!-- {{site.title}} :: {{page.title}} client JavaScript application bundle. -->
+    <script type="text/JavaScript" src="{{clientAppBundle}}" ></script>
+  </body>
+</html>

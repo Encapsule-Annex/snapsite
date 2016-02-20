@@ -1,10 +1,10 @@
 {
     "name": "snapsite",
-    "version": "0.0.1",
-    "description": "Node.js-dependent command line tools for generating snap sites (spaps).",
-    "main": "snaprtlib.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+    "version": "0.0.2",
+    "description": "Node.js command line tools for rendering ReactJS websites in a snap.",
+    "main": "snaprt.js",
+    "bin": {
+        "snapsite": "./bin/snapsite.js"
     },
     "repository": {
         "type": "git",
@@ -48,6 +48,8 @@
         "react-dom": "^0.14.6",
         "webpack": "^1.12.11",
         "webpack-dev-server": "^1.14.1"
+    },
+    "snapsite": {
+        "configFile": "snapsite-config.js"
     }
-
 }
