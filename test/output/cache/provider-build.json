@@ -1,0 +1,310 @@
+{
+    "pages": {
+        "a90e9ae0": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456019173850,
+                        "date": "Sat Feb 20 2016 17:46:13 GMT-0800 (PST)",
+                        "hash": "WChHSfosQCCp9RtUVayTfA"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.3"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": []
+                },
+                "page": {
+                    "primaryRouteHash": "a90e9ae0",
+                    "primaryRoute": "/",
+                    "title": "Route Title",
+                    "description": "A route is associated with a ReactJS page by default.",
+                    "tooltip": "Some tooltip...",
+                    "rank": 0,
+                    "context": {}
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/code/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/code/encapsule/snapsite/bin/rtlib/default-client-extension",
+                "contentRenderModuleLoad": "SNAPRT.reactTheme.MissingContentRender"
+            },
+            "doc": {
+                "routeHash": "a90e9ae0",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Route Title\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.3\n    Sat Feb 20 2016 17:46:13 GMT-0800 (PST)\n    1456019173850 WChHSfosQCCp9RtUVayTfA\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Route Title</title>\n    <meta name=\"description\" content=\"A route is associated with a ReactJS page by default.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Route Title content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><h1>Route Title</h1><span><div style=\"margin:1em;padding:1em;background-color:#FFCC99;border:5px solid red;font-family:Courier;font-size:10pt;\"><h2>Missing content.jsx</h2><p><strong>Cannot display page-specific content for &#x27;a90e9ae0&#x27; on route &#x27;/&#x27;.</strong></p><p>Please create the file <strong>&#x27;content.jsx&#x27;</strong> in the route input directory, and rebuild the site to correct this problem.</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.</li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Route Title client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./a90e9ae0.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/code/encapsule/snapsite/test/output/client/a90e9ae0.html"
+            }
+        }
+    },
+    "webpack": {
+        "server": {
+            "config": {
+                "target": "node",
+                "resolveLoader": {
+                    "modulesDirectories": [
+                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                    ],
+                    "fastUnsafe": [],
+                    "alias": {},
+                    "packageMains": [
+                        "webpackNodeLoader",
+                        "nodeLoader",
+                        "loader",
+                        "main"
+                    ],
+                    "extensions": [
+                        "",
+                        ".webpack-node-loader.js",
+                        ".loader.js",
+                        ".js"
+                    ],
+                    "moduleTemplates": [
+                        "*-webpack-node-loader",
+                        "*-node-loader",
+                        "*-loader",
+                        "*"
+                    ]
+                },
+                "externals": [
+                    ".bin",
+                    "arccore",
+                    "react"
+                ],
+                "entry": {
+                    "a90e9ae0": "/home/cdr/code/encapsule/snapsite/test/input/__server-entry.jsx"
+                },
+                "output": {
+                    "filename": "[name].js",
+                    "chunkFilename": "[id].js",
+                    "path": "/home/cdr/code/encapsule/snapsite/test/output/server",
+                    "libraryTarget": "commonjs2",
+                    "sourceMapFilename": "[file].map[query]",
+                    "hotUpdateChunkFilename": "[id].[hash].hot-update.js",
+                    "hotUpdateMainFilename": "[hash].hot-update.json",
+                    "crossOriginLoading": false,
+                    "hashFunction": "md5",
+                    "hashDigest": "hex",
+                    "hashDigestLength": 20,
+                    "sourcePrefix": "\t",
+                    "devtoolLineToLine": false
+                },
+                "module": {
+                    "loaders": [
+                        {
+                            "test": {},
+                            "loader": "babel-loader",
+                            "query": {
+                                "presets": [
+                                    "react",
+                                    "es2015"
+                                ]
+                            }
+                        }
+                    ],
+                    "unknownContextRequest": ".",
+                    "unknownContextRecursive": true,
+                    "unknownContextRegExp": {},
+                    "unknownContextCritical": true,
+                    "exprContextRequest": ".",
+                    "exprContextRegExp": {},
+                    "exprContextRecursive": true,
+                    "exprContextCritical": true,
+                    "wrappedContextRegExp": {},
+                    "wrappedContextRecursive": true,
+                    "wrappedContextCritical": false
+                },
+                "plugins": [],
+                "debug": false,
+                "devtool": false,
+                "cache": true,
+                "context": "/home/cdr/code/encapsule/snapsite",
+                "node": {
+                    "console": false,
+                    "process": true,
+                    "global": true,
+                    "setImmediate": true,
+                    "__filename": "mock",
+                    "__dirname": "mock"
+                },
+                "resolve": {
+                    "fastUnsafe": [],
+                    "alias": {},
+                    "modulesDirectories": [
+                        "node_modules"
+                    ],
+                    "packageMains": [
+                        "webpackNode",
+                        "node",
+                        "main"
+                    ],
+                    "packageAlias": false,
+                    "extensions": [
+                        "",
+                        ".webpack-node.js",
+                        ".js",
+                        ".json",
+                        ".node"
+                    ]
+                },
+                "optimize": {
+                    "occurenceOrderPreferEntry": true
+                }
+            }
+        },
+        "client": {
+            "config": {
+                "target": "web",
+                "resolveLoader": {
+                    "modulesDirectories": [
+                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                    ],
+                    "fastUnsafe": [],
+                    "alias": {},
+                    "packageMains": [
+                        "webpackLoader",
+                        "webLoader",
+                        "loader",
+                        "main"
+                    ],
+                    "extensions": [
+                        "",
+                        ".webpack-loader.js",
+                        ".web-loader.js",
+                        ".loader.js",
+                        ".js"
+                    ],
+                    "moduleTemplates": [
+                        "*-webpack-loader",
+                        "*-web-loader",
+                        "*-loader",
+                        "*"
+                    ]
+                },
+                "entry": {
+                    "a90e9ae0": "/home/cdr/code/encapsule/snapsite/test/input/__client-entry.jsx"
+                },
+                "output": {
+                    "filename": "[name].js",
+                    "chunkFilename": "[id].js",
+                    "path": "/home/cdr/code/encapsule/snapsite/test/output/client",
+                    "libraryTarget": "umd",
+                    "sourceMapFilename": "[file].map[query]",
+                    "hotUpdateChunkFilename": "[id].[hash].hot-update.js",
+                    "hotUpdateMainFilename": "[hash].hot-update.json",
+                    "crossOriginLoading": false,
+                    "hashFunction": "md5",
+                    "hashDigest": "hex",
+                    "hashDigestLength": 20,
+                    "sourcePrefix": "\t",
+                    "devtoolLineToLine": false
+                },
+                "module": {
+                    "loaders": [
+                        {
+                            "test": {},
+                            "loader": "babel-loader",
+                            "query": {
+                                "presets": [
+                                    "react",
+                                    "es2015"
+                                ]
+                            }
+                        }
+                    ],
+                    "unknownContextRequest": ".",
+                    "unknownContextRecursive": true,
+                    "unknownContextRegExp": {},
+                    "unknownContextCritical": true,
+                    "exprContextRequest": ".",
+                    "exprContextRegExp": {},
+                    "exprContextRecursive": true,
+                    "exprContextCritical": true,
+                    "wrappedContextRegExp": {},
+                    "wrappedContextRecursive": true,
+                    "wrappedContextCritical": false
+                },
+                "plugins": [],
+                "debug": false,
+                "devtool": false,
+                "cache": true,
+                "context": "/home/cdr/code/encapsule/snapsite",
+                "node": {
+                    "console": false,
+                    "process": true,
+                    "global": true,
+                    "setImmediate": true,
+                    "__filename": "mock",
+                    "__dirname": "mock"
+                },
+                "resolve": {
+                    "fastUnsafe": [],
+                    "alias": {},
+                    "packageAlias": "browser",
+                    "modulesDirectories": [
+                        "web_modules",
+                        "node_modules"
+                    ],
+                    "packageMains": [
+                        "webpack",
+                        "browser",
+                        "web",
+                        "browserify",
+                        [
+                            "jam",
+                            "main"
+                        ],
+                        "main"
+                    ],
+                    "extensions": [
+                        "",
+                        ".webpack.js",
+                        ".web.js",
+                        ".js",
+                        ".json"
+                    ]
+                },
+                "optimize": {
+                    "occurenceOrderPreferEntry": true
+                }
+            }
+        }
+    }
+}

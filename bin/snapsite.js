@@ -11,16 +11,16 @@ const MKDIRP = require('mkdirp');
 
 var filters = {
     load: {
-        projectConfig: require('./impl/filter-load-project-config'),
-        routeConfig: require('./impl/filter-load-route-config'),
-        routeProviders: require('./impl/filter-load-route-providers'),
+        projectConfig: require('./tool/filter-load-project-config'),
+        routeConfig: require('./tool/filter-load-route-config'),
+        routeProviders: require('./tool/filter-load-route-providers'),
     },
     build: {
-        routeProviders: require('./impl/filter-build-route-providers')
+        routeProviders: require('./tool/filter-build-route-providers')
     },
     providers: {
-        ReactJS: require('./impl/provider-reactjs'),
-        StaticFiles: require('./impl/provider-staticfiles')
+        ReactJS: require('./tool/provider-reactjs'),
+        StaticFiles: require('./tool/provider-staticfiles')
     }
 };
 

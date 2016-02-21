@@ -1,0 +1,63 @@
+{
+    "org": {
+        "seed": "replace this with an IRUT",
+        "name": "Replace w/your org name",
+        "location": "Repalce w/your org location",
+        "url": "https://mysite.com",
+        "email": "admin@mysite.com"
+    },
+    "site": {
+        "seed": "replace this an an IRUT",
+        "url": "https://mysite.com",
+        "title": "Site Title",
+        "description": "A description of your website.",
+        "copyright": "Copyright (C) 2016 Replace w/your org name",
+        "context": {}
+    },
+    "generator": {
+        "build": {
+            "time": 1456019173850,
+            "date": "Sat Feb 20 2016 17:46:13 GMT-0800 (PST)",
+            "hash": "WChHSfosQCCp9RtUVayTfA"
+        },
+        "agent": {
+            "name": "snapsite",
+            "version": "0.0.3"
+        }
+    },
+    "pagesGraph": {
+        "name": "ReactJS UX Route Graph",
+        "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+        "vlist": [
+            {
+                "u": "a90e9ae0",
+                "p": {
+                    "primaryRouteHash": "a90e9ae0",
+                    "primaryRoute": "/",
+                    "title": "Route Title",
+                    "description": "A route is associated with a ReactJS page by default.",
+                    "tooltip": "Some tooltip...",
+                    "rank": 0
+                }
+            }
+        ],
+        "elist": []
+    },
+    "page": {
+        "primaryRouteHash": "a90e9ae0",
+        "primaryRoute": "/",
+        "title": "Route Title",
+        "description": "A route is associated with a ReactJS page by default.",
+        "tooltip": "Some tooltip...",
+        "rank": 0,
+        "context": {}
+    },
+    "lookup": {
+        "routeHashToRouteMap": {
+            "a90e9ae0": "/"
+        },
+        "routeToRouteHashMap": {
+            "/": "a90e9ae0"
+        }
+    }
+}

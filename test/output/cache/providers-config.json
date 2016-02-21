@@ -1,0 +1,123 @@
+{
+    "ReactJS": {
+        "pagesDataContext": {
+            "org": {
+                "seed": "replace this with an IRUT",
+                "name": "Replace w/your org name",
+                "location": "Repalce w/your org location",
+                "url": "https://mysite.com",
+                "email": "admin@mysite.com"
+            },
+            "site": {
+                "seed": "replace this an an IRUT",
+                "url": "https://mysite.com",
+                "title": "Site Title",
+                "description": "A description of your website.",
+                "copyright": "Copyright (C) 2016 Replace w/your org name"
+            },
+            "generator": {
+                "build": {
+                    "time": 1456019173850,
+                    "date": "Sat Feb 20 2016 17:46:13 GMT-0800 (PST)",
+                    "hash": "WChHSfosQCCp9RtUVayTfA"
+                },
+                "agent": {
+                    "name": "snapsite",
+                    "version": "0.0.3"
+                }
+            },
+            "pagesGraph": {
+                "name": "ReactJS UX Route Graph",
+                "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                "vlist": [
+                    {
+                        "u": "a90e9ae0",
+                        "p": {
+                            "primaryRouteHash": "a90e9ae0",
+                            "primaryRoute": "/",
+                            "title": "Route Title",
+                            "description": "A route is associated with a ReactJS page by default.",
+                            "tooltip": "Some tooltip...",
+                            "rank": 0
+                        }
+                    }
+                ],
+                "elist": []
+            },
+            "pagesContext": {
+                "a90e9ae0": {}
+            }
+        },
+        "webpackConfig": {
+            "node": {
+                "target": "node",
+                "resolveLoader": {
+                    "modulesDirectories": [
+                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                    ]
+                },
+                "externals": [
+                    ".bin",
+                    "arccore",
+                    "react"
+                ],
+                "entry": {
+                    "a90e9ae0": "/home/cdr/code/encapsule/snapsite/test/input/__server-entry.jsx"
+                },
+                "output": {
+                    "filename": "[name].js",
+                    "chunkFilename": "[id].js",
+                    "path": "/home/cdr/code/encapsule/snapsite/test/output/server",
+                    "libraryTarget": "commonjs2"
+                },
+                "module": {
+                    "loaders": [
+                        {
+                            "test": {},
+                            "loader": "babel-loader",
+                            "query": {
+                                "presets": [
+                                    "react",
+                                    "es2015"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "plugins": []
+            },
+            "browser": {
+                "target": "web",
+                "resolveLoader": {
+                    "modulesDirectories": [
+                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                    ]
+                },
+                "entry": {
+                    "a90e9ae0": "/home/cdr/code/encapsule/snapsite/test/input/__client-entry.jsx"
+                },
+                "output": {
+                    "filename": "[name].js",
+                    "chunkFilename": "[id].js",
+                    "path": "/home/cdr/code/encapsule/snapsite/test/output/client",
+                    "libraryTarget": "umd"
+                },
+                "module": {
+                    "loaders": [
+                        {
+                            "test": {},
+                            "loader": "babel-loader",
+                            "query": {
+                                "presets": [
+                                    "react",
+                                    "es2015"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "plugins": []
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "routeHashGraph": {
+        "name": "TFAWmEXE-JdwP4pgvRj_gw",
+        "description": "[replace this with an IRUT:replace this an an IRUT] route configuration digraph model.",
+        "vlist": [
+            {
+                "u": "a90e9ae0",
+                "p": {
+                    "primaryRoute": "/",
+                    "primaryRouteHash": "a90e9ae0",
+                    "sourcesDirectory": "/home/cdr/code/encapsule/snapsite/test/input",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Route Title",
+                        "description": "A route is associated with a ReactJS page by default.",
+                        "tooltip": "Some tooltip...",
+                        "rank": 0,
+                        "providers": {
+                            "ReactJS": {}
+                        }
+                    }
+                }
+            }
+        ],
+        "elist": []
+    },
+    "routeHashToRouteMap": {
+        "a90e9ae0": "/"
+    },
+    "routeToRouteHashMap": {
+        "/": "a90e9ae0"
+    },
+    "routeProvidersMap": {
+        "ReactJS": [
+            "a90e9ae0"
+        ]
+    }
+}

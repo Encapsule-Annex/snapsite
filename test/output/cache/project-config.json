@@ -1,0 +1,44 @@
+{
+    "dirs": {
+        "input": {
+            "routes": "/home/cdr/code/encapsule/snapsite/test/input"
+        },
+        "output": {
+            "client": "/home/cdr/code/encapsule/snapsite/test/output/client",
+            "server": "/home/cdr/code/encapsule/snapsite/test/output/server",
+            "cache": "/home/cdr/code/encapsule/snapsite/test/output/cache"
+        },
+        "package": "/home/cdr/code/encapsule/snapsite"
+    },
+    "org": {
+        "seed": "replace this with an IRUT",
+        "name": "Replace w/your org name",
+        "location": "Repalce w/your org location",
+        "url": "https://mysite.com",
+        "email": "admin@mysite.com"
+    },
+    "site": {
+        "seed": "replace this an an IRUT",
+        "url": "https://mysite.com",
+        "title": "Site Title",
+        "description": "A description of your website.",
+        "copyright": "Copyright (C) 2016 Replace w/your org name"
+    },
+    "providers": {
+        "ReactJS": {}
+    },
+    "paths": {
+        "config": "/home/cdr/code/encapsule/snapsite/test/snapsite-config.js"
+    },
+    "generator": {
+        "build": {
+            "time": 1456019173850,
+            "date": "Sat Feb 20 2016 17:46:13 GMT-0800 (PST)",
+            "hash": "WChHSfosQCCp9RtUVayTfA"
+        },
+        "agent": {
+            "name": "snapsite",
+            "version": "0.0.3"
+        }
+    }
+}

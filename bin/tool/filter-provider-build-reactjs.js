@@ -121,13 +121,15 @@ var factoryResponse = ARCCORE.filter.create({
                 // Okay - now we can augment the data context to add data required to build
                 // the server and client entry point scripts.
 
-                pageDataContextSerialize.snapsiteModule = PATH.join(routeToRootRelativePath, 'client-libs');
+                // pageDataContextSerialize.snapsiteModule = PATH.join(routeToRootRelativePath, 'client-libs');
+                pageDataContextSerialize.snapsiteModule = PATH.join(__dirname, '../rtlib');
 
                 var clientRuntimeExtensionPath = PATH.join(routeSourcePath, 'client-runtime.js');
                 if (FS.existsSync(clientRuntimeExtensionPath) && FS.statSync(clientRuntimeExtensionPath).isFile()) {
                     pageDataContextSerialize.clientExtensionModule = clientRuntimeExtensionPath;
                 } else {
-                    pageDataContextSerialize.clientExtensionModule = PATH.join(routeToRootRelativePath, 'default-client-extension');
+                    // pageDataContextSerialize.clientExtensionModule = PATH.join(routeToRootRelativePath, 'default-client-extension');
+                    pageDataContextSerialize.clientExtensionModule = PATH.join(__dirname, '../rtlib/default-client-extension');
                 }
 
                 var contentRenderModulePath = PATH.join(routeSourcePath, 'content.jsx');
