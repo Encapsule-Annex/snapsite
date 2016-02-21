@@ -1,10 +1,10 @@
 {
     "name": "snapsite",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Node.js command line tools for rendering ReactJS websites in a snap.",
-    "main": "snaprt.js",
     "bin": {
-        "snapsite": "./bin/snapsite.js"
+        "snapsite": "./bin/snapsite.js",
+        "snap": "./bin/snapsite.js"
     },
     "repository": {
         "type": "git",
