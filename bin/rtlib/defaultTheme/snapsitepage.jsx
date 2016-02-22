@@ -1,4 +1,4 @@
-// content-frame.jsx
+// snapsitepate.jsx
 
 // Generic page content render component draws standard header,
 // footer, and navigation chrome common to all site pages. And,
@@ -11,6 +11,12 @@ const ARRCORE = require('arccore');
 const Breadcrumbs = require('./breadcrumbs.jsx');
 const Copyright = require('./copyright.jsx');
 const Sitemap = require('./sitemap.jsx');
+
+const styles = {
+    fontFamily: 'Verdana, Geneva, sans-serif',
+    fontSize: '12pt',
+    margin: '1em'
+};
 
 
 var SnapPage = React.createClass({
@@ -25,12 +31,14 @@ var SnapPage = React.createClass({
 
         var isRootPage = (this.props.pagesGraph.inDegree(this.props.page.primaryRouteHash) === 0);
 
-        if (!isRootPage) {
+        if (isRootPage) {
+            content.push(<h1 key={makeKey()}>{this.props.site.title}</h1>);
+        } else {
             content.push(<Breadcrumbs {...this.props} key={makeKey()} />);
-            content.push(<hr key={makeKey()} />);
+            content.push(<h1 key={makeKey()}>{this.props.page.title}</h1>);
+            content.push(<p key={makeKey()}><i>{this.props.page.description}</i></p>);
         }
 
-        content.push(<h1 key={makeKey()}>{this.props.page.title}</h1>);
 
         var contentRendered = React.createElement(this.props.renderContent, this.props);
         content.push(<span key={makeKey()}>{contentRendered}</span>);
@@ -38,10 +46,9 @@ var SnapPage = React.createClass({
         content.push(<hr key={makeKey()} />);
         content.push(<Sitemap {...this.props} key={makeKey()} />);
 
-        content.push(<hr key={makeKey()} />);
         content.push(<Copyright {...this.props} key={makeKey()} />);
 
-        return (<span>{content}</span>);
+        return (<div style={styles}>{content}</div>);
 
     }
 });

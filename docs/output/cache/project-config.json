@@ -11,18 +11,18 @@
         "package": "/home/cdr/encapsule/snapsite"
     },
     "org": {
-        "seed": "replace this with an IRUT",
-        "name": "Replace w/your org name",
-        "location": "Repalce w/your org location",
-        "url": "https://mysite.com",
+        "seed": "koJdft_STGCMJe6dZcq5kg",
+        "name": "Encapsule.io",
+        "location": "Bellevue, WA USA",
+        "url": "https://encapsule.io",
         "email": "admin@mysite.com"
     },
     "site": {
-        "seed": "replace this an an IRUT",
-        "url": "https://mysite.com",
-        "title": "Site Title",
-        "description": "A description of your website.",
-        "copyright": "Copyright (C) 2016 Replace w/your org name"
+        "seed": "4pJr9UX5Q9aIn2yudW138Q",
+        "url": "http://github.com/Encapsule/snapsite",
+        "title": "snapsite",
+        "description": "snapsite website generator documentation.",
+        "copyright": "Copyright (C) 2016 Encapsule.io"
     },
     "providers": {
         "ReactJS": {}
@@ -32,9 +32,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456128020757,
-            "date": "Mon Feb 22 2016 00:00:20 GMT-0800 (PST)",
-            "hash": "FwShkkuuTLiwO691lDe6ag"
+            "time": 1456135781436,
+            "date": "Mon Feb 22 2016 02:09:41 GMT-0800 (PST)",
+            "hash": "0DLIwxiGTXqWVhLB78WmCQ"
         },
         "agent": {
             "name": "snapsite",

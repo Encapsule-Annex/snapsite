@@ -1,19 +1,19 @@
 {
     "routeHashGraph": {
-        "name": "TFAWmEXE-JdwP4pgvRj_gw",
-        "description": "[replace this with an IRUT:replace this an an IRUT] route configuration digraph model.",
+        "name": "W3b_b8MRREKcE4tNRakkxQ",
+        "description": "[koJdft_STGCMJe6dZcq5kg:4pJr9UX5Q9aIn2yudW138Q] route configuration digraph model.",
         "vlist": [
             {
-                "u": "a90e9ae0",
+                "u": "02413fb0",
                 "p": {
                     "primaryRoute": "/",
-                    "primaryRouteHash": "a90e9ae0",
+                    "primaryRouteHash": "02413fb0",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input",
                     "routeConfig": {
                         "aliases": [],
-                        "title": "Route Title",
-                        "description": "A route is associated with a ReactJS page by default.",
-                        "tooltip": "Some tooltip...",
+                        "title": "home",
+                        "description": "snapsite website generator command line tool docs.",
+                        "tooltip": "Jump back to the top...",
                         "rank": 0,
                         "providers": {
                             "ReactJS": {}
@@ -22,10 +22,10 @@
                 }
             },
             {
-                "u": "f41811ee",
+                "u": "556295b3",
                 "p": {
                     "primaryRoute": "/testsite",
-                    "primaryRouteHash": "f41811ee",
+                    "primaryRouteHash": "556295b3",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite",
                     "routeConfig": {
                         "aliases": [],
@@ -50,10 +50,10 @@
                 }
             },
             {
-                "u": "202c309f",
+                "u": "f243d161",
                 "p": {
                     "primaryRoute": "/testsite/about",
-                    "primaryRouteHash": "202c309f",
+                    "primaryRouteHash": "f243d161",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/about",
                     "routeConfig": {
                         "aliases": [],
@@ -73,10 +73,10 @@
                 }
             },
             {
-                "u": "1e21dd27",
+                "u": "587cc689",
                 "p": {
                     "primaryRoute": "/testsite/blog",
-                    "primaryRouteHash": "1e21dd27",
+                    "primaryRouteHash": "587cc689",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/blog",
                     "routeConfig": {
                         "aliases": [],
@@ -91,10 +91,10 @@
                 }
             },
             {
-                "u": "421567c4",
+                "u": "57b4d1df",
                 "p": {
                     "primaryRoute": "/testsite/colter",
-                    "primaryRouteHash": "421567c4",
+                    "primaryRouteHash": "57b4d1df",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/colter",
                     "routeConfig": {
                         "aliases": [],
@@ -111,10 +111,10 @@
                 }
             },
             {
-                "u": "d66b4755",
+                "u": "b0f90273",
                 "p": {
                     "primaryRoute": "/testsite/docs",
-                    "primaryRouteHash": "d66b4755",
+                    "primaryRouteHash": "b0f90273",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/docs",
                     "routeConfig": {
                         "aliases": [],
@@ -129,10 +129,10 @@
                 }
             },
             {
-                "u": "f840cd18",
+                "u": "0261711c",
                 "p": {
                     "primaryRoute": "/testsite/new-page",
-                    "primaryRouteHash": "f840cd18",
+                    "primaryRouteHash": "0261711c",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/new-page",
                     "routeConfig": {
                         "aliases": [],
@@ -147,10 +147,10 @@
                 }
             },
             {
-                "u": "1189e049",
+                "u": "40e95a37",
                 "p": {
                     "primaryRoute": "/testsite/static",
-                    "primaryRouteHash": "1189e049",
+                    "primaryRouteHash": "40e95a37",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/static",
                     "routeConfig": {
                         "aliases": [],
@@ -167,10 +167,10 @@
                 }
             },
             {
-                "u": "de94d6a8",
+                "u": "7d516a9c",
                 "p": {
                     "primaryRoute": "/testsite/tiffany",
-                    "primaryRouteHash": "de94d6a8",
+                    "primaryRouteHash": "7d516a9c",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/tiffany",
                     "routeConfig": {
                         "aliases": [],
@@ -185,10 +185,10 @@
                 }
             },
             {
-                "u": "c27356c0",
+                "u": "3ecfb36e",
                 "p": {
                     "primaryRoute": "/testsite/about/contact",
-                    "primaryRouteHash": "c27356c0",
+                    "primaryRouteHash": "3ecfb36e",
                     "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/contact",
                     "routeConfig": {
                         "aliases": [],
@@ -206,98 +206,98 @@
         "elist": [
             {
                 "e": {
-                    "u": "a90e9ae0",
-                    "v": "f41811ee"
+                    "u": "02413fb0",
+                    "v": "556295b3"
                 }
             },
             {
                 "e": {
-                    "u": "f41811ee",
-                    "v": "202c309f"
+                    "u": "556295b3",
+                    "v": "f243d161"
                 }
             },
             {
                 "e": {
-                    "u": "f41811ee",
-                    "v": "1e21dd27"
+                    "u": "556295b3",
+                    "v": "587cc689"
                 }
             },
             {
                 "e": {
-                    "u": "f41811ee",
-                    "v": "421567c4"
+                    "u": "556295b3",
+                    "v": "57b4d1df"
                 }
             },
             {
                 "e": {
-                    "u": "f41811ee",
-                    "v": "d66b4755"
+                    "u": "556295b3",
+                    "v": "b0f90273"
                 }
             },
             {
                 "e": {
-                    "u": "f41811ee",
-                    "v": "f840cd18"
+                    "u": "556295b3",
+                    "v": "0261711c"
                 }
             },
             {
                 "e": {
-                    "u": "f41811ee",
-                    "v": "1189e049"
+                    "u": "556295b3",
+                    "v": "40e95a37"
                 }
             },
             {
                 "e": {
-                    "u": "f41811ee",
-                    "v": "de94d6a8"
+                    "u": "556295b3",
+                    "v": "7d516a9c"
                 }
             },
             {
                 "e": {
-                    "u": "202c309f",
-                    "v": "c27356c0"
+                    "u": "f243d161",
+                    "v": "3ecfb36e"
                 }
             }
         ]
     },
     "routeHashToRouteMap": {
-        "a90e9ae0": "/",
-        "f41811ee": "/testsite",
-        "202c309f": "/testsite/about",
-        "1e21dd27": "/testsite/blog",
-        "421567c4": "/testsite/colter",
-        "d66b4755": "/testsite/docs",
-        "f840cd18": "/testsite/new-page",
-        "1189e049": "/testsite/static",
-        "de94d6a8": "/testsite/tiffany",
-        "c27356c0": "/testsite/about/contact"
+        "02413fb0": "/",
+        "556295b3": "/testsite",
+        "f243d161": "/testsite/about",
+        "587cc689": "/testsite/blog",
+        "57b4d1df": "/testsite/colter",
+        "b0f90273": "/testsite/docs",
+        "0261711c": "/testsite/new-page",
+        "40e95a37": "/testsite/static",
+        "7d516a9c": "/testsite/tiffany",
+        "3ecfb36e": "/testsite/about/contact"
     },
     "routeToRouteHashMap": {
-        "/": "a90e9ae0",
-        "/testsite": "f41811ee",
-        "/testsite/about": "202c309f",
-        "/testsite/blog": "1e21dd27",
-        "/testsite/colter": "421567c4",
-        "/testsite/docs": "d66b4755",
-        "/testsite/new-page": "f840cd18",
-        "/testsite/static": "1189e049",
-        "/testsite/tiffany": "de94d6a8",
-        "/testsite/about/contact": "c27356c0"
+        "/": "02413fb0",
+        "/testsite": "556295b3",
+        "/testsite/about": "f243d161",
+        "/testsite/blog": "587cc689",
+        "/testsite/colter": "57b4d1df",
+        "/testsite/docs": "b0f90273",
+        "/testsite/new-page": "0261711c",
+        "/testsite/static": "40e95a37",
+        "/testsite/tiffany": "7d516a9c",
+        "/testsite/about/contact": "3ecfb36e"
     },
     "routeProvidersMap": {
         "ReactJS": [
-            "a90e9ae0",
-            "f41811ee",
-            "202c309f",
-            "1e21dd27",
-            "421567c4",
-            "d66b4755",
-            "f840cd18",
-            "de94d6a8",
-            "c27356c0"
+            "02413fb0",
+            "556295b3",
+            "f243d161",
+            "587cc689",
+            "57b4d1df",
+            "b0f90273",
+            "0261711c",
+            "7d516a9c",
+            "3ecfb36e"
         ],
         "StaticFiles": [
-            "1189e049"
+            "40e95a37"
         ]
     }
 }

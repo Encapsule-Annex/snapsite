@@ -2,14 +2,14 @@
 /*
   __client-entry.jsx
 
-  Copyright (C) 2016 Replace w/your org name
+  Copyright (C) 2016 Encapsule.io
 
-  Main client entry point for Site Title snapsite route '202c309f'.
+  Main client entry point for snapsite snapsite route 'f243d161'.
   This script will be called when the HTML5 document published at
-  URL 'https://mysite.com/testsite/about' loads in your browser.
+  URL 'http://github.com/Encapsule/snapsite/testsite/about' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 00:00:20 GMT-0800 (PST)
-  Site build instance: [1456128020757 FwShkkuuTLiwO691lDe6ag]
+  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 02:09:41 GMT-0800 (PST)
+  Site build instance: [1456135781436 0DLIwxiGTXqWVhLB78WmCQ]
 */
 // ======================================================================
 
@@ -32,7 +32,7 @@ if (factoryResponse.error) {
 reactContextData.pagesGraph = factoryResponse.result;
 
 console.log("snapsite client app initializing on route '/testsite/about'...");
-console.log("Page [Site Title :: About] (202c309f) Copyright (C) 2016 Replace w/your org name");
+console.log("Page [snapsite :: About] (f243d161) Copyright (C) 2016 Encapsule.io");
 console.log("Powered by Encapsule/snapsite v0.0.5 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);

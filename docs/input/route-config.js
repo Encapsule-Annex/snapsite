@@ -1,5 +1,5 @@
 module.exports = {
-    title: "Route Title",
-    description: "A route is associated with a ReactJS page by default.",
-    tooltip: "Some tooltip..."
+    title: "home",
+    description: "snapsite website generator command line tool docs.",
+    tooltip: "Jump back to the top..."
 };

@@ -2,14 +2,16 @@
 
 module.exports = {
     org: {
-        name: "Replace w/your org name",
-        location: "Repalce w/your org location",
-        seed: "replace this with an IRUT"
+        name: "Encapsule.io",
+        url: "https://encapsule.io",
+        location: "Bellevue, WA USA",
+        seed: "koJdft_STGCMJe6dZcq5kg"
     },
     site: {
-        title: "Site Title",
-        description: "A description of your website.",
-        seed: "replace this an an IRUT",
+        title: "snapsite",
+        description: "snapsite website generator documentation.",
+        seed: "4pJr9UX5Q9aIn2yudW138Q",
+        url: "http://github.com/Encapsule/snapsite",
     },
     dirs: {
         input: {

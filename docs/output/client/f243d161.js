@@ -60,26 +60,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	/*
 	  __client-entry.jsx
 
-	  Copyright (C) 2016 Replace w/your org name
+	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for Site Title snapsite route 'de94d6a8'.
+	  Main client entry point for snapsite snapsite route 'f243d161'.
 	  This script will be called when the HTML5 document published at
-	  URL 'https://mysite.com/testsite/tiffany' loads in your browser.
+	  URL 'http://github.com/Encapsule/snapsite/testsite/about' loads in your browser.
 
-	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 00:00:20 GMT-0800 (PST)
-	  Site build instance: [1456128020757 FwShkkuuTLiwO691lDe6ag]
+	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 02:09:41 GMT-0800 (PST)
+	  Site build instance: [1456135781436 0DLIwxiGTXqWVhLB78WmCQ]
 	*/
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(210);
+	var SNAPRT = __webpack_require__(218);
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
 	var React = SNAPRT.react;
 	var ReactDOM = SNAPRT.reactDOM;
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(211);
+	var reactContextData = __webpack_require__(219);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -89,8 +89,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Replace the serialized digraph model with a runtime DirectedGraph container.
 	reactContextData.pagesGraph = factoryResponse.result;
 
-	console.log("snapsite client app initializing on route '/testsite/tiffany'...");
-	console.log("Page [Site Title :: Hello, Tiffany] (de94d6a8) Copyright (C) 2016 Replace w/your org name");
+	console.log("snapsite client app initializing on route '/testsite/about'...");
+	console.log("Page [snapsite :: About] (f243d161) Copyright (C) 2016 Encapsule.io");
 	console.log("Powered by Encapsule/snapsite v0.0.5 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
@@ -98,7 +98,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
 
-	var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
+	var reactContentComponent = __webpack_require__(220);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -115,7 +115,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	console.log("... re-rendering the page client-side...");
 	renderPageContent();
 
-	var clientAppEntry = __webpack_require__(193);
+	var clientAppEntry = __webpack_require__(192);
 
 	console.log("... calling client runtime extension...");
 	clientAppEntry({
@@ -23548,7 +23548,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	// content-frame.jsx
+	// snapsitepate.jsx
 
 	// Generic page content render component draws standard header,
 	// footer, and navigation chrome common to all site pages. And,
@@ -23561,6 +23561,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Breadcrumbs = __webpack_require__(186);
 	var Copyright = __webpack_require__(188);
 	var Sitemap = __webpack_require__(189);
+
+	var styles = {
+	    fontFamily: 'Verdana, Geneva, sans-serif',
+	    fontSize: '12pt',
+	    margin: '1em'
+	};
 
 	var SnapPage = React.createClass({
 	    displayName: 'SnapPage',
@@ -23578,16 +23584,29 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        var isRootPage = this.props.pagesGraph.inDegree(this.props.page.primaryRouteHash) === 0;
 
-	        if (!isRootPage) {
+	        if (isRootPage) {
+	            content.push(React.createElement(
+	                'h1',
+	                { key: makeKey() },
+	                this.props.site.title
+	            ));
+	        } else {
 	            content.push(React.createElement(Breadcrumbs, _extends({}, this.props, { key: makeKey() })));
-	            content.push(React.createElement('hr', { key: makeKey() }));
+	            content.push(React.createElement(
+	                'h1',
+	                { key: makeKey() },
+	                this.props.page.title
+	            ));
+	            content.push(React.createElement(
+	                'p',
+	                { key: makeKey() },
+	                React.createElement(
+	                    'i',
+	                    null,
+	                    this.props.page.description
+	                )
+	            ));
 	        }
-
-	        content.push(React.createElement(
-	            'h1',
-	            { key: makeKey() },
-	            this.props.page.title
-	        ));
 
 	        var contentRendered = React.createElement(this.props.renderContent, this.props);
 	        content.push(React.createElement(
@@ -23599,12 +23618,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	        content.push(React.createElement('hr', { key: makeKey() }));
 	        content.push(React.createElement(Sitemap, _extends({}, this.props, { key: makeKey() })));
 
-	        content.push(React.createElement('hr', { key: makeKey() }));
 	        content.push(React.createElement(Copyright, _extends({}, this.props, { key: makeKey() })));
 
 	        return React.createElement(
-	            'span',
-	            null,
+	            'div',
+	            { style: styles },
 	            content
 	        );
 	    }
@@ -23712,6 +23730,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var React = __webpack_require__(27);
 
 	var year = new Date().getFullYear();
+	var styles = { borderTop: '1px solid #DDDDDD', textAlign: 'right', fontSize: '10pt', paddingTop: '0.5em' };
 
 	var Copyright = React.createClass({
 	    displayName: 'Copyright',
@@ -23719,8 +23738,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    className: "Copyright",
 	    render: function render() {
 	        return React.createElement(
-	            'span',
-	            null,
+	            'div',
+	            { style: styles },
 	            'Copyright © ',
 	            year,
 	            ' ',
@@ -23884,8 +23903,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 191 */,
-/* 192 */,
-/* 193 */
+/* 192 */
 /***/ function(module, exports) {
 
 	// default-client-extension.js
@@ -23897,6 +23915,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
+/* 193 */,
 /* 194 */,
 /* 195 */,
 /* 196 */,
@@ -23913,7 +23932,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 207 */,
 /* 208 */,
 /* 209 */,
-/* 210 */
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23922,47 +23949,47 @@ return /******/ (function(modules) { // webpackBootstrap
 	/*
 	  __snaprt.jsx
 
-	  Copyright (C) 2016 Replace w/your org name
+	  Copyright (C) 2016 Encapsule.io
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/testsite/tiffany'.
+	  server scripts for input route '/testsite/about'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
 	  JS components specific to the the current snapsite theme).
 
-	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 00:00:20 GMT-0800 (PST)
-	  Site build instance: [1456128020757 FwShkkuuTLiwO691lDe6ag]
+	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 02:09:41 GMT-0800 (PST)
+	  Site build instance: [1456135781436 0DLIwxiGTXqWVhLB78WmCQ]
 	*/
 	// ======================================================================
 
 	module.exports = __webpack_require__(2);
 
 /***/ },
-/* 211 */
+/* 219 */
 /***/ function(module, exports) {
 
 	module.exports = {
 		"org": {
-			"seed": "replace this with an IRUT",
-			"name": "Replace w/your org name",
-			"location": "Repalce w/your org location",
-			"url": "https://mysite.com",
+			"seed": "koJdft_STGCMJe6dZcq5kg",
+			"name": "Encapsule.io",
+			"location": "Bellevue, WA USA",
+			"url": "https://encapsule.io",
 			"email": "admin@mysite.com"
 		},
 		"site": {
-			"seed": "replace this an an IRUT",
-			"url": "https://mysite.com",
-			"title": "Site Title",
-			"description": "A description of your website.",
-			"copyright": "Copyright (C) 2016 Replace w/your org name",
+			"seed": "4pJr9UX5Q9aIn2yudW138Q",
+			"url": "http://github.com/Encapsule/snapsite",
+			"title": "snapsite",
+			"description": "snapsite website generator documentation.",
+			"copyright": "Copyright (C) 2016 Encapsule.io",
 			"context": {}
 		},
 		"generator": {
 			"build": {
-				"time": 1456128020757,
-				"date": "Mon Feb 22 2016 00:00:20 GMT-0800 (PST)",
-				"hash": "FwShkkuuTLiwO691lDe6ag"
+				"time": 1456135781436,
+				"date": "Mon Feb 22 2016 02:09:41 GMT-0800 (PST)",
+				"hash": "0DLIwxiGTXqWVhLB78WmCQ"
 			},
 			"agent": {
 				"name": "snapsite",
@@ -23974,20 +24001,20 @@ return /******/ (function(modules) { // webpackBootstrap
 			"description": "A directed graph model of undefined routes mapped to ReactJS UX.",
 			"vlist": [
 				{
-					"u": "a90e9ae0",
+					"u": "02413fb0",
 					"p": {
-						"primaryRouteHash": "a90e9ae0",
+						"primaryRouteHash": "02413fb0",
 						"primaryRoute": "/",
-						"title": "Route Title",
-						"description": "A route is associated with a ReactJS page by default.",
-						"tooltip": "Some tooltip...",
+						"title": "home",
+						"description": "snapsite website generator command line tool docs.",
+						"tooltip": "Jump back to the top...",
 						"rank": 0
 					}
 				},
 				{
-					"u": "f41811ee",
+					"u": "556295b3",
 					"p": {
-						"primaryRouteHash": "f41811ee",
+						"primaryRouteHash": "556295b3",
 						"primaryRoute": "/testsite",
 						"title": "Home",
 						"description": "Encapsule.io software development website.",
@@ -23996,9 +24023,9 @@ return /******/ (function(modules) { // webpackBootstrap
 					}
 				},
 				{
-					"u": "202c309f",
+					"u": "f243d161",
 					"p": {
-						"primaryRouteHash": "202c309f",
+						"primaryRouteHash": "f243d161",
 						"primaryRoute": "/testsite/about",
 						"title": "About",
 						"description": "Learn about Encapsule.io.",
@@ -24007,9 +24034,9 @@ return /******/ (function(modules) { // webpackBootstrap
 					}
 				},
 				{
-					"u": "1e21dd27",
+					"u": "587cc689",
 					"p": {
-						"primaryRouteHash": "1e21dd27",
+						"primaryRouteHash": "587cc689",
 						"primaryRoute": "/testsite/blog",
 						"title": "Blog",
 						"description": "Encapsule.io web development blog.",
@@ -24018,9 +24045,9 @@ return /******/ (function(modules) { // webpackBootstrap
 					}
 				},
 				{
-					"u": "421567c4",
+					"u": "57b4d1df",
 					"p": {
-						"primaryRouteHash": "421567c4",
+						"primaryRouteHash": "57b4d1df",
 						"primaryRoute": "/testsite/colter",
 						"title": "Hello, Colter",
 						"description": "This is a test. Hello!",
@@ -24029,9 +24056,9 @@ return /******/ (function(modules) { // webpackBootstrap
 					}
 				},
 				{
-					"u": "d66b4755",
+					"u": "b0f90273",
 					"p": {
-						"primaryRouteHash": "d66b4755",
+						"primaryRouteHash": "b0f90273",
 						"primaryRoute": "/testsite/docs",
 						"title": "Documentation",
 						"description": "Encapsule tools, and libaries documentation library.",
@@ -24040,9 +24067,9 @@ return /******/ (function(modules) { // webpackBootstrap
 					}
 				},
 				{
-					"u": "f840cd18",
+					"u": "0261711c",
 					"p": {
-						"primaryRouteHash": "f840cd18",
+						"primaryRouteHash": "0261711c",
 						"primaryRoute": "/testsite/new-page",
 						"title": "Hello, John",
 						"description": "A test page to demonstrate some basic capabilities.",
@@ -24051,9 +24078,9 @@ return /******/ (function(modules) { // webpackBootstrap
 					}
 				},
 				{
-					"u": "de94d6a8",
+					"u": "7d516a9c",
 					"p": {
-						"primaryRouteHash": "de94d6a8",
+						"primaryRouteHash": "7d516a9c",
 						"primaryRoute": "/testsite/tiffany",
 						"title": "Hello, Tiffany",
 						"description": "This is a simple demo page.",
@@ -24062,9 +24089,9 @@ return /******/ (function(modules) { // webpackBootstrap
 					}
 				},
 				{
-					"u": "c27356c0",
+					"u": "3ecfb36e",
 					"p": {
-						"primaryRouteHash": "c27356c0",
+						"primaryRouteHash": "3ecfb36e",
 						"primaryRoute": "/testsite/about/contact",
 						"title": "Contact",
 						"description": "Contact information and directions to Encapsule.io.",
@@ -24076,90 +24103,136 @@ return /******/ (function(modules) { // webpackBootstrap
 			"elist": [
 				{
 					"e": {
-						"u": "a90e9ae0",
-						"v": "f41811ee"
+						"u": "02413fb0",
+						"v": "556295b3"
 					}
 				},
 				{
 					"e": {
-						"u": "f41811ee",
-						"v": "202c309f"
+						"u": "556295b3",
+						"v": "f243d161"
 					}
 				},
 				{
 					"e": {
-						"u": "f41811ee",
-						"v": "1e21dd27"
+						"u": "556295b3",
+						"v": "587cc689"
 					}
 				},
 				{
 					"e": {
-						"u": "f41811ee",
-						"v": "421567c4"
+						"u": "556295b3",
+						"v": "57b4d1df"
 					}
 				},
 				{
 					"e": {
-						"u": "f41811ee",
-						"v": "d66b4755"
+						"u": "556295b3",
+						"v": "b0f90273"
 					}
 				},
 				{
 					"e": {
-						"u": "f41811ee",
-						"v": "f840cd18"
+						"u": "556295b3",
+						"v": "0261711c"
 					}
 				},
 				{
 					"e": {
-						"u": "f41811ee",
-						"v": "de94d6a8"
+						"u": "556295b3",
+						"v": "7d516a9c"
 					}
 				},
 				{
 					"e": {
-						"u": "202c309f",
-						"v": "c27356c0"
+						"u": "f243d161",
+						"v": "3ecfb36e"
 					}
 				}
 			]
 		},
 		"page": {
-			"primaryRouteHash": "de94d6a8",
-			"primaryRoute": "/testsite/tiffany",
-			"title": "Hello, Tiffany",
-			"description": "This is a simple demo page.",
-			"tooltip": "Jump to Tiff's demo page...",
+			"primaryRouteHash": "f243d161",
+			"primaryRoute": "/testsite/about",
+			"title": "About",
+			"description": "Learn about Encapsule.io.",
+			"tooltip": "About Encapsule.io...",
 			"rank": 0,
-			"context": {}
+			"context": {
+				"content": [
+					"This is supposed to be presented as a paragraph.",
+					"Let's assume that it's markdown format."
+				]
+			}
 		},
 		"lookup": {
 			"routeHashToRouteMap": {
-				"a90e9ae0": "/",
-				"f41811ee": "/testsite",
-				"202c309f": "/testsite/about",
-				"1e21dd27": "/testsite/blog",
-				"421567c4": "/testsite/colter",
-				"d66b4755": "/testsite/docs",
-				"f840cd18": "/testsite/new-page",
-				"1189e049": "/testsite/static",
-				"de94d6a8": "/testsite/tiffany",
-				"c27356c0": "/testsite/about/contact"
+				"02413fb0": "/",
+				"556295b3": "/testsite",
+				"f243d161": "/testsite/about",
+				"587cc689": "/testsite/blog",
+				"57b4d1df": "/testsite/colter",
+				"b0f90273": "/testsite/docs",
+				"0261711c": "/testsite/new-page",
+				"40e95a37": "/testsite/static",
+				"7d516a9c": "/testsite/tiffany",
+				"3ecfb36e": "/testsite/about/contact"
 			},
 			"routeToRouteHashMap": {
-				"/": "a90e9ae0",
-				"/testsite": "f41811ee",
-				"/testsite/about": "202c309f",
-				"/testsite/blog": "1e21dd27",
-				"/testsite/colter": "421567c4",
-				"/testsite/docs": "d66b4755",
-				"/testsite/new-page": "f840cd18",
-				"/testsite/static": "1189e049",
-				"/testsite/tiffany": "de94d6a8",
-				"/testsite/about/contact": "c27356c0"
+				"/": "02413fb0",
+				"/testsite": "556295b3",
+				"/testsite/about": "f243d161",
+				"/testsite/blog": "587cc689",
+				"/testsite/colter": "57b4d1df",
+				"/testsite/docs": "b0f90273",
+				"/testsite/new-page": "0261711c",
+				"/testsite/static": "40e95a37",
+				"/testsite/tiffany": "7d516a9c",
+				"/testsite/about/contact": "3ecfb36e"
 			}
 		}
 	};
+
+/***/ },
+/* 220 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var ARCCORE = __webpack_require__(3);
+	var React = __webpack_require__(27);
+
+	var rootComponent = React.createClass({
+	    displayName: 'rootComponent',
+
+	    render: function render() {
+	        var timestring = new Date().getTime();
+	        var datestring = new Date().toString();
+	        var irut = ARCCORE.identifier.irut.fromReference(timestring).result;
+	        return React.createElement(
+	            'div',
+	            null,
+	            React.createElement(
+	                'h2',
+	                null,
+	                irut
+	            ),
+	            React.createElement(
+	                'p',
+	                null,
+	                'It\'s now ',
+	                datestring
+	            ),
+	            React.createElement(
+	                'p',
+	                null,
+	                'This is just a placeholder for some actual content.'
+	            )
+	        );
+	    }
+	});
+
+	module.exports = rootComponent;
 
 /***/ }
 /******/ ])
