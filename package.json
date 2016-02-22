@@ -1,55 +1,57 @@
 {
-    "name": "snapsite",
-    "version": "0.0.5",
-    "description": "Node.js command line tools for rendering ReactJS websites in a snap.",
-    "bin": {
-        "snapsite": "./bin/snapsite.js",
-        "snap": "./bin/snapsite.js"
-    },
-    "snapsite": {
-        "configFile": "docs/snapsite-config.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Encapsule/snapsite.git"
-    },
-    "keywords": [
-        "React",
-        "website",
-        "generator",
-        "automation",
-        "webpack",
-        "routing",
-        "content",
-        "management",
-        "git",
-        "json",
-        "graph",
-        "encapsule",
-        "arcspace",
-        "arccore",
-        "arctools"
-    ],
-    "author": "ChrisRus",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Encapsule/snapsite/issues"
-    },
-    "homepage": "https://github.com/Encapsule/snapsite#readme",
-    "dependencies": {
-        "arccore": "github:encapsule/ARCcore",
-        "arctools": "github:encapsule/ARCtools",
-        "babel": "^6.3.26",
-        "babel-core": "^6.4.5",
-        "babel-loader": "^6.2.1",
-        "babel-preset-es2015": "^6.3.13",
-        "babel-preset-react": "^6.3.13",
-        "handlebars": "^4.0.5",
-        "json-loader": "^0.5.4",
-        "mkdirp": "^0.5.1",
-        "react": "^0.14.6",
-        "react-dom": "^0.14.6",
-        "webpack": "^1.12.11",
-        "webpack-dev-server": "^1.14.1"
-    }
+  "name": "snapsite",
+  "version": "0.0.5",
+  "description": "Node.js command line tools for rendering ReactJS websites in a snap.",
+  "bin": {
+    "snapsite": "./bin/snapsite.js",
+    "snap": "./bin/snapsite.js"
+  },
+  "snapsite": {
+    "configFile": "docs/snapsite-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Encapsule/snapsite.git"
+  },
+  "keywords": [
+    "React",
+    "website",
+    "generator",
+    "automation",
+    "webpack",
+    "routing",
+    "content",
+    "management",
+    "git",
+    "json",
+    "graph",
+    "encapsule",
+    "arcspace",
+    "arccore",
+    "arctools"
+  ],
+  "author": "ChrisRus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Encapsule/snapsite/issues"
+  },
+  "homepage": "https://github.com/Encapsule/snapsite#readme",
+  "dependencies": {
+    "arccore": "github:encapsule/ARCcore",
+    "arctools": "github:encapsule/ARCtools",
+    "babel": "^6.3.26",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "bootstrap": "^3.3.6",
+    "handlebars": "^4.0.5",
+    "json-loader": "^0.5.4",
+    "mkdirp": "^0.5.1",
+    "react": "^0.14.6",
+    "react-bootstrap": "^0.28.3",
+    "react-dom": "^0.14.6",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  }
 }

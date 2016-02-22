@@ -1,14 +1,14 @@
 {
     "dirs": {
         "input": {
-            "routes": "/home/cdr/encapsule/snapsite/docs/input"
+            "routes": "/home/cdr/code/encapsule/snapsite/docs/input"
         },
         "output": {
-            "client": "/home/cdr/encapsule/snapsite/docs/output/client",
-            "server": "/home/cdr/encapsule/snapsite/docs/output/server",
-            "cache": "/home/cdr/encapsule/snapsite/docs/output/cache"
+            "client": "/home/cdr/code/encapsule/snapsite/docs/output/client",
+            "server": "/home/cdr/code/encapsule/snapsite/docs/output/server",
+            "cache": "/home/cdr/code/encapsule/snapsite/docs/output/cache"
         },
-        "package": "/home/cdr/encapsule/snapsite"
+        "package": "/home/cdr/code/encapsule/snapsite/"
     },
     "org": {
         "seed": "koJdft_STGCMJe6dZcq5kg",
@@ -28,13 +28,13 @@
         "ReactJS": {}
     },
     "paths": {
-        "config": "/home/cdr/encapsule/snapsite/docs/snapsite-config.js"
+        "config": "/home/cdr/code/encapsule/snapsite/docs/snapsite-config.js"
     },
     "generator": {
         "build": {
-            "time": 1456135781436,
-            "date": "Mon Feb 22 2016 02:09:41 GMT-0800 (PST)",
-            "hash": "0DLIwxiGTXqWVhLB78WmCQ"
+            "time": 1456173833358,
+            "date": "Mon Feb 22 2016 12:43:53 GMT-0800 (PST)",
+            "hash": "ePh2mf3HS0Cw_7yWS_d5Ig"
         },
         "agent": {
             "name": "snapsite",

@@ -3,6 +3,8 @@
 
 const ARCCORE = require('arccore');
 const React = require('react');
+const ReactBootstrap = require('react-bootstrap');
+const Glyphicon = ReactBootstrap.Glyphicon;
 
 var RouteHashLink = require('./routehashlink.jsx');
 
@@ -24,7 +26,7 @@ var Breadcrumbs = React.createClass({
             breadcrumbs.unshift(<RouteHashLink {...this.props} routeHash={routeHash} active={false} key={"breadcrumbs" + routeHash} />);
         }
 
-        return (<div>{breadcrumbs}</div>);
+        return (<div><Glyphicon glyph="home" /> :: {breadcrumbs}</div>);
 
     }
 

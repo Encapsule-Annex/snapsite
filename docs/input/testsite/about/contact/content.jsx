@@ -1,6 +1,6 @@
 
 
-const COMMON = require('./__snaprt');
+const COMMON = require('./__snaprt.jsx');
 const ARCCORE = COMMON.arccore;
 const React = COMMON.react;
 const ReactTheme = COMMON.reactTheme;

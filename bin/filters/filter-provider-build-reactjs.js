@@ -174,7 +174,7 @@ var factoryResponse = ARCCORE.filter.create({
                     errors.unshift("Failed to write shared library declaration for route '" + primaryRoute + "':");
                     break;
                 }
-                console.log(clistyle.infoBody("... wrote ") + clistyle.fileOutput(serverEntryJavaScriptPath) + " for route " + clistyle.dirInput(primaryRoute));
+                console.log(clistyle.infoBody("... wrote ") + clistyle.fileOutput(snaprtJavaScriptPath) + " for route " + clistyle.dirInput(primaryRoute));
 
                 // Synthesize the server-side JavaScript entry point module via Handlebars.
                 var serverEntryJavaScript;

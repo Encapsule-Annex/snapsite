@@ -1,7 +1,7 @@
 module.exports = {
-    title: "Home",
-    description: "Encapsule.io software development website.",
-    tooltip: "Jump back to the top of the site...",
+    title: "Test Pages",
+    description: "A collection of simple test pages for experimentation.",
+    tooltip: "Jump to test pages...",
     providers: {
         ReactJS: {
             content: "Testing 1,2,3",

@@ -8,8 +8,8 @@
   This script will be called when the HTML5 document published at
   URL 'http://github.com/Encapsule/snapsite/testsite/colter' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 02:09:41 GMT-0800 (PST)
-  Site build instance: [1456135781436 0DLIwxiGTXqWVhLB78WmCQ]
+  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 12:43:53 GMT-0800 (PST)
+  Site build instance: [1456173833358 ePh2mf3HS0Cw_7yWS_d5Ig]
 */
 // ======================================================================
 
@@ -62,7 +62,7 @@ var renderPageContent = function() {
 console.log("... re-rendering the page client-side...");
 renderPageContent();
 
-const clientAppEntry = require('/home/cdr/encapsule/snapsite/docs/input/testsite/colter/client-runtime.js');
+const clientAppEntry = require('/home/cdr/code/encapsule/snapsite/docs/input/testsite/colter/client-runtime.js');
 
 console.log("... calling client runtime extension...");
 clientAppEntry({
