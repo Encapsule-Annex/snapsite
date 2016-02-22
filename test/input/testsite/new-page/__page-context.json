@@ -198,11 +198,11 @@
         ]
     },
     "page": {
-        "primaryRouteHash": "a90e9ae0",
-        "primaryRoute": "/",
-        "title": "Route Title",
-        "description": "A route is associated with a ReactJS page by default.",
-        "tooltip": "Some tooltip...",
+        "primaryRouteHash": "f840cd18",
+        "primaryRoute": "/testsite/new-page",
+        "title": "Hello, John",
+        "description": "A test page to demonstrate some basic capabilities.",
+        "tooltip": "Jump to the Hello, John demo page...",
         "rank": 0,
         "context": {}
     },

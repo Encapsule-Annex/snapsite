@@ -17,13 +17,13 @@
             },
             "generator": {
                 "build": {
-                    "time": 1456100599003,
-                    "date": "Sun Feb 21 2016 16:23:19 GMT-0800 (PST)",
-                    "hash": "o8ZQVEqeTaiuCxZBR-PO_w"
+                    "time": 1456125090677,
+                    "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                    "hash": "Sh5MP100T96tzoq6vIibEQ"
                 },
                 "agent": {
                     "name": "snapsite",
-                    "version": "0.0.4"
+                    "version": "0.0.5"
                 }
             },
             "pagesGraph": {
@@ -40,12 +40,192 @@
                             "tooltip": "Some tooltip...",
                             "rank": 0
                         }
+                    },
+                    {
+                        "u": "fd1f8812",
+                        "p": {
+                            "primaryRouteHash": "fd1f8812",
+                            "primaryRoute": "/installation",
+                            "title": "Test Route",
+                            "description": "A quick test route.",
+                            "tooltip": "Jump to the test route...",
+                            "rank": 0
+                        }
+                    },
+                    {
+                        "u": "f41811ee",
+                        "p": {
+                            "primaryRouteHash": "f41811ee",
+                            "primaryRoute": "/testsite",
+                            "title": "Home",
+                            "description": "Encapsule.io software development website.",
+                            "tooltip": "Jump back to the top of the site...",
+                            "rank": 9
+                        }
+                    },
+                    {
+                        "u": "202c309f",
+                        "p": {
+                            "primaryRouteHash": "202c309f",
+                            "primaryRoute": "/testsite/about",
+                            "title": "About",
+                            "description": "Learn about Encapsule.io.",
+                            "tooltip": "About Encapsule.io...",
+                            "rank": 0
+                        }
+                    },
+                    {
+                        "u": "1e21dd27",
+                        "p": {
+                            "primaryRouteHash": "1e21dd27",
+                            "primaryRoute": "/testsite/blog",
+                            "title": "Blog",
+                            "description": "Encapsule.io web development blog.",
+                            "tooltip": "Encapsule.io blog...",
+                            "rank": 0
+                        }
+                    },
+                    {
+                        "u": "421567c4",
+                        "p": {
+                            "primaryRouteHash": "421567c4",
+                            "primaryRoute": "/testsite/colter",
+                            "title": "Hello, Colter",
+                            "description": "This is a test. Hello!",
+                            "tooltip": "Jump to Hello, Colter...",
+                            "rank": 0
+                        }
+                    },
+                    {
+                        "u": "d66b4755",
+                        "p": {
+                            "primaryRouteHash": "d66b4755",
+                            "primaryRoute": "/testsite/docs",
+                            "title": "Documentation",
+                            "description": "Encapsule tools, and libaries documentation library.",
+                            "tooltip": "Browse technical documentation...",
+                            "rank": 0
+                        }
+                    },
+                    {
+                        "u": "f840cd18",
+                        "p": {
+                            "primaryRouteHash": "f840cd18",
+                            "primaryRoute": "/testsite/new-page",
+                            "title": "Hello, John",
+                            "description": "A test page to demonstrate some basic capabilities.",
+                            "tooltip": "Jump to the Hello, John demo page...",
+                            "rank": 0
+                        }
+                    },
+                    {
+                        "u": "de94d6a8",
+                        "p": {
+                            "primaryRouteHash": "de94d6a8",
+                            "primaryRoute": "/testsite/tiffany",
+                            "title": "Hello, Tiffany",
+                            "description": "This is a simple demo page.",
+                            "tooltip": "Jump to Tiff's demo page...",
+                            "rank": 0
+                        }
+                    },
+                    {
+                        "u": "c27356c0",
+                        "p": {
+                            "primaryRouteHash": "c27356c0",
+                            "primaryRoute": "/testsite/about/contact",
+                            "title": "Contact",
+                            "description": "Contact information and directions to Encapsule.io.",
+                            "tooltip": "Contact information...",
+                            "rank": 0
+                        }
                     }
                 ],
-                "elist": []
+                "elist": [
+                    {
+                        "e": {
+                            "u": "a90e9ae0",
+                            "v": "fd1f8812"
+                        }
+                    },
+                    {
+                        "e": {
+                            "u": "a90e9ae0",
+                            "v": "f41811ee"
+                        }
+                    },
+                    {
+                        "e": {
+                            "u": "f41811ee",
+                            "v": "202c309f"
+                        }
+                    },
+                    {
+                        "e": {
+                            "u": "f41811ee",
+                            "v": "1e21dd27"
+                        }
+                    },
+                    {
+                        "e": {
+                            "u": "f41811ee",
+                            "v": "421567c4"
+                        }
+                    },
+                    {
+                        "e": {
+                            "u": "f41811ee",
+                            "v": "d66b4755"
+                        }
+                    },
+                    {
+                        "e": {
+                            "u": "f41811ee",
+                            "v": "f840cd18"
+                        }
+                    },
+                    {
+                        "e": {
+                            "u": "f41811ee",
+                            "v": "de94d6a8"
+                        }
+                    },
+                    {
+                        "e": {
+                            "u": "202c309f",
+                            "v": "c27356c0"
+                        }
+                    }
+                ]
             },
             "pagesContext": {
-                "a90e9ae0": {}
+                "a90e9ae0": {},
+                "fd1f8812": {},
+                "f41811ee": {
+                    "content": "Testing 1,2,3",
+                    "something": {
+                        "x": [
+                            "apple",
+                            "oranges",
+                            "grapes",
+                            "bannanas"
+                        ]
+                    }
+                },
+                "202c309f": {
+                    "content": [
+                        "This is supposed to be presented as a paragraph.",
+                        "Let's assume that it's markdown format."
+                    ]
+                },
+                "1e21dd27": {},
+                "421567c4": {
+                    "testData": "Hey this is some test data."
+                },
+                "d66b4755": {},
+                "f840cd18": {},
+                "de94d6a8": {},
+                "c27356c0": {}
             }
         },
         "webpackConfig": {
@@ -53,21 +233,29 @@
                 "target": "node",
                 "resolveLoader": {
                     "modulesDirectories": [
-                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                        "/home/cdr/encapsule/snapsite/node_modules"
                     ]
                 },
                 "externals": [
-                    ".bin",
                     "arccore",
                     "react"
                 ],
                 "entry": {
-                    "a90e9ae0": "/home/cdr/code/encapsule/snapsite/test/input/__server-entry.jsx"
+                    "a90e9ae0": "/home/cdr/encapsule/snapsite/test/input/__server-entry.jsx",
+                    "fd1f8812": "/home/cdr/encapsule/snapsite/test/input/installation/__server-entry.jsx",
+                    "f41811ee": "/home/cdr/encapsule/snapsite/test/input/testsite/__server-entry.jsx",
+                    "202c309f": "/home/cdr/encapsule/snapsite/test/input/testsite/about/__server-entry.jsx",
+                    "1e21dd27": "/home/cdr/encapsule/snapsite/test/input/testsite/blog/__server-entry.jsx",
+                    "421567c4": "/home/cdr/encapsule/snapsite/test/input/testsite/colter/__server-entry.jsx",
+                    "d66b4755": "/home/cdr/encapsule/snapsite/test/input/testsite/docs/__server-entry.jsx",
+                    "f840cd18": "/home/cdr/encapsule/snapsite/test/input/testsite/new-page/__server-entry.jsx",
+                    "de94d6a8": "/home/cdr/encapsule/snapsite/test/input/testsite/tiffany/__server-entry.jsx",
+                    "c27356c0": "/home/cdr/encapsule/snapsite/test/input/testsite/about/contact/__server-entry.jsx"
                 },
                 "output": {
                     "filename": "[name].js",
                     "chunkFilename": "[id].js",
-                    "path": "/home/cdr/code/encapsule/snapsite/test/output/server",
+                    "path": "/home/cdr/encapsule/snapsite/test/output/server",
                     "libraryTarget": "commonjs2"
                 },
                 "module": {
@@ -90,16 +278,25 @@
                 "target": "web",
                 "resolveLoader": {
                     "modulesDirectories": [
-                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                        "/home/cdr/encapsule/snapsite/node_modules"
                     ]
                 },
                 "entry": {
-                    "a90e9ae0": "/home/cdr/code/encapsule/snapsite/test/input/__client-entry.jsx"
+                    "a90e9ae0": "/home/cdr/encapsule/snapsite/test/input/__client-entry.jsx",
+                    "fd1f8812": "/home/cdr/encapsule/snapsite/test/input/installation/__client-entry.jsx",
+                    "f41811ee": "/home/cdr/encapsule/snapsite/test/input/testsite/__client-entry.jsx",
+                    "202c309f": "/home/cdr/encapsule/snapsite/test/input/testsite/about/__client-entry.jsx",
+                    "1e21dd27": "/home/cdr/encapsule/snapsite/test/input/testsite/blog/__client-entry.jsx",
+                    "421567c4": "/home/cdr/encapsule/snapsite/test/input/testsite/colter/__client-entry.jsx",
+                    "d66b4755": "/home/cdr/encapsule/snapsite/test/input/testsite/docs/__client-entry.jsx",
+                    "f840cd18": "/home/cdr/encapsule/snapsite/test/input/testsite/new-page/__client-entry.jsx",
+                    "de94d6a8": "/home/cdr/encapsule/snapsite/test/input/testsite/tiffany/__client-entry.jsx",
+                    "c27356c0": "/home/cdr/encapsule/snapsite/test/input/testsite/about/contact/__client-entry.jsx"
                 },
                 "output": {
                     "filename": "[name].js",
                     "chunkFilename": "[id].js",
-                    "path": "/home/cdr/code/encapsule/snapsite/test/output/client",
+                    "path": "/home/cdr/encapsule/snapsite.gh-pages",
                     "libraryTarget": "umd"
                 },
                 "module": {
@@ -119,5 +316,8 @@
                 "plugins": []
             }
         }
+    },
+    "StaticFiles": {
+        "nothing": "This provider can't be loaded because it isn't implemented yet."
     }
 }

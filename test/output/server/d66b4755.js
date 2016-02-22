@@ -53,7 +53,7 @@ module.exports =
 
 	  Copyright (C) 2016 Replace w/your org name
 
-	  Server UX render entry entry point for Site Title snapsite route 'a90e9ae0'.
+	  Server UX render entry entry point for Site Title snapsite route 'd66b4755'.
 	  This script is called by the snapsite compilation process to pre-render
 	  HTML5  pages. This script is also leveraged at runtime by the  Node.js
 	  webserver process for website's that leverage custom server-side business
@@ -65,14 +65,14 @@ module.exports =
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(170);
+	var SNAPRT = __webpack_require__(176);
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
 	var React = SNAPRT.react;
 	var ReactDOMServer = __webpack_require__(157);
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(171);
+	var reactContextData = __webpack_require__(177);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -85,7 +85,7 @@ module.exports =
 	// Load the developer-defined React component responsible for rendering
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
-	var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
+	var reactContentComponent = __webpack_require__(178);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -100,7 +100,7 @@ module.exports =
 	            response.result = ReactDOMServer.renderToStaticMarkup(React.createElement(SNAPRT.reactTheme.SnapPage, reactContextData));
 	        } catch (error_) {
 	            errors.unshift(error_.toString());
-	            errors.unshift("Failed to render '/' due to error:");
+	            errors.unshift("Failed to render '/testsite/docs' due to error:");
 	            break;
 	        }
 	        break;
@@ -19203,7 +19203,13 @@ module.exports =
 /* 167 */,
 /* 168 */,
 /* 169 */,
-/* 170 */
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19215,7 +19221,7 @@ module.exports =
 	  Copyright (C) 2016 Replace w/your org name
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/'.
+	  server scripts for input route '/testsite/docs'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -19229,7 +19235,7 @@ module.exports =
 	module.exports = __webpack_require__(2);
 
 /***/ },
-/* 171 */
+/* 177 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -19432,11 +19438,11 @@ module.exports =
 			]
 		},
 		"page": {
-			"primaryRouteHash": "a90e9ae0",
-			"primaryRoute": "/",
-			"title": "Route Title",
-			"description": "A route is associated with a ReactJS page by default.",
-			"tooltip": "Some tooltip...",
+			"primaryRouteHash": "d66b4755",
+			"primaryRoute": "/testsite/docs",
+			"title": "Documentation",
+			"description": "Encapsule tools, and libaries documentation library.",
+			"tooltip": "Browse technical documentation...",
 			"rank": 0,
 			"context": {}
 		},
@@ -19469,6 +19475,57 @@ module.exports =
 			}
 		}
 	};
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var COMMON = __webpack_require__(176);
+	var ARCCORE = COMMON.arccore;
+	var React = COMMON.react;
+
+	var rootComponent = React.createClass({
+	        displayName: 'rootComponent',
+
+	        render: function render() {
+	                var timestring = new Date().getTime();
+	                var datestring = new Date().toString();
+	                var irut = ARCCORE.identifier.irut.fromReference(timestring).result;
+	                return React.createElement(
+	                        'div',
+	                        null,
+	                        React.createElement(
+	                                'h2',
+	                                null,
+	                                irut
+	                        ),
+	                        React.createElement(
+	                                'p',
+	                                null,
+	                                'It\'s now ',
+	                                datestring
+	                        ),
+	                        React.createElement(
+	                                'h3',
+	                                null,
+	                                'Docs Lib Placeholder'
+	                        ),
+	                        React.createElement(
+	                                'p',
+	                                null,
+	                                'Similar to the ',
+	                                React.createElement(COMMON.reactTheme.RouteHashLink, _extends({}, this.props, { routeHash: this.props.lookup.routeToRouteHashMap['/testsite/blog'] })),
+	                                ', the documentation library feature will be a custom index over appropriately tagged pages.'
+	                        )
+	                );
+	        }
+	});
+
+	module.exports = rootComponent;
 
 /***/ }
 /******/ ]);

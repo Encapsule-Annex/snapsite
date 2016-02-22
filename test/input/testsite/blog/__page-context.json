@@ -198,11 +198,11 @@
         ]
     },
     "page": {
-        "primaryRouteHash": "a90e9ae0",
-        "primaryRoute": "/",
-        "title": "Route Title",
-        "description": "A route is associated with a ReactJS page by default.",
-        "tooltip": "Some tooltip...",
+        "primaryRouteHash": "1e21dd27",
+        "primaryRoute": "/testsite/blog",
+        "title": "Blog",
+        "description": "Encapsule.io web development blog.",
+        "tooltip": "Encapsule.io blog...",
         "rank": 0,
         "context": {}
     },

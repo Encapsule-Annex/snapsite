@@ -4,8 +4,10 @@
 
 var package = require('../package.json');
 
+// ARCtools is ARCcore + some shared CLI tool package dependencies.
 const ARCTOOLS = require('arctools');
 const ARCCORE = ARCTOOLS.arccore;
+
 const PATH = require('path');
 const MKDIRP = require('mkdirp');
 const React = require('react');
@@ -28,13 +30,11 @@ var filters = {
 var clistyle = ARCTOOLS.clistyles;
 
 console.log(clistyle.bannerAuthor("Encapsule") + "/" + clistyle.bannerPackage(package.name) +
-            " v" + clistyle.bannerVersion(package.version) + 
-            " > powered by " + clistyle.bannerAuthor("Encapsule") + "/" +
-            clistyle.bannerPackage(ARCCORE.__meta.name) + " (" + ARCCORE.__meta.codename + ") " +
-            " v" + clistyle.bannerVersion(ARCCORE.__meta.version) + " & " +
-            clistyle.bannerAuthor("Facebook") + "/" +
-            clistyle.bannerPackage("react") +
-            " v" + clistyle.bannerVersion(React.version));
+            " v" + clistyle.bannerVersion(package.version) + "\n" +
+            "> " + clistyle.bannerAuthor("Facebook") + "/" + clistyle.bannerPackage("react") +
+            " v" + clistyle.bannerVersion(React.version) + "\n" +
+            "> " + clistyle.bannerAuthor("Encapsule") + "/" + clistyle.bannerPackage(ARCCORE.__meta.name) +
+            " v" + clistyle.bannerVersion(ARCCORE.__meta.version) + " (" + ARCCORE.__meta.codename + ")");
 
 
 

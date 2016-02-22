@@ -17,7 +17,7 @@ module.exports = {
         },
         output: {
             cache: './test/output/cache',
-            client: './test/output/client',
+            client: '../snapsite.gh-pages',
             server: './test/output/server'
         }
     }

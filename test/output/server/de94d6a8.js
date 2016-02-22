@@ -53,7 +53,7 @@ module.exports =
 
 	  Copyright (C) 2016 Replace w/your org name
 
-	  Server UX render entry entry point for Site Title snapsite route 'a90e9ae0'.
+	  Server UX render entry entry point for Site Title snapsite route 'de94d6a8'.
 	  This script is called by the snapsite compilation process to pre-render
 	  HTML5  pages. This script is also leveraged at runtime by the  Node.js
 	  webserver process for website's that leverage custom server-side business
@@ -65,14 +65,14 @@ module.exports =
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(170);
+	var SNAPRT = __webpack_require__(179);
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
 	var React = SNAPRT.react;
 	var ReactDOMServer = __webpack_require__(157);
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(171);
+	var reactContextData = __webpack_require__(180);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -100,7 +100,7 @@ module.exports =
 	            response.result = ReactDOMServer.renderToStaticMarkup(React.createElement(SNAPRT.reactTheme.SnapPage, reactContextData));
 	        } catch (error_) {
 	            errors.unshift(error_.toString());
-	            errors.unshift("Failed to render '/' due to error:");
+	            errors.unshift("Failed to render '/testsite/tiffany' due to error:");
 	            break;
 	        }
 	        break;
@@ -19203,7 +19203,16 @@ module.exports =
 /* 167 */,
 /* 168 */,
 /* 169 */,
-/* 170 */
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19215,7 +19224,7 @@ module.exports =
 	  Copyright (C) 2016 Replace w/your org name
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/'.
+	  server scripts for input route '/testsite/tiffany'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -19229,7 +19238,7 @@ module.exports =
 	module.exports = __webpack_require__(2);
 
 /***/ },
-/* 171 */
+/* 180 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -19432,11 +19441,11 @@ module.exports =
 			]
 		},
 		"page": {
-			"primaryRouteHash": "a90e9ae0",
-			"primaryRoute": "/",
-			"title": "Route Title",
-			"description": "A route is associated with a ReactJS page by default.",
-			"tooltip": "Some tooltip...",
+			"primaryRouteHash": "de94d6a8",
+			"primaryRoute": "/testsite/tiffany",
+			"title": "Hello, Tiffany",
+			"description": "This is a simple demo page.",
+			"tooltip": "Jump to Tiff's demo page...",
 			"rank": 0,
 			"context": {}
 		},

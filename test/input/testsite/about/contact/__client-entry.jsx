@@ -1,26 +1,26 @@
 // ======================================================================
 /*
-  __client-entry.jsx
+  __client-entry.js
 
-  {{site.copyright}}
+  Copyright (C) 2016 Replace w/your org name
 
-  Main client entry point for {{site.title}} {{generator.agent.name}} route '{{page.primaryRouteHash}}'.
+  Main client entry point for Site Title snapsite route 'c27356c0'.
   This script will be called when the HTML5 document published at
-  URL '{{site.url}}{{page.primaryRoute}}' loads in your browser.
+  URL 'https://mysite.com/testsite/about/contact' loads in your browser.
 
-  Produced by Encapsule/{{generator.agent.name}} v{{generator.agent.version}} {{generator.build.date}}
-  Site build instance: [{{generator.build.time}} {{generator.build.hash}}]
+  Produced by Encapsule/snapsite v0.0.5 Sun Feb 21 2016 23:11:30 GMT-0800 (PST)
+  Site build instance: [1456125090677 Sh5MP100T96tzoq6vIibEQ]
 */
 // ======================================================================
 
 // Load the snapsite runtime library.
-const SNAPRT = require('{{snapsiteModule}}');
+const SNAPRT = require('./__snaprt.jsx');
 // Alias submodules.
 const ARCCORE = SNAPRT.arccore;
 const React = SNAPRT.react;
 const ReactDOM = SNAPRT.reactDOM;
 
-// Load the React data context prepared by {{generator.agent.name}}.
+// Load the React data context prepared by snapsite.
 var reactContextData = require('json!./__page-context');
 
 // Convert the serialized pages digraph model into an in-memory graph DB.
@@ -31,18 +31,18 @@ if (factoryResponse.error) {
 // Replace the serialized digraph model with a runtime DirectedGraph container.
 reactContextData.pagesGraph = factoryResponse.result;
 
-console.log("{{generator.agent.name}} client app initializing on route '{{page.primaryRoute}}'...");
-console.log("Page [{{site.title}} :: {{page.title}}] ({{page.primaryRouteHash}}) {{site.copyright}}");
-console.log("Powered by Encapsule/{{generator.agent.name}} v{{generator.agent.version}} // " +
+console.log("snapsite client app initializing on route '/testsite/about/contact'...");
+console.log("Page [Site Title :: Contact] (c27356c0) Copyright (C) 2016 Replace w/your org name");
+console.log("Powered by Encapsule/snapsite v0.0.5 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);
-console.log("Please follow @Encapsule on Twitter for {{generator.agent.name}} news & updates. https://twitter.com/Encapsule");
+console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
 // Load the developer-defined React component responsible for rendering
 // page-specific content from (a) the React data context (b) user input
 // (c) local storage (d) communication with remote servers.
 
-var reactContentComponent = {{{contentRenderModuleLoad}}};
+var reactContentComponent = require('./content.jsx');
 
 // Specialize the content rendering behavior of <SnapPage>.
 reactContextData.renderContent = reactContentComponent;
@@ -62,7 +62,7 @@ var renderPageContent = function() {
 console.log("... re-rendering the page client-side...");
 renderPageContent();
 
-const clientAppEntry = require('{{clientExtensionModule}}');
+const clientAppEntry = require('/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension');
 
 console.log("... calling client runtime extension...");
 clientAppEntry({

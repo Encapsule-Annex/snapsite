@@ -198,13 +198,23 @@
         ]
     },
     "page": {
-        "primaryRouteHash": "a90e9ae0",
-        "primaryRoute": "/",
-        "title": "Route Title",
-        "description": "A route is associated with a ReactJS page by default.",
-        "tooltip": "Some tooltip...",
-        "rank": 0,
-        "context": {}
+        "primaryRouteHash": "f41811ee",
+        "primaryRoute": "/testsite",
+        "title": "Home",
+        "description": "Encapsule.io software development website.",
+        "tooltip": "Jump back to the top of the site...",
+        "rank": 9,
+        "context": {
+            "content": "Testing 1,2,3",
+            "something": {
+                "x": [
+                    "apple",
+                    "oranges",
+                    "grapes",
+                    "bannanas"
+                ]
+            }
+        }
     },
     "lookup": {
         "routeHashToRouteMap": {

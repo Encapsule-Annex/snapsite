@@ -8,7 +8,7 @@
                 "p": {
                     "primaryRoute": "/",
                     "primaryRouteHash": "a90e9ae0",
-                    "sourcesDirectory": "/home/cdr/code/encapsule/snapsite/test/input",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Route Title",
@@ -20,19 +20,311 @@
                         }
                     }
                 }
+            },
+            {
+                "u": "fd1f8812",
+                "p": {
+                    "primaryRoute": "/installation",
+                    "primaryRouteHash": "fd1f8812",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/installation",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Test Route",
+                        "description": "A quick test route.",
+                        "tooltip": "Jump to the test route...",
+                        "rank": 0,
+                        "providers": {
+                            "ReactJS": {}
+                        }
+                    }
+                }
+            },
+            {
+                "u": "f41811ee",
+                "p": {
+                    "primaryRoute": "/testsite",
+                    "primaryRouteHash": "f41811ee",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Home",
+                        "description": "Encapsule.io software development website.",
+                        "tooltip": "Jump back to the top of the site...",
+                        "rank": 9,
+                        "providers": {
+                            "ReactJS": {
+                                "content": "Testing 1,2,3",
+                                "something": {
+                                    "x": [
+                                        "apple",
+                                        "oranges",
+                                        "grapes",
+                                        "bannanas"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "u": "202c309f",
+                "p": {
+                    "primaryRoute": "/testsite/about",
+                    "primaryRouteHash": "202c309f",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/about",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "About",
+                        "description": "Learn about Encapsule.io.",
+                        "tooltip": "About Encapsule.io...",
+                        "rank": 0,
+                        "providers": {
+                            "ReactJS": {
+                                "content": [
+                                    "This is supposed to be presented as a paragraph.",
+                                    "Let's assume that it's markdown format."
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "u": "1e21dd27",
+                "p": {
+                    "primaryRoute": "/testsite/blog",
+                    "primaryRouteHash": "1e21dd27",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/blog",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Blog",
+                        "description": "Encapsule.io web development blog.",
+                        "tooltip": "Encapsule.io blog...",
+                        "rank": 0,
+                        "providers": {
+                            "ReactJS": {}
+                        }
+                    }
+                }
+            },
+            {
+                "u": "421567c4",
+                "p": {
+                    "primaryRoute": "/testsite/colter",
+                    "primaryRouteHash": "421567c4",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/colter",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Hello, Colter",
+                        "description": "This is a test. Hello!",
+                        "tooltip": "Jump to Hello, Colter...",
+                        "rank": 0,
+                        "providers": {
+                            "ReactJS": {
+                                "testData": "Hey this is some test data."
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "u": "d66b4755",
+                "p": {
+                    "primaryRoute": "/testsite/docs",
+                    "primaryRouteHash": "d66b4755",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/docs",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Documentation",
+                        "description": "Encapsule tools, and libaries documentation library.",
+                        "tooltip": "Browse technical documentation...",
+                        "rank": 0,
+                        "providers": {
+                            "ReactJS": {}
+                        }
+                    }
+                }
+            },
+            {
+                "u": "f840cd18",
+                "p": {
+                    "primaryRoute": "/testsite/new-page",
+                    "primaryRouteHash": "f840cd18",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/new-page",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Hello, John",
+                        "description": "A test page to demonstrate some basic capabilities.",
+                        "tooltip": "Jump to the Hello, John demo page...",
+                        "rank": 0,
+                        "providers": {
+                            "ReactJS": {}
+                        }
+                    }
+                }
+            },
+            {
+                "u": "1189e049",
+                "p": {
+                    "primaryRoute": "/testsite/static",
+                    "primaryRouteHash": "1189e049",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/static",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Static",
+                        "description": "Static site resources.",
+                        "tooltip": "Jump to static site resources.",
+                        "rank": 0,
+                        "providers": {
+                            "StaticFiles": {
+                                "test": "This is data fed to the static files provider"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "u": "de94d6a8",
+                "p": {
+                    "primaryRoute": "/testsite/tiffany",
+                    "primaryRouteHash": "de94d6a8",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/tiffany",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Hello, Tiffany",
+                        "description": "This is a simple demo page.",
+                        "tooltip": "Jump to Tiff's demo page...",
+                        "rank": 0,
+                        "providers": {
+                            "ReactJS": {}
+                        }
+                    }
+                }
+            },
+            {
+                "u": "c27356c0",
+                "p": {
+                    "primaryRoute": "/testsite/about/contact",
+                    "primaryRouteHash": "c27356c0",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/about/contact",
+                    "routeConfig": {
+                        "aliases": [],
+                        "title": "Contact",
+                        "description": "Contact information and directions to Encapsule.io.",
+                        "tooltip": "Contact information...",
+                        "rank": 0,
+                        "providers": {
+                            "ReactJS": {}
+                        }
+                    }
+                }
             }
         ],
-        "elist": []
+        "elist": [
+            {
+                "e": {
+                    "u": "a90e9ae0",
+                    "v": "fd1f8812"
+                }
+            },
+            {
+                "e": {
+                    "u": "a90e9ae0",
+                    "v": "f41811ee"
+                }
+            },
+            {
+                "e": {
+                    "u": "f41811ee",
+                    "v": "202c309f"
+                }
+            },
+            {
+                "e": {
+                    "u": "f41811ee",
+                    "v": "1e21dd27"
+                }
+            },
+            {
+                "e": {
+                    "u": "f41811ee",
+                    "v": "421567c4"
+                }
+            },
+            {
+                "e": {
+                    "u": "f41811ee",
+                    "v": "d66b4755"
+                }
+            },
+            {
+                "e": {
+                    "u": "f41811ee",
+                    "v": "f840cd18"
+                }
+            },
+            {
+                "e": {
+                    "u": "f41811ee",
+                    "v": "1189e049"
+                }
+            },
+            {
+                "e": {
+                    "u": "f41811ee",
+                    "v": "de94d6a8"
+                }
+            },
+            {
+                "e": {
+                    "u": "202c309f",
+                    "v": "c27356c0"
+                }
+            }
+        ]
     },
     "routeHashToRouteMap": {
-        "a90e9ae0": "/"
+        "a90e9ae0": "/",
+        "fd1f8812": "/installation",
+        "f41811ee": "/testsite",
+        "202c309f": "/testsite/about",
+        "1e21dd27": "/testsite/blog",
+        "421567c4": "/testsite/colter",
+        "d66b4755": "/testsite/docs",
+        "f840cd18": "/testsite/new-page",
+        "1189e049": "/testsite/static",
+        "de94d6a8": "/testsite/tiffany",
+        "c27356c0": "/testsite/about/contact"
     },
     "routeToRouteHashMap": {
-        "/": "a90e9ae0"
+        "/": "a90e9ae0",
+        "/installation": "fd1f8812",
+        "/testsite": "f41811ee",
+        "/testsite/about": "202c309f",
+        "/testsite/blog": "1e21dd27",
+        "/testsite/colter": "421567c4",
+        "/testsite/docs": "d66b4755",
+        "/testsite/new-page": "f840cd18",
+        "/testsite/static": "1189e049",
+        "/testsite/tiffany": "de94d6a8",
+        "/testsite/about/contact": "c27356c0"
     },
     "routeProvidersMap": {
         "ReactJS": [
-            "a90e9ae0"
+            "a90e9ae0",
+            "fd1f8812",
+            "f41811ee",
+            "202c309f",
+            "1e21dd27",
+            "421567c4",
+            "d66b4755",
+            "f840cd18",
+            "de94d6a8",
+            "c27356c0"
+        ],
+        "StaticFiles": [
+            "1189e049"
         ]
     }
 }

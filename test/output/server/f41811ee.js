@@ -53,7 +53,7 @@ module.exports =
 
 	  Copyright (C) 2016 Replace w/your org name
 
-	  Server UX render entry entry point for Site Title snapsite route 'a90e9ae0'.
+	  Server UX render entry entry point for Site Title snapsite route 'f41811ee'.
 	  This script is called by the snapsite compilation process to pre-render
 	  HTML5  pages. This script is also leveraged at runtime by the  Node.js
 	  webserver process for website's that leverage custom server-side business
@@ -65,14 +65,14 @@ module.exports =
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(170);
+	var SNAPRT = __webpack_require__(181);
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
 	var React = SNAPRT.react;
 	var ReactDOMServer = __webpack_require__(157);
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(171);
+	var reactContextData = __webpack_require__(182);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -85,7 +85,7 @@ module.exports =
 	// Load the developer-defined React component responsible for rendering
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
-	var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
+	var reactContentComponent = __webpack_require__(183);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -100,7 +100,7 @@ module.exports =
 	            response.result = ReactDOMServer.renderToStaticMarkup(React.createElement(SNAPRT.reactTheme.SnapPage, reactContextData));
 	        } catch (error_) {
 	            errors.unshift(error_.toString());
-	            errors.unshift("Failed to render '/' due to error:");
+	            errors.unshift("Failed to render '/testsite' due to error:");
 	            break;
 	        }
 	        break;
@@ -19203,7 +19203,18 @@ module.exports =
 /* 167 */,
 /* 168 */,
 /* 169 */,
-/* 170 */
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19215,7 +19226,7 @@ module.exports =
 	  Copyright (C) 2016 Replace w/your org name
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/'.
+	  server scripts for input route '/testsite'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -19229,7 +19240,7 @@ module.exports =
 	module.exports = __webpack_require__(2);
 
 /***/ },
-/* 171 */
+/* 182 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -19432,13 +19443,23 @@ module.exports =
 			]
 		},
 		"page": {
-			"primaryRouteHash": "a90e9ae0",
-			"primaryRoute": "/",
-			"title": "Route Title",
-			"description": "A route is associated with a ReactJS page by default.",
-			"tooltip": "Some tooltip...",
-			"rank": 0,
-			"context": {}
+			"primaryRouteHash": "f41811ee",
+			"primaryRoute": "/testsite",
+			"title": "Home",
+			"description": "Encapsule.io software development website.",
+			"tooltip": "Jump back to the top of the site...",
+			"rank": 9,
+			"context": {
+				"content": "Testing 1,2,3",
+				"something": {
+					"x": [
+						"apple",
+						"oranges",
+						"grapes",
+						"bannanas"
+					]
+				}
+			}
 		},
 		"lookup": {
 			"routeHashToRouteMap": {
@@ -19469,6 +19490,160 @@ module.exports =
 			}
 		}
 	};
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var COMMON = __webpack_require__(184);
+	var ARCCORE = COMMON.arccore;
+	var React = COMMON.react;
+
+	var ReactTheme = COMMON.reactTheme;
+
+	// const Sitemap = require('./sitemap.jsx');
+	// const Breadcrumbs = require('./breadcrumbs.jsx');
+
+	var rootComponent = React.createClass({
+	    displayName: 'rootComponent',
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            charHistory: [],
+	            checktime: new Date().getTime()
+	        };
+	    },
+
+	    render: function render() {
+	        var charHistory = this.state.charHistory;
+
+	        var date = new Date();
+	        var timestring = date.getTime();
+	        var datestring = date.toString();
+	        var irut = ARCCORE.identifier.irut.fromReference(datestring).result;
+	        var irut2 = ARCCORE.identifier.irut.fromReference(timestring).result;
+
+	        charHistory.push(irut2.charAt(irut.length - 8));
+	        if (charHistory.length > 60) {
+	            charHistory.shift();
+	        }
+	        this.state.charHistory = charHistory;
+
+	        var elapsed = timestring - this.state.checktime;
+	        this.state.checktime = timestring;
+
+	        var fps = Math.floor(1000 / elapsed);
+
+	        var irutStyles = {
+	            fontFamily: "Courier"
+	        };
+
+	        var propsString = JSON.stringify(this.props, undefined, 4);
+
+	        var jsonStyles = {
+	            backgroundColor: '#DDEEFF',
+	            padding: '1em',
+	            margin: '1em',
+	            border: '1px solid #AABBCC'
+	        };
+
+	        return React.createElement(
+	            'div',
+	            null,
+	            React.createElement(
+	                'p',
+	                null,
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'Not much eye candy yet but there\'s a whole lot going on in this little demo!'
+	                )
+	            ),
+	            React.createElement(
+	                'i',
+	                null,
+	                'If the little ASCII spaceship launches, then the client app is working as expected!'
+	            ),
+	            React.createElement(
+	                'h2',
+	                { style: irutStyles },
+	                irut
+	            ),
+	            React.createElement(
+	                'div',
+	                { style: irutStyles },
+	                charHistory.join(''),
+	                ' >=[oooo]>-'
+	            ),
+	            React.createElement(
+	                'p',
+	                null,
+	                'It\'s now ',
+	                datestring,
+	                ' Epoch=',
+	                timestring,
+	                '(msec) period=',
+	                elapsed,
+	                '(msec) framerate=',
+	                fps,
+	                '(fps)'
+	            ),
+	            React.createElement(
+	                'h3',
+	                null,
+	                this.props.generator.agent.name,
+	                ' ',
+	                this.props.generator.agent.version,
+	                ' React JS data context'
+	            ),
+	            React.createElement(
+	                'i',
+	                null,
+	                'Every ReactJS page generated by ',
+	                this.props.generator.agent.name,
+	                ' is passed a JSON document to render that looks like this:'
+	            ),
+	            React.createElement(
+	                'div',
+	                { style: jsonStyles },
+	                React.createElement(
+	                    'pre',
+	                    null,
+	                    propsString
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = rootComponent;
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// ======================================================================
+	/*
+	  __snaprt.js
+
+	  Copyright (C) 2016 Replace w/your org name
+
+	  Shared runtime dependencies of snapsite client and
+	  server scripts for input route '/testsite'.
+
+	  JSX authors should require __snaprt into scope in order to gain
+	  access to theme bindings (array of named function points to React
+	  JS components specific to the the current snapsite theme).
+
+	  Produced by Encapsule/snapsite v0.0.5 Sun Feb 21 2016 22:41:01 GMT-0800 (PST)
+	  Site build instance: [1456123261268 k5ml8mI6Tz-0x33QD9OBiQ]
+	*/
+	// ======================================================================
+
+	module.exports = __webpack_require__(2);
+
 
 /***/ }
 /******/ ]);

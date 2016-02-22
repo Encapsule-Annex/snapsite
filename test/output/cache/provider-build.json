@@ -19,13 +19,13 @@
                 },
                 "generator": {
                     "build": {
-                        "time": 1456100599003,
-                        "date": "Sun Feb 21 2016 16:23:19 GMT-0800 (PST)",
-                        "hash": "o8ZQVEqeTaiuCxZBR-PO_w"
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
                     },
                     "agent": {
                         "name": "snapsite",
-                        "version": "0.0.4"
+                        "version": "0.0.5"
                     }
                 },
                 "pagesGraph": {
@@ -42,9 +42,163 @@
                                 "tooltip": "Some tooltip...",
                                 "rank": 0
                             }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
                         }
                     ],
-                    "elist": []
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
                 },
                 "page": {
                     "primaryRouteHash": "a90e9ae0",
@@ -57,20 +211,2280 @@
                 },
                 "lookup": {
                     "routeHashToRouteMap": {
-                        "a90e9ae0": "/"
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
                     },
                     "routeToRouteHashMap": {
-                        "/": "a90e9ae0"
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
                     }
                 },
-                "snapsiteModule": "/home/cdr/code/encapsule/snapsite/bin/rtlib",
-                "clientExtensionModule": "/home/cdr/code/encapsule/snapsite/bin/rtlib/default-client-extension",
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension",
                 "contentRenderModuleLoad": "SNAPRT.reactTheme.MissingContentRender"
             },
             "doc": {
                 "routeHash": "a90e9ae0",
-                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Route Title\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.4\n    Sun Feb 21 2016 16:23:19 GMT-0800 (PST)\n    1456100599003 o8ZQVEqeTaiuCxZBR-PO_w\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Route Title</title>\n    <meta name=\"description\" content=\"A route is associated with a ReactJS page by default.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Route Title content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><h1>Route Title</h1><span><div style=\"margin:1em;padding:1em;background-color:#FFCC99;border:5px solid red;font-family:Courier;font-size:10pt;\"><h2>Missing content.jsx</h2><p><strong>Cannot display page-specific content for &#x27;a90e9ae0&#x27; on route &#x27;/&#x27;.</strong></p><p>Please create the file <strong>&#x27;content.jsx&#x27;</strong> in the route input directory, and rebuild the site to correct this problem.</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.</li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Route Title client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./a90e9ae0.js\" ></script>\n  </body>\n</html>\n",
-                "path": "/home/cdr/code/encapsule/snapsite/test/output/client/a90e9ae0.html"
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Route Title\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Route Title</title>\n    <meta name=\"description\" content=\"A route is associated with a ReactJS page by default.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Route Title content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><h1>Route Title</h1><span><div style=\"margin:1em;padding:1em;background-color:#FFCC99;border:5px solid red;font-family:Courier;font-size:10pt;\"><h2>Missing content.jsx</h2><p><strong>Cannot display page-specific content for &#x27;a90e9ae0&#x27; on route &#x27;/&#x27;.</strong></p><p>Please create the file <strong>&#x27;content.jsx&#x27;</strong> in the route input directory, and rebuild the site to correct this problem.</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Route Title client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./a90e9ae0.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/a90e9ae0.html"
+            }
+        },
+        "fd1f8812": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.5"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
+                },
+                "page": {
+                    "primaryRouteHash": "fd1f8812",
+                    "primaryRoute": "/installation",
+                    "title": "Test Route",
+                    "description": "A quick test route.",
+                    "tooltip": "Jump to the test route...",
+                    "rank": 0,
+                    "context": {}
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension",
+                "contentRenderModuleLoad": "SNAPRT.reactTheme.MissingContentRender"
+            },
+            "doc": {
+                "routeHash": "fd1f8812",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Test Route\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Test Route</title>\n    <meta name=\"description\" content=\"A quick test route.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Test Route content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><div><a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> / <span>Test Route</span></div><hr/><h1>Test Route</h1><span><div style=\"margin:1em;padding:1em;background-color:#FFCC99;border:5px solid red;font-family:Courier;font-size:10pt;\"><h2>Missing content.jsx</h2><p><strong>Cannot display page-specific content for &#x27;fd1f8812&#x27; on route &#x27;/installation&#x27;.</strong></p><p>Please create the file <strong>&#x27;content.jsx&#x27;</strong> in the route input directory, and rebuild the site to correct this problem.</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Test Route client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./fd1f8812.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/fd1f8812.html"
+            }
+        },
+        "f41811ee": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.5"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
+                },
+                "page": {
+                    "primaryRouteHash": "f41811ee",
+                    "primaryRoute": "/testsite",
+                    "title": "Home",
+                    "description": "Encapsule.io software development website.",
+                    "tooltip": "Jump back to the top of the site...",
+                    "rank": 9,
+                    "context": {
+                        "content": "Testing 1,2,3",
+                        "something": {
+                            "x": [
+                                "apple",
+                                "oranges",
+                                "grapes",
+                                "bannanas"
+                            ]
+                        }
+                    }
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/test/input/testsite/client-runtime.js",
+                "contentRenderModuleLoad": "require('./content.jsx')"
+            },
+            "doc": {
+                "routeHash": "f41811ee",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Home\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Home</title>\n    <meta name=\"description\" content=\"Encapsule.io software development website.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Home content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><div><a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> / <span>Home</span></div><hr/><h1>Home</h1><span><div><p><strong>Not much eye candy yet but there&#x27;s a whole lot going on in this little demo!</strong></p><i>If the little ASCII spaceship launches, then the client app is working as expected!</i><h2 style=\"font-family:Courier;\">0osY76ODG3yswiWmLU4IjA</h2><div style=\"font-family:Courier;\">c &gt;=[oooo]&gt;-</div><p>It&#x27;s now Sun Feb 21 2016 23:11:36 GMT-0800 (PST) Epoch=1456125096795(msec) period=1(msec) framerate=1000(fps)</p><h3>snapsite 0.0.5 React JS data context</h3><i>Every ReactJS page generated by snapsite is passed a JSON document to render that looks like this:</i><div style=\"background-color:#DDEEFF;padding:1em;margin:1em;border:1px solid #AABBCC;\"><pre>{\n    &quot;org&quot;: {\n        &quot;seed&quot;: &quot;replace this with an IRUT&quot;,\n        &quot;name&quot;: &quot;Replace w/your org name&quot;,\n        &quot;location&quot;: &quot;Repalce w/your org location&quot;,\n        &quot;url&quot;: &quot;https://mysite.com&quot;,\n        &quot;email&quot;: &quot;admin@mysite.com&quot;\n    },\n    &quot;site&quot;: {\n        &quot;seed&quot;: &quot;replace this an an IRUT&quot;,\n        &quot;url&quot;: &quot;https://mysite.com&quot;,\n        &quot;title&quot;: &quot;Site Title&quot;,\n        &quot;description&quot;: &quot;A description of your website.&quot;,\n        &quot;copyright&quot;: &quot;Copyright (C) 2016 Replace w/your org name&quot;,\n        &quot;context&quot;: {}\n    },\n    &quot;generator&quot;: {\n        &quot;build&quot;: {\n            &quot;time&quot;: 1456125090677,\n            &quot;date&quot;: &quot;Sun Feb 21 2016 23:11:30 GMT-0800 (PST)&quot;,\n            &quot;hash&quot;: &quot;Sh5MP100T96tzoq6vIibEQ&quot;\n        },\n        &quot;agent&quot;: {\n            &quot;name&quot;: &quot;snapsite&quot;,\n            &quot;version&quot;: &quot;0.0.5&quot;\n        }\n    },\n    &quot;pagesGraph&quot;: {\n        &quot;name&quot;: &quot;ReactJS UX Route Graph&quot;,\n        &quot;description&quot;: &quot;A directed graph model of undefined routes mapped to ReactJS UX.&quot;,\n        &quot;vlist&quot;: [\n            {\n                &quot;u&quot;: &quot;a90e9ae0&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;a90e9ae0&quot;,\n                    &quot;primaryRoute&quot;: &quot;/&quot;,\n                    &quot;title&quot;: &quot;Route Title&quot;,\n                    &quot;description&quot;: &quot;A route is associated with a ReactJS page by default.&quot;,\n                    &quot;tooltip&quot;: &quot;Some tooltip...&quot;,\n                    &quot;rank&quot;: 0\n                }\n            },\n            {\n                &quot;u&quot;: &quot;fd1f8812&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;fd1f8812&quot;,\n                    &quot;primaryRoute&quot;: &quot;/installation&quot;,\n                    &quot;title&quot;: &quot;Test Route&quot;,\n                    &quot;description&quot;: &quot;A quick test route.&quot;,\n                    &quot;tooltip&quot;: &quot;Jump to the test route...&quot;,\n                    &quot;rank&quot;: 0\n                }\n            },\n            {\n                &quot;u&quot;: &quot;f41811ee&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;f41811ee&quot;,\n                    &quot;primaryRoute&quot;: &quot;/testsite&quot;,\n                    &quot;title&quot;: &quot;Home&quot;,\n                    &quot;description&quot;: &quot;Encapsule.io software development website.&quot;,\n                    &quot;tooltip&quot;: &quot;Jump back to the top of the site...&quot;,\n                    &quot;rank&quot;: 9\n                }\n            },\n            {\n                &quot;u&quot;: &quot;202c309f&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;202c309f&quot;,\n                    &quot;primaryRoute&quot;: &quot;/testsite/about&quot;,\n                    &quot;title&quot;: &quot;About&quot;,\n                    &quot;description&quot;: &quot;Learn about Encapsule.io.&quot;,\n                    &quot;tooltip&quot;: &quot;About Encapsule.io...&quot;,\n                    &quot;rank&quot;: 0\n                }\n            },\n            {\n                &quot;u&quot;: &quot;1e21dd27&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;1e21dd27&quot;,\n                    &quot;primaryRoute&quot;: &quot;/testsite/blog&quot;,\n                    &quot;title&quot;: &quot;Blog&quot;,\n                    &quot;description&quot;: &quot;Encapsule.io web development blog.&quot;,\n                    &quot;tooltip&quot;: &quot;Encapsule.io blog...&quot;,\n                    &quot;rank&quot;: 0\n                }\n            },\n            {\n                &quot;u&quot;: &quot;421567c4&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;421567c4&quot;,\n                    &quot;primaryRoute&quot;: &quot;/testsite/colter&quot;,\n                    &quot;title&quot;: &quot;Hello, Colter&quot;,\n                    &quot;description&quot;: &quot;This is a test. Hello!&quot;,\n                    &quot;tooltip&quot;: &quot;Jump to Hello, Colter...&quot;,\n                    &quot;rank&quot;: 0\n                }\n            },\n            {\n                &quot;u&quot;: &quot;d66b4755&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;d66b4755&quot;,\n                    &quot;primaryRoute&quot;: &quot;/testsite/docs&quot;,\n                    &quot;title&quot;: &quot;Documentation&quot;,\n                    &quot;description&quot;: &quot;Encapsule tools, and libaries documentation library.&quot;,\n                    &quot;tooltip&quot;: &quot;Browse technical documentation...&quot;,\n                    &quot;rank&quot;: 0\n                }\n            },\n            {\n                &quot;u&quot;: &quot;f840cd18&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;f840cd18&quot;,\n                    &quot;primaryRoute&quot;: &quot;/testsite/new-page&quot;,\n                    &quot;title&quot;: &quot;Hello, John&quot;,\n                    &quot;description&quot;: &quot;A test page to demonstrate some basic capabilities.&quot;,\n                    &quot;tooltip&quot;: &quot;Jump to the Hello, John demo page...&quot;,\n                    &quot;rank&quot;: 0\n                }\n            },\n            {\n                &quot;u&quot;: &quot;de94d6a8&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;de94d6a8&quot;,\n                    &quot;primaryRoute&quot;: &quot;/testsite/tiffany&quot;,\n                    &quot;title&quot;: &quot;Hello, Tiffany&quot;,\n                    &quot;description&quot;: &quot;This is a simple demo page.&quot;,\n                    &quot;tooltip&quot;: &quot;Jump to Tiff&#x27;s demo page...&quot;,\n                    &quot;rank&quot;: 0\n                }\n            },\n            {\n                &quot;u&quot;: &quot;c27356c0&quot;,\n                &quot;p&quot;: {\n                    &quot;primaryRouteHash&quot;: &quot;c27356c0&quot;,\n                    &quot;primaryRoute&quot;: &quot;/testsite/about/contact&quot;,\n                    &quot;title&quot;: &quot;Contact&quot;,\n                    &quot;description&quot;: &quot;Contact information and directions to Encapsule.io.&quot;,\n                    &quot;tooltip&quot;: &quot;Contact information...&quot;,\n                    &quot;rank&quot;: 0\n                }\n            }\n        ],\n        &quot;elist&quot;: [\n            {\n                &quot;e&quot;: {\n                    &quot;u&quot;: &quot;a90e9ae0&quot;,\n                    &quot;v&quot;: &quot;fd1f8812&quot;\n                }\n            },\n            {\n                &quot;e&quot;: {\n                    &quot;u&quot;: &quot;a90e9ae0&quot;,\n                    &quot;v&quot;: &quot;f41811ee&quot;\n                }\n            },\n            {\n                &quot;e&quot;: {\n                    &quot;u&quot;: &quot;f41811ee&quot;,\n                    &quot;v&quot;: &quot;202c309f&quot;\n                }\n            },\n            {\n                &quot;e&quot;: {\n                    &quot;u&quot;: &quot;f41811ee&quot;,\n                    &quot;v&quot;: &quot;1e21dd27&quot;\n                }\n            },\n            {\n                &quot;e&quot;: {\n                    &quot;u&quot;: &quot;f41811ee&quot;,\n                    &quot;v&quot;: &quot;421567c4&quot;\n                }\n            },\n            {\n                &quot;e&quot;: {\n                    &quot;u&quot;: &quot;f41811ee&quot;,\n                    &quot;v&quot;: &quot;d66b4755&quot;\n                }\n            },\n            {\n                &quot;e&quot;: {\n                    &quot;u&quot;: &quot;f41811ee&quot;,\n                    &quot;v&quot;: &quot;f840cd18&quot;\n                }\n            },\n            {\n                &quot;e&quot;: {\n                    &quot;u&quot;: &quot;f41811ee&quot;,\n                    &quot;v&quot;: &quot;de94d6a8&quot;\n                }\n            },\n            {\n                &quot;e&quot;: {\n                    &quot;u&quot;: &quot;202c309f&quot;,\n                    &quot;v&quot;: &quot;c27356c0&quot;\n                }\n            }\n        ]\n    },\n    &quot;page&quot;: {\n        &quot;primaryRouteHash&quot;: &quot;f41811ee&quot;,\n        &quot;primaryRoute&quot;: &quot;/testsite&quot;,\n        &quot;title&quot;: &quot;Home&quot;,\n        &quot;description&quot;: &quot;Encapsule.io software development website.&quot;,\n        &quot;tooltip&quot;: &quot;Jump back to the top of the site...&quot;,\n        &quot;rank&quot;: 9,\n        &quot;context&quot;: {\n            &quot;content&quot;: &quot;Testing 1,2,3&quot;,\n            &quot;something&quot;: {\n                &quot;x&quot;: [\n                    &quot;apple&quot;,\n                    &quot;oranges&quot;,\n                    &quot;grapes&quot;,\n                    &quot;bannanas&quot;\n                ]\n            }\n        }\n    },\n    &quot;lookup&quot;: {\n        &quot;routeHashToRouteMap&quot;: {\n            &quot;a90e9ae0&quot;: &quot;/&quot;,\n            &quot;fd1f8812&quot;: &quot;/installation&quot;,\n            &quot;f41811ee&quot;: &quot;/testsite&quot;,\n            &quot;202c309f&quot;: &quot;/testsite/about&quot;,\n            &quot;1e21dd27&quot;: &quot;/testsite/blog&quot;,\n            &quot;421567c4&quot;: &quot;/testsite/colter&quot;,\n            &quot;d66b4755&quot;: &quot;/testsite/docs&quot;,\n            &quot;f840cd18&quot;: &quot;/testsite/new-page&quot;,\n            &quot;1189e049&quot;: &quot;/testsite/static&quot;,\n            &quot;de94d6a8&quot;: &quot;/testsite/tiffany&quot;,\n            &quot;c27356c0&quot;: &quot;/testsite/about/contact&quot;\n        },\n        &quot;routeToRouteHashMap&quot;: {\n            &quot;/&quot;: &quot;a90e9ae0&quot;,\n            &quot;/installation&quot;: &quot;fd1f8812&quot;,\n            &quot;/testsite&quot;: &quot;f41811ee&quot;,\n            &quot;/testsite/about&quot;: &quot;202c309f&quot;,\n            &quot;/testsite/blog&quot;: &quot;1e21dd27&quot;,\n            &quot;/testsite/colter&quot;: &quot;421567c4&quot;,\n            &quot;/testsite/docs&quot;: &quot;d66b4755&quot;,\n            &quot;/testsite/new-page&quot;: &quot;f840cd18&quot;,\n            &quot;/testsite/static&quot;: &quot;1189e049&quot;,\n            &quot;/testsite/tiffany&quot;: &quot;de94d6a8&quot;,\n            &quot;/testsite/about/contact&quot;: &quot;c27356c0&quot;\n        }\n    }\n}</pre></div></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Home client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./f41811ee.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/f41811ee.html"
+            }
+        },
+        "202c309f": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.5"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
+                },
+                "page": {
+                    "primaryRouteHash": "202c309f",
+                    "primaryRoute": "/testsite/about",
+                    "title": "About",
+                    "description": "Learn about Encapsule.io.",
+                    "tooltip": "About Encapsule.io...",
+                    "rank": 0,
+                    "context": {
+                        "content": [
+                            "This is supposed to be presented as a paragraph.",
+                            "Let's assume that it's markdown format."
+                        ]
+                    }
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension",
+                "contentRenderModuleLoad": "require('./content.jsx')"
+            },
+            "doc": {
+                "routeHash": "202c309f",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: About\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: About</title>\n    <meta name=\"description\" content=\"Learn about Encapsule.io.\" />\n  </head>\n  <body>\n    <!-- Site Title :: About content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><div><a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> / <a href=\"./f41811ee.html\" title=\"Jump back to the top of the site...\">Home</a> / <span>About</span></div><hr/><h1>About</h1><span><div><h2>a1iegzlov53ahl7zOreLJw</h2><p>It&#x27;s now Sun Feb 21 2016 23:11:36 GMT-0800 (PST)</p><p>This is just a placeholder for some actual content.</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: About client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./202c309f.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/202c309f.html"
+            }
+        },
+        "1e21dd27": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.5"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
+                },
+                "page": {
+                    "primaryRouteHash": "1e21dd27",
+                    "primaryRoute": "/testsite/blog",
+                    "title": "Blog",
+                    "description": "Encapsule.io web development blog.",
+                    "tooltip": "Encapsule.io blog...",
+                    "rank": 0,
+                    "context": {}
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension",
+                "contentRenderModuleLoad": "require('./content.jsx')"
+            },
+            "doc": {
+                "routeHash": "1e21dd27",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Blog\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Blog</title>\n    <meta name=\"description\" content=\"Encapsule.io web development blog.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Blog content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><div><a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> / <a href=\"./f41811ee.html\" title=\"Jump back to the top of the site...\">Home</a> / <span>Blog</span></div><hr/><h1>Blog</h1><span><div><h2>iGaqGmuJOhSKvx-LgE66iw</h2><p>It&#x27;s now Sun Feb 21 2016 23:11:37 GMT-0800 (PST)</p><h3>Blog Placeholder</h3><p>This is just some HTML content that I&#x27;m writing into the content.jsx component.</p><p>In the short term, the blog feature will be implemented as a custom index over appropriately tagged pages. More on this later...</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Blog client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./1e21dd27.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/1e21dd27.html"
+            }
+        },
+        "421567c4": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.5"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
+                },
+                "page": {
+                    "primaryRouteHash": "421567c4",
+                    "primaryRoute": "/testsite/colter",
+                    "title": "Hello, Colter",
+                    "description": "This is a test. Hello!",
+                    "tooltip": "Jump to Hello, Colter...",
+                    "rank": 0,
+                    "context": {
+                        "testData": "Hey this is some test data."
+                    }
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/test/input/testsite/colter/client-runtime.js",
+                "contentRenderModuleLoad": "require('./content.jsx')"
+            },
+            "doc": {
+                "routeHash": "421567c4",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Hello, Colter\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Hello, Colter</title>\n    <meta name=\"description\" content=\"This is a test. Hello!\" />\n  </head>\n  <body>\n    <!-- Site Title :: Hello, Colter content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><div><a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> / <a href=\"./f41811ee.html\" title=\"Jump back to the top of the site...\">Home</a> / <span>Hello, Colter</span></div><hr/><h1>Hello, Colter</h1><span><div><h3>Hey, man!</h3><h1>The current time is 1456125097139</h1><p>Hey this is some test data.</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Hello, Colter client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./421567c4.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/421567c4.html"
+            }
+        },
+        "d66b4755": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.5"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
+                },
+                "page": {
+                    "primaryRouteHash": "d66b4755",
+                    "primaryRoute": "/testsite/docs",
+                    "title": "Documentation",
+                    "description": "Encapsule tools, and libaries documentation library.",
+                    "tooltip": "Browse technical documentation...",
+                    "rank": 0,
+                    "context": {}
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension",
+                "contentRenderModuleLoad": "require('./content.jsx')"
+            },
+            "doc": {
+                "routeHash": "d66b4755",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Documentation\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Documentation</title>\n    <meta name=\"description\" content=\"Encapsule tools, and libaries documentation library.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Documentation content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><div><a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> / <a href=\"./f41811ee.html\" title=\"Jump back to the top of the site...\">Home</a> / <span>Documentation</span></div><hr/><h1>Documentation</h1><span><div><h2>cBAFabPt9Z7DMvG68njTwQ</h2><p>It&#x27;s now Sun Feb 21 2016 23:11:37 GMT-0800 (PST)</p><h3>Docs Lib Placeholder</h3><p>Similar to the <a href=\"./1e21dd27.html\" title=\"Encapsule.io blog...\">Blog</a>, the documentation library feature will be a custom index over appropriately tagged pages.</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Documentation client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./d66b4755.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/d66b4755.html"
+            }
+        },
+        "f840cd18": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.5"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
+                },
+                "page": {
+                    "primaryRouteHash": "f840cd18",
+                    "primaryRoute": "/testsite/new-page",
+                    "title": "Hello, John",
+                    "description": "A test page to demonstrate some basic capabilities.",
+                    "tooltip": "Jump to the Hello, John demo page...",
+                    "rank": 0,
+                    "context": {}
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension",
+                "contentRenderModuleLoad": "require('./content.jsx')"
+            },
+            "doc": {
+                "routeHash": "f840cd18",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Hello, John\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Hello, John</title>\n    <meta name=\"description\" content=\"A test page to demonstrate some basic capabilities.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Hello, John content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><div><a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> / <a href=\"./f41811ee.html\" title=\"Jump back to the top of the site...\">Home</a> / <span>Hello, John</span></div><hr/><h1>Hello, John</h1><span><div><p>Since yesterday:</p><ul><li>Hand-created client and server entry points in route directories are gone. This logic is now generated at build-time.</li><li>I&#x27;ve created the basis for a powerful theme system that will be super simple to use. Install an npm package, change a line in your config, and recompile will reskin any site generated with snapsite.</li><li>This little demo uses several basic widgets implemented by the default theme.<ul><li>breadcrumbs at the top of the page</li><li>page title</li><li>sitemap / copyright footer</li><li>In-site link helpers that abstract the details of URL&#x27;s (can get tricky). For example: <a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> links back to the top of the site using a hash signature I don&#x27;t know off the top of my head. In this case I use the route &#x27;/&#x27;</li></ul></li><li>This little demo is a raw copy of the generated client app to github pages (free hosting).</li></ul></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Hello, John client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./f840cd18.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/f840cd18.html"
+            }
+        },
+        "de94d6a8": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.5"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
+                },
+                "page": {
+                    "primaryRouteHash": "de94d6a8",
+                    "primaryRoute": "/testsite/tiffany",
+                    "title": "Hello, Tiffany",
+                    "description": "This is a simple demo page.",
+                    "tooltip": "Jump to Tiff's demo page...",
+                    "rank": 0,
+                    "context": {}
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension",
+                "contentRenderModuleLoad": "SNAPRT.reactTheme.MissingContentRender"
+            },
+            "doc": {
+                "routeHash": "de94d6a8",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Hello, Tiffany\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Hello, Tiffany</title>\n    <meta name=\"description\" content=\"This is a simple demo page.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Hello, Tiffany content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><div><a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> / <a href=\"./f41811ee.html\" title=\"Jump back to the top of the site...\">Home</a> / <span>Hello, Tiffany</span></div><hr/><h1>Hello, Tiffany</h1><span><div style=\"margin:1em;padding:1em;background-color:#FFCC99;border:5px solid red;font-family:Courier;font-size:10pt;\"><h2>Missing content.jsx</h2><p><strong>Cannot display page-specific content for &#x27;de94d6a8&#x27; on route &#x27;/testsite/tiffany&#x27;.</strong></p><p>Please create the file <strong>&#x27;content.jsx&#x27;</strong> in the route input directory, and rebuild the site to correct this problem.</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Hello, Tiffany client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./de94d6a8.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/de94d6a8.html"
+            }
+        },
+        "c27356c0": {
+            "context": {
+                "org": {
+                    "seed": "replace this with an IRUT",
+                    "name": "Replace w/your org name",
+                    "location": "Repalce w/your org location",
+                    "url": "https://mysite.com",
+                    "email": "admin@mysite.com"
+                },
+                "site": {
+                    "seed": "replace this an an IRUT",
+                    "url": "https://mysite.com",
+                    "title": "Site Title",
+                    "description": "A description of your website.",
+                    "copyright": "Copyright (C) 2016 Replace w/your org name",
+                    "context": {}
+                },
+                "generator": {
+                    "build": {
+                        "time": 1456125090677,
+                        "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
+                        "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    },
+                    "agent": {
+                        "name": "snapsite",
+                        "version": "0.0.5"
+                    }
+                },
+                "pagesGraph": {
+                    "name": "ReactJS UX Route Graph",
+                    "description": "A directed graph model of undefined routes mapped to ReactJS UX.",
+                    "vlist": [
+                        {
+                            "u": "a90e9ae0",
+                            "p": {
+                                "primaryRouteHash": "a90e9ae0",
+                                "primaryRoute": "/",
+                                "title": "Route Title",
+                                "description": "A route is associated with a ReactJS page by default.",
+                                "tooltip": "Some tooltip...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "fd1f8812",
+                            "p": {
+                                "primaryRouteHash": "fd1f8812",
+                                "primaryRoute": "/installation",
+                                "title": "Test Route",
+                                "description": "A quick test route.",
+                                "tooltip": "Jump to the test route...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f41811ee",
+                            "p": {
+                                "primaryRouteHash": "f41811ee",
+                                "primaryRoute": "/testsite",
+                                "title": "Home",
+                                "description": "Encapsule.io software development website.",
+                                "tooltip": "Jump back to the top of the site...",
+                                "rank": 9
+                            }
+                        },
+                        {
+                            "u": "202c309f",
+                            "p": {
+                                "primaryRouteHash": "202c309f",
+                                "primaryRoute": "/testsite/about",
+                                "title": "About",
+                                "description": "Learn about Encapsule.io.",
+                                "tooltip": "About Encapsule.io...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "1e21dd27",
+                            "p": {
+                                "primaryRouteHash": "1e21dd27",
+                                "primaryRoute": "/testsite/blog",
+                                "title": "Blog",
+                                "description": "Encapsule.io web development blog.",
+                                "tooltip": "Encapsule.io blog...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "421567c4",
+                            "p": {
+                                "primaryRouteHash": "421567c4",
+                                "primaryRoute": "/testsite/colter",
+                                "title": "Hello, Colter",
+                                "description": "This is a test. Hello!",
+                                "tooltip": "Jump to Hello, Colter...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "d66b4755",
+                            "p": {
+                                "primaryRouteHash": "d66b4755",
+                                "primaryRoute": "/testsite/docs",
+                                "title": "Documentation",
+                                "description": "Encapsule tools, and libaries documentation library.",
+                                "tooltip": "Browse technical documentation...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "f840cd18",
+                            "p": {
+                                "primaryRouteHash": "f840cd18",
+                                "primaryRoute": "/testsite/new-page",
+                                "title": "Hello, John",
+                                "description": "A test page to demonstrate some basic capabilities.",
+                                "tooltip": "Jump to the Hello, John demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "de94d6a8",
+                            "p": {
+                                "primaryRouteHash": "de94d6a8",
+                                "primaryRoute": "/testsite/tiffany",
+                                "title": "Hello, Tiffany",
+                                "description": "This is a simple demo page.",
+                                "tooltip": "Jump to Tiff's demo page...",
+                                "rank": 0
+                            }
+                        },
+                        {
+                            "u": "c27356c0",
+                            "p": {
+                                "primaryRouteHash": "c27356c0",
+                                "primaryRoute": "/testsite/about/contact",
+                                "title": "Contact",
+                                "description": "Contact information and directions to Encapsule.io.",
+                                "tooltip": "Contact information...",
+                                "rank": 0
+                            }
+                        }
+                    ],
+                    "elist": [
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "fd1f8812"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "a90e9ae0",
+                                "v": "f41811ee"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "202c309f"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "1e21dd27"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "421567c4"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "d66b4755"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "f840cd18"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "f41811ee",
+                                "v": "de94d6a8"
+                            }
+                        },
+                        {
+                            "e": {
+                                "u": "202c309f",
+                                "v": "c27356c0"
+                            }
+                        }
+                    ]
+                },
+                "page": {
+                    "primaryRouteHash": "c27356c0",
+                    "primaryRoute": "/testsite/about/contact",
+                    "title": "Contact",
+                    "description": "Contact information and directions to Encapsule.io.",
+                    "tooltip": "Contact information...",
+                    "rank": 0,
+                    "context": {}
+                },
+                "lookup": {
+                    "routeHashToRouteMap": {
+                        "a90e9ae0": "/",
+                        "fd1f8812": "/installation",
+                        "f41811ee": "/testsite",
+                        "202c309f": "/testsite/about",
+                        "1e21dd27": "/testsite/blog",
+                        "421567c4": "/testsite/colter",
+                        "d66b4755": "/testsite/docs",
+                        "f840cd18": "/testsite/new-page",
+                        "1189e049": "/testsite/static",
+                        "de94d6a8": "/testsite/tiffany",
+                        "c27356c0": "/testsite/about/contact"
+                    },
+                    "routeToRouteHashMap": {
+                        "/": "a90e9ae0",
+                        "/installation": "fd1f8812",
+                        "/testsite": "f41811ee",
+                        "/testsite/about": "202c309f",
+                        "/testsite/blog": "1e21dd27",
+                        "/testsite/colter": "421567c4",
+                        "/testsite/docs": "d66b4755",
+                        "/testsite/new-page": "f840cd18",
+                        "/testsite/static": "1189e049",
+                        "/testsite/tiffany": "de94d6a8",
+                        "/testsite/about/contact": "c27356c0"
+                    }
+                },
+                "snapsiteModule": "/home/cdr/encapsule/snapsite/bin/rtlib",
+                "clientExtensionModule": "/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension",
+                "contentRenderModuleLoad": "require('./content.jsx')"
+            },
+            "doc": {
+                "routeHash": "c27356c0",
+                "document": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-----------------------------------------------------------------------\n    Site Title :: Contact\n    Copyright (C) 2016 Replace w/your org name, Repalce w/your org location\n\n    Built with Encapsule/snapsite v0.0.5\n    Sun Feb 21 2016 23:11:30 GMT-0800 (PST)\n    1456125090677 Sh5MP100T96tzoq6vIibEQ\n    ----------------------------------------------------------------------->\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n    <meta charset=\"utf-8\" />\n    <title>Site Title :: Contact</title>\n    <meta name=\"description\" content=\"Contact information and directions to Encapsule.io.\" />\n  </head>\n  <body>\n    <!-- Site Title :: Contact content formatted w/React JS. -->\n    <div id=\"content\">\n      <span><div><a href=\"./a90e9ae0.html\" title=\"Some tooltip...\">Route Title</a> / <a href=\"./f41811ee.html\" title=\"Jump back to the top of the site...\">Home</a> / <a href=\"./202c309f.html\" title=\"About Encapsule.io...\">About</a> / <span>Contact</span></div><hr/><h1>Contact</h1><span><div><h2>zQ_diVCdnJmnjRxCsmMJ9w</h2><p>It&#x27;s now Sun Feb 21 2016 23:11:37 GMT-0800 (PST)</p><p>Blah blah blah contact info...</p></div></span><hr/><div><ul><li><a href=\"a90e9ae0.html\">Route Title</a> - A route is associated with a ReactJS page by default.<ul><li><a href=\"fd1f8812.html\">Test Route</a> - A quick test route.</li></ul><ul><li><a href=\"f41811ee.html\">Home</a> - Encapsule.io software development website.<ul><li><a href=\"202c309f.html\">About</a> - Learn about Encapsule.io.<ul><li><a href=\"c27356c0.html\">Contact</a> - Contact information and directions to Encapsule.io.</li></ul></li></ul><ul><li><a href=\"1e21dd27.html\">Blog</a> - Encapsule.io web development blog.</li></ul><ul><li><a href=\"421567c4.html\">Hello, Colter</a> - This is a test. Hello!</li></ul><ul><li><a href=\"d66b4755.html\">Documentation</a> - Encapsule tools, and libaries documentation library.</li></ul><ul><li><a href=\"f840cd18.html\">Hello, John</a> - A test page to demonstrate some basic capabilities.</li></ul><ul><li><a href=\"de94d6a8.html\">Hello, Tiffany</a> - This is a simple demo page.</li></ul></li></ul></li></ul></div><hr/><span>Copyright © 2016 <a href=\"https://mysite.com\" title=\"Replace w/your org name homepage...\">Replace w/your org name</a> Repalce w/your org location</span></span>\n    </div>\n    <!-- Site Title :: Contact client JavaScript application bundle. -->\n    <script type=\"text/JavaScript\" src=\"./c27356c0.js\" ></script>\n  </body>\n</html>\n",
+                "path": "/home/cdr/encapsule/snapsite.gh-pages/c27356c0.html"
             }
         }
     },
@@ -80,7 +2494,7 @@
                 "target": "node",
                 "resolveLoader": {
                     "modulesDirectories": [
-                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                        "/home/cdr/encapsule/snapsite/node_modules"
                     ],
                     "fastUnsafe": [],
                     "alias": {},
@@ -104,17 +2518,25 @@
                     ]
                 },
                 "externals": [
-                    ".bin",
                     "arccore",
                     "react"
                 ],
                 "entry": {
-                    "a90e9ae0": "/home/cdr/code/encapsule/snapsite/test/input/__server-entry.jsx"
+                    "a90e9ae0": "/home/cdr/encapsule/snapsite/test/input/__server-entry.jsx",
+                    "fd1f8812": "/home/cdr/encapsule/snapsite/test/input/installation/__server-entry.jsx",
+                    "f41811ee": "/home/cdr/encapsule/snapsite/test/input/testsite/__server-entry.jsx",
+                    "202c309f": "/home/cdr/encapsule/snapsite/test/input/testsite/about/__server-entry.jsx",
+                    "1e21dd27": "/home/cdr/encapsule/snapsite/test/input/testsite/blog/__server-entry.jsx",
+                    "421567c4": "/home/cdr/encapsule/snapsite/test/input/testsite/colter/__server-entry.jsx",
+                    "d66b4755": "/home/cdr/encapsule/snapsite/test/input/testsite/docs/__server-entry.jsx",
+                    "f840cd18": "/home/cdr/encapsule/snapsite/test/input/testsite/new-page/__server-entry.jsx",
+                    "de94d6a8": "/home/cdr/encapsule/snapsite/test/input/testsite/tiffany/__server-entry.jsx",
+                    "c27356c0": "/home/cdr/encapsule/snapsite/test/input/testsite/about/contact/__server-entry.jsx"
                 },
                 "output": {
                     "filename": "[name].js",
                     "chunkFilename": "[id].js",
-                    "path": "/home/cdr/code/encapsule/snapsite/test/output/server",
+                    "path": "/home/cdr/encapsule/snapsite/test/output/server",
                     "libraryTarget": "commonjs2",
                     "sourceMapFilename": "[file].map[query]",
                     "hotUpdateChunkFilename": "[id].[hash].hot-update.js",
@@ -155,7 +2577,7 @@
                 "debug": false,
                 "devtool": false,
                 "cache": true,
-                "context": "/home/cdr/code/encapsule/snapsite",
+                "context": "/home/cdr/encapsule/snapsite/bin",
                 "node": {
                     "console": false,
                     "process": true,
@@ -194,7 +2616,7 @@
                 "target": "web",
                 "resolveLoader": {
                     "modulesDirectories": [
-                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                        "/home/cdr/encapsule/snapsite/node_modules"
                     ],
                     "fastUnsafe": [],
                     "alias": {},
@@ -219,12 +2641,21 @@
                     ]
                 },
                 "entry": {
-                    "a90e9ae0": "/home/cdr/code/encapsule/snapsite/test/input/__client-entry.jsx"
+                    "a90e9ae0": "/home/cdr/encapsule/snapsite/test/input/__client-entry.jsx",
+                    "fd1f8812": "/home/cdr/encapsule/snapsite/test/input/installation/__client-entry.jsx",
+                    "f41811ee": "/home/cdr/encapsule/snapsite/test/input/testsite/__client-entry.jsx",
+                    "202c309f": "/home/cdr/encapsule/snapsite/test/input/testsite/about/__client-entry.jsx",
+                    "1e21dd27": "/home/cdr/encapsule/snapsite/test/input/testsite/blog/__client-entry.jsx",
+                    "421567c4": "/home/cdr/encapsule/snapsite/test/input/testsite/colter/__client-entry.jsx",
+                    "d66b4755": "/home/cdr/encapsule/snapsite/test/input/testsite/docs/__client-entry.jsx",
+                    "f840cd18": "/home/cdr/encapsule/snapsite/test/input/testsite/new-page/__client-entry.jsx",
+                    "de94d6a8": "/home/cdr/encapsule/snapsite/test/input/testsite/tiffany/__client-entry.jsx",
+                    "c27356c0": "/home/cdr/encapsule/snapsite/test/input/testsite/about/contact/__client-entry.jsx"
                 },
                 "output": {
                     "filename": "[name].js",
                     "chunkFilename": "[id].js",
-                    "path": "/home/cdr/code/encapsule/snapsite/test/output/client",
+                    "path": "/home/cdr/encapsule/snapsite.gh-pages",
                     "libraryTarget": "umd",
                     "sourceMapFilename": "[file].map[query]",
                     "hotUpdateChunkFilename": "[id].[hash].hot-update.js",
@@ -265,7 +2696,7 @@
                 "debug": false,
                 "devtool": false,
                 "cache": true,
-                "context": "/home/cdr/code/encapsule/snapsite",
+                "context": "/home/cdr/encapsule/snapsite/bin",
                 "node": {
                     "console": false,
                     "process": true,

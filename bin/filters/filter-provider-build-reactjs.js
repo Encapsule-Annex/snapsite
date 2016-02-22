@@ -38,7 +38,22 @@ var factoryResponse = ARCCORE.filter.create({
                 webpack: {}
             };
 
-            var filterResponse = ARCTOOLS.jsrcFileLoaderSync.request(PATH.join(__dirname, 'client-entry-js.hbs'));
+            var filterResponse = ARCTOOLS.jsrcFileLoaderSync.request(PATH.join(__dirname, 'snaprt-jsx.hbs'));
+            if (filterResponse.error) {
+                errors.unshift(filterResponse.error);
+                errors.unshift("Unable to load snap-rtlib-js template.");
+                break;
+            }
+            var snaprtTemplate = filterResponse.result.resource;
+            try {
+                snaprtTemplate = HANDLEBARS.compile(snaprtTemplate);
+            } catch (error_) {
+                errors.unshift(error_.toString());
+                errors.unshift("Unable to compile snap-rtlib-js shared lib JavaScript template.");
+                break;
+            }
+
+            var filterResponse = ARCTOOLS.jsrcFileLoaderSync.request(PATH.join(__dirname, 'client-entry-jsx.hbs'));
             if (filterResponse.error) {
                 errors.unshift(filterResponse.error);
                 errors.unshift("Unable to load client-side entry point JavaScript template.");
@@ -53,7 +68,7 @@ var factoryResponse = ARCCORE.filter.create({
                 break;
             }
 
-            var filterResponse = ARCTOOLS.jsrcFileLoaderSync.request(PATH.join(__dirname, 'server-entry-js.hbs'));
+            var filterResponse = ARCTOOLS.jsrcFileLoaderSync.request(PATH.join(__dirname, 'server-entry-jsx.hbs'));
             if (filterResponse.error) {
                 errors.unshift(filterResponse.error);
                 errors.unshift("Unable to load server-side entry point JavaScript template.");
@@ -138,6 +153,28 @@ var factoryResponse = ARCCORE.filter.create({
                 } else {
                     pageDataContextSerialize.contentRenderModuleLoad = "SNAPRT.reactTheme.MissingContentRender";
                 }
+
+                // Synthesize the snap-rtlib.js shared lib declaration via Handlebars.
+                var snaprtJavaScript;
+                try {
+                    snaprtJavaScript = snaprtTemplate(pageDataContextSerialize);
+                } catch (error_) {
+                    errors.unshift
+                    errors.unshift(error_.toString());
+                    errors.unshift("Failed to generate snap-rtlib.js library declaration for route '" + primaryRoute + "':");
+                    break;
+                }
+                var snaprtJavaScriptPath = PATH.join(request_.projectManifest.projectConfig.dirs.input.routes, primaryRoute, '__snaprt.jsx');
+                writerResponse = ARCTOOLS.stringToFileSync.request({
+                    resource: snaprtJavaScript,
+                    path: snaprtJavaScriptPath
+                });
+                if (writerResponse.error) {
+                    errors.unshift(writerResponse.error);
+                    errors.unshift("Failed to write shared library declaration for route '" + primaryRoute + "':");
+                    break;
+                }
+                console.log(clistyle.infoBody("... wrote ") + clistyle.fileOutput(serverEntryJavaScriptPath) + " for route " + clistyle.dirInput(primaryRoute));
 
                 // Synthesize the server-side JavaScript entry point module via Handlebars.
                 var serverEntryJavaScript;

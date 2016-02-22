@@ -198,11 +198,11 @@
         ]
     },
     "page": {
-        "primaryRouteHash": "a90e9ae0",
-        "primaryRoute": "/",
-        "title": "Route Title",
-        "description": "A route is associated with a ReactJS page by default.",
-        "tooltip": "Some tooltip...",
+        "primaryRouteHash": "d66b4755",
+        "primaryRoute": "/testsite/docs",
+        "title": "Documentation",
+        "description": "Encapsule tools, and libaries documentation library.",
+        "tooltip": "Browse technical documentation...",
         "rank": 0,
         "context": {}
     },

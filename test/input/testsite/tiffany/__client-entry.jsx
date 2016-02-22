@@ -4,9 +4,9 @@
 
   Copyright (C) 2016 Replace w/your org name
 
-  Main client entry point for Site Title snapsite route 'a90e9ae0'.
+  Main client entry point for Site Title snapsite route 'de94d6a8'.
   This script will be called when the HTML5 document published at
-  URL 'https://mysite.com/' loads in your browser.
+  URL 'https://mysite.com/testsite/tiffany' loads in your browser.
 
   Produced by Encapsule/snapsite v0.0.5 Sun Feb 21 2016 23:11:30 GMT-0800 (PST)
   Site build instance: [1456125090677 Sh5MP100T96tzoq6vIibEQ]
@@ -31,8 +31,8 @@ if (factoryResponse.error) {
 // Replace the serialized digraph model with a runtime DirectedGraph container.
 reactContextData.pagesGraph = factoryResponse.result;
 
-console.log("snapsite client app initializing on route '/'...");
-console.log("Page [Site Title :: Route Title] (a90e9ae0) Copyright (C) 2016 Replace w/your org name");
+console.log("snapsite client app initializing on route '/testsite/tiffany'...");
+console.log("Page [Site Title :: Hello, Tiffany] (de94d6a8) Copyright (C) 2016 Replace w/your org name");
 console.log("Powered by Encapsule/snapsite v0.0.5 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);

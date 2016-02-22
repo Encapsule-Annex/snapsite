@@ -53,7 +53,7 @@ module.exports =
 
 	  Copyright (C) 2016 Replace w/your org name
 
-	  Server UX render entry entry point for Site Title snapsite route 'a90e9ae0'.
+	  Server UX render entry entry point for Site Title snapsite route 'c27356c0'.
 	  This script is called by the snapsite compilation process to pre-render
 	  HTML5  pages. This script is also leveraged at runtime by the  Node.js
 	  webserver process for website's that leverage custom server-side business
@@ -65,14 +65,14 @@ module.exports =
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(170);
+	var SNAPRT = __webpack_require__(172);
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
 	var React = SNAPRT.react;
 	var ReactDOMServer = __webpack_require__(157);
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(171);
+	var reactContextData = __webpack_require__(173);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -85,7 +85,7 @@ module.exports =
 	// Load the developer-defined React component responsible for rendering
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
-	var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
+	var reactContentComponent = __webpack_require__(174);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -100,7 +100,7 @@ module.exports =
 	            response.result = ReactDOMServer.renderToStaticMarkup(React.createElement(SNAPRT.reactTheme.SnapPage, reactContextData));
 	        } catch (error_) {
 	            errors.unshift(error_.toString());
-	            errors.unshift("Failed to render '/' due to error:");
+	            errors.unshift("Failed to render '/testsite/about/contact' due to error:");
 	            break;
 	        }
 	        break;
@@ -19203,7 +19203,9 @@ module.exports =
 /* 167 */,
 /* 168 */,
 /* 169 */,
-/* 170 */
+/* 170 */,
+/* 171 */,
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19215,7 +19217,7 @@ module.exports =
 	  Copyright (C) 2016 Replace w/your org name
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/'.
+	  server scripts for input route '/testsite/about/contact'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -19229,7 +19231,7 @@ module.exports =
 	module.exports = __webpack_require__(2);
 
 /***/ },
-/* 171 */
+/* 173 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -19432,11 +19434,11 @@ module.exports =
 			]
 		},
 		"page": {
-			"primaryRouteHash": "a90e9ae0",
-			"primaryRoute": "/",
-			"title": "Route Title",
-			"description": "A route is associated with a ReactJS page by default.",
-			"tooltip": "Some tooltip...",
+			"primaryRouteHash": "c27356c0",
+			"primaryRoute": "/testsite/about/contact",
+			"title": "Contact",
+			"description": "Contact information and directions to Encapsule.io.",
+			"tooltip": "Contact information...",
 			"rank": 0,
 			"context": {}
 		},
@@ -19469,6 +19471,74 @@ module.exports =
 			}
 		}
 	};
+
+/***/ },
+/* 174 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var COMMON = __webpack_require__(175);
+	var ARCCORE = COMMON.arccore;
+	var React = COMMON.react;
+	var ReactTheme = COMMON.reactTheme;
+
+	var rootComponent = React.createClass({
+	    displayName: 'rootComponent',
+
+	    render: function render() {
+	        var timestring = new Date().getTime();
+	        var datestring = new Date().toString();
+	        var irut = ARCCORE.identifier.irut.fromReference(timestring).result;
+	        return React.createElement(
+	            'div',
+	            null,
+	            React.createElement(
+	                'h2',
+	                null,
+	                irut
+	            ),
+	            React.createElement(
+	                'p',
+	                null,
+	                'It\'s now ',
+	                datestring
+	            ),
+	            React.createElement(
+	                'p',
+	                null,
+	                'Blah blah blah contact info...'
+	            )
+	        );
+	    }
+	});
+
+	module.exports = rootComponent;
+
+/***/ },
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// ======================================================================
+	/*
+	  __snaprt.js
+
+	  Copyright (C) 2016 Replace w/your org name
+
+	  Shared runtime dependencies of snapsite client and
+	  server scripts for input route '/testsite/about/contact'.
+
+	  JSX authors should require __snaprt into scope in order to gain
+	  access to theme bindings (array of named function points to React
+	  JS components specific to the the current snapsite theme).
+
+	  Produced by Encapsule/snapsite v0.0.5 Sun Feb 21 2016 22:41:01 GMT-0800 (PST)
+	  Site build instance: [1456123261268 k5ml8mI6Tz-0x33QD9OBiQ]
+	*/
+	// ======================================================================
+
+	module.exports = __webpack_require__(2);
+
 
 /***/ }
 /******/ ]);
