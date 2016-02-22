@@ -17,13 +17,13 @@
             },
             "generator": {
                 "build": {
-                    "time": 1456019173850,
-                    "date": "Sat Feb 20 2016 17:46:13 GMT-0800 (PST)",
-                    "hash": "WChHSfosQCCp9RtUVayTfA"
+                    "time": 1456100599003,
+                    "date": "Sun Feb 21 2016 16:23:19 GMT-0800 (PST)",
+                    "hash": "o8ZQVEqeTaiuCxZBR-PO_w"
                 },
                 "agent": {
                     "name": "snapsite",
-                    "version": "0.0.3"
+                    "version": "0.0.4"
                 }
             },
             "pagesGraph": {

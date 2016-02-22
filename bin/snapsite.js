@@ -2,31 +2,41 @@
 
 // snapsite.js
 
-const toolName = "snapsite";
+var package = require('../package.json');
 
 const ARCTOOLS = require('arctools');
 const ARCCORE = ARCTOOLS.arccore;
 const PATH = require('path');
 const MKDIRP = require('mkdirp');
+const React = require('react');
 
 var filters = {
     load: {
-        projectConfig: require('./tool/filter-load-project-config'),
-        routeConfig: require('./tool/filter-load-route-config'),
-        routeProviders: require('./tool/filter-load-route-providers'),
+        projectConfig: require('./filters/filter-load-project-config'),
+        routeConfig: require('./filters/filter-load-route-config'),
+        routeProviders: require('./filters/filter-load-route-providers'),
     },
     build: {
-        routeProviders: require('./tool/filter-build-route-providers')
+        routeProviders: require('./filters/filter-build-route-providers')
     },
     providers: {
-        ReactJS: require('./tool/provider-reactjs'),
-        StaticFiles: require('./tool/provider-staticfiles')
+        ReactJS: require('./filters/provider-reactjs'),
+        StaticFiles: require('./filters/provider-staticfiles')
     }
 };
 
 var clistyle = ARCTOOLS.clistyles;
 
-console.log(ARCTOOLS.createToolBanner(toolName));
+console.log(clistyle.bannerAuthor("Encapsule") + "/" + clistyle.bannerPackage(package.name) +
+            " v" + clistyle.bannerVersion(package.version) + 
+            " > powered by " + clistyle.bannerAuthor("Encapsule") + "/" +
+            clistyle.bannerPackage(ARCCORE.__meta.name) + " (" + ARCCORE.__meta.codename + ") " +
+            " v" + clistyle.bannerVersion(ARCCORE.__meta.version) + " & " +
+            clistyle.bannerAuthor("Facebook") + "/" +
+            clistyle.bannerPackage("react") +
+            " v" + clistyle.bannerVersion(React.version));
+
+
 
 // ==========================================================================
 // LOAD PROJECT CONFIGURATION

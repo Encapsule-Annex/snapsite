@@ -8,8 +8,8 @@
   This script will be called when the HTML5 document published at
   URL 'https://mysite.com/' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.3 Sat Feb 20 2016 17:46:13 GMT-0800 (PST)
-  Site build instance: [1456019173850 WChHSfosQCCp9RtUVayTfA]
+  Produced by Encapsule/snapsite v0.0.4 Sun Feb 21 2016 16:23:19 GMT-0800 (PST)
+  Site build instance: [1456100599003 o8ZQVEqeTaiuCxZBR-PO_w]
 */
 // ======================================================================
 
@@ -33,7 +33,7 @@ reactContextData.pagesGraph = factoryResponse.result;
 
 console.log("snapsite client app initializing on route '/'...");
 console.log("Page [Site Title :: Route Title] (a90e9ae0) Copyright (C) 2016 Replace w/your org name");
-console.log("Powered by Encapsule/snapsite v0.0.3 // " +
+console.log("Powered by Encapsule/snapsite v0.0.4 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);
 console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
