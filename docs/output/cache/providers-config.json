@@ -17,9 +17,9 @@
             },
             "generator": {
                 "build": {
-                    "time": 1456125090677,
-                    "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
-                    "hash": "Sh5MP100T96tzoq6vIibEQ"
+                    "time": 1456128020757,
+                    "date": "Mon Feb 22 2016 00:00:20 GMT-0800 (PST)",
+                    "hash": "FwShkkuuTLiwO691lDe6ag"
                 },
                 "agent": {
                     "name": "snapsite",
@@ -38,17 +38,6 @@
                             "title": "Route Title",
                             "description": "A route is associated with a ReactJS page by default.",
                             "tooltip": "Some tooltip...",
-                            "rank": 0
-                        }
-                    },
-                    {
-                        "u": "fd1f8812",
-                        "p": {
-                            "primaryRouteHash": "fd1f8812",
-                            "primaryRoute": "/installation",
-                            "title": "Test Route",
-                            "description": "A quick test route.",
-                            "tooltip": "Jump to the test route...",
                             "rank": 0
                         }
                     },
@@ -145,12 +134,6 @@
                     {
                         "e": {
                             "u": "a90e9ae0",
-                            "v": "fd1f8812"
-                        }
-                    },
-                    {
-                        "e": {
-                            "u": "a90e9ae0",
                             "v": "f41811ee"
                         }
                     },
@@ -200,7 +183,6 @@
             },
             "pagesContext": {
                 "a90e9ae0": {},
-                "fd1f8812": {},
                 "f41811ee": {
                     "content": "Testing 1,2,3",
                     "something": {
@@ -241,21 +223,20 @@
                     "react"
                 ],
                 "entry": {
-                    "a90e9ae0": "/home/cdr/encapsule/snapsite/test/input/__server-entry.jsx",
-                    "fd1f8812": "/home/cdr/encapsule/snapsite/test/input/installation/__server-entry.jsx",
-                    "f41811ee": "/home/cdr/encapsule/snapsite/test/input/testsite/__server-entry.jsx",
-                    "202c309f": "/home/cdr/encapsule/snapsite/test/input/testsite/about/__server-entry.jsx",
-                    "1e21dd27": "/home/cdr/encapsule/snapsite/test/input/testsite/blog/__server-entry.jsx",
-                    "421567c4": "/home/cdr/encapsule/snapsite/test/input/testsite/colter/__server-entry.jsx",
-                    "d66b4755": "/home/cdr/encapsule/snapsite/test/input/testsite/docs/__server-entry.jsx",
-                    "f840cd18": "/home/cdr/encapsule/snapsite/test/input/testsite/new-page/__server-entry.jsx",
-                    "de94d6a8": "/home/cdr/encapsule/snapsite/test/input/testsite/tiffany/__server-entry.jsx",
-                    "c27356c0": "/home/cdr/encapsule/snapsite/test/input/testsite/about/contact/__server-entry.jsx"
+                    "a90e9ae0": "/home/cdr/encapsule/snapsite/docs/input/__server-entry.jsx",
+                    "f41811ee": "/home/cdr/encapsule/snapsite/docs/input/testsite/__server-entry.jsx",
+                    "202c309f": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/__server-entry.jsx",
+                    "1e21dd27": "/home/cdr/encapsule/snapsite/docs/input/testsite/blog/__server-entry.jsx",
+                    "421567c4": "/home/cdr/encapsule/snapsite/docs/input/testsite/colter/__server-entry.jsx",
+                    "d66b4755": "/home/cdr/encapsule/snapsite/docs/input/testsite/docs/__server-entry.jsx",
+                    "f840cd18": "/home/cdr/encapsule/snapsite/docs/input/testsite/new-page/__server-entry.jsx",
+                    "de94d6a8": "/home/cdr/encapsule/snapsite/docs/input/testsite/tiffany/__server-entry.jsx",
+                    "c27356c0": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/contact/__server-entry.jsx"
                 },
                 "output": {
                     "filename": "[name].js",
                     "chunkFilename": "[id].js",
-                    "path": "/home/cdr/encapsule/snapsite/test/output/server",
+                    "path": "/home/cdr/encapsule/snapsite/docs/output/server",
                     "libraryTarget": "commonjs2"
                 },
                 "module": {
@@ -282,21 +263,20 @@
                     ]
                 },
                 "entry": {
-                    "a90e9ae0": "/home/cdr/encapsule/snapsite/test/input/__client-entry.jsx",
-                    "fd1f8812": "/home/cdr/encapsule/snapsite/test/input/installation/__client-entry.jsx",
-                    "f41811ee": "/home/cdr/encapsule/snapsite/test/input/testsite/__client-entry.jsx",
-                    "202c309f": "/home/cdr/encapsule/snapsite/test/input/testsite/about/__client-entry.jsx",
-                    "1e21dd27": "/home/cdr/encapsule/snapsite/test/input/testsite/blog/__client-entry.jsx",
-                    "421567c4": "/home/cdr/encapsule/snapsite/test/input/testsite/colter/__client-entry.jsx",
-                    "d66b4755": "/home/cdr/encapsule/snapsite/test/input/testsite/docs/__client-entry.jsx",
-                    "f840cd18": "/home/cdr/encapsule/snapsite/test/input/testsite/new-page/__client-entry.jsx",
-                    "de94d6a8": "/home/cdr/encapsule/snapsite/test/input/testsite/tiffany/__client-entry.jsx",
-                    "c27356c0": "/home/cdr/encapsule/snapsite/test/input/testsite/about/contact/__client-entry.jsx"
+                    "a90e9ae0": "/home/cdr/encapsule/snapsite/docs/input/__client-entry.jsx",
+                    "f41811ee": "/home/cdr/encapsule/snapsite/docs/input/testsite/__client-entry.jsx",
+                    "202c309f": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/__client-entry.jsx",
+                    "1e21dd27": "/home/cdr/encapsule/snapsite/docs/input/testsite/blog/__client-entry.jsx",
+                    "421567c4": "/home/cdr/encapsule/snapsite/docs/input/testsite/colter/__client-entry.jsx",
+                    "d66b4755": "/home/cdr/encapsule/snapsite/docs/input/testsite/docs/__client-entry.jsx",
+                    "f840cd18": "/home/cdr/encapsule/snapsite/docs/input/testsite/new-page/__client-entry.jsx",
+                    "de94d6a8": "/home/cdr/encapsule/snapsite/docs/input/testsite/tiffany/__client-entry.jsx",
+                    "c27356c0": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/contact/__client-entry.jsx"
                 },
                 "output": {
                     "filename": "[name].js",
                     "chunkFilename": "[id].js",
-                    "path": "/home/cdr/encapsule/snapsite.gh-pages",
+                    "path": "/home/cdr/encapsule/snapsite/docs/output/client",
                     "libraryTarget": "umd"
                 },
                 "module": {

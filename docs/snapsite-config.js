@@ -13,12 +13,12 @@ module.exports = {
     },
     dirs: {
         input: {
-            routes: './test/input'
+            routes: 'docs/input'
         },
         output: {
-            cache: './test/output/cache',
-            client: '../snapsite.gh-pages',
-            server: './test/output/server'
+            cache: 'docs/output/cache',
+            client: 'docs/output/client',
+            server: 'docs/output/server'
         }
     }
 };

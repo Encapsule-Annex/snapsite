@@ -8,7 +8,7 @@
                 "p": {
                     "primaryRoute": "/",
                     "primaryRouteHash": "a90e9ae0",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Route Title",
@@ -22,29 +22,11 @@
                 }
             },
             {
-                "u": "fd1f8812",
-                "p": {
-                    "primaryRoute": "/installation",
-                    "primaryRouteHash": "fd1f8812",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/installation",
-                    "routeConfig": {
-                        "aliases": [],
-                        "title": "Test Route",
-                        "description": "A quick test route.",
-                        "tooltip": "Jump to the test route...",
-                        "rank": 0,
-                        "providers": {
-                            "ReactJS": {}
-                        }
-                    }
-                }
-            },
-            {
                 "u": "f41811ee",
                 "p": {
                     "primaryRoute": "/testsite",
                     "primaryRouteHash": "f41811ee",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Home",
@@ -72,7 +54,7 @@
                 "p": {
                     "primaryRoute": "/testsite/about",
                     "primaryRouteHash": "202c309f",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/about",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/about",
                     "routeConfig": {
                         "aliases": [],
                         "title": "About",
@@ -95,7 +77,7 @@
                 "p": {
                     "primaryRoute": "/testsite/blog",
                     "primaryRouteHash": "1e21dd27",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/blog",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/blog",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Blog",
@@ -113,7 +95,7 @@
                 "p": {
                     "primaryRoute": "/testsite/colter",
                     "primaryRouteHash": "421567c4",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/colter",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/colter",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Hello, Colter",
@@ -133,7 +115,7 @@
                 "p": {
                     "primaryRoute": "/testsite/docs",
                     "primaryRouteHash": "d66b4755",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/docs",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/docs",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Documentation",
@@ -151,7 +133,7 @@
                 "p": {
                     "primaryRoute": "/testsite/new-page",
                     "primaryRouteHash": "f840cd18",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/new-page",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/new-page",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Hello, John",
@@ -169,7 +151,7 @@
                 "p": {
                     "primaryRoute": "/testsite/static",
                     "primaryRouteHash": "1189e049",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/static",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/static",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Static",
@@ -189,7 +171,7 @@
                 "p": {
                     "primaryRoute": "/testsite/tiffany",
                     "primaryRouteHash": "de94d6a8",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/tiffany",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/tiffany",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Hello, Tiffany",
@@ -207,7 +189,7 @@
                 "p": {
                     "primaryRoute": "/testsite/about/contact",
                     "primaryRouteHash": "c27356c0",
-                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/test/input/testsite/about/contact",
+                    "sourcesDirectory": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/contact",
                     "routeConfig": {
                         "aliases": [],
                         "title": "Contact",
@@ -222,12 +204,6 @@
             }
         ],
         "elist": [
-            {
-                "e": {
-                    "u": "a90e9ae0",
-                    "v": "fd1f8812"
-                }
-            },
             {
                 "e": {
                     "u": "a90e9ae0",
@@ -286,7 +262,6 @@
     },
     "routeHashToRouteMap": {
         "a90e9ae0": "/",
-        "fd1f8812": "/installation",
         "f41811ee": "/testsite",
         "202c309f": "/testsite/about",
         "1e21dd27": "/testsite/blog",
@@ -299,7 +274,6 @@
     },
     "routeToRouteHashMap": {
         "/": "a90e9ae0",
-        "/installation": "fd1f8812",
         "/testsite": "f41811ee",
         "/testsite/about": "202c309f",
         "/testsite/blog": "1e21dd27",
@@ -313,7 +287,6 @@
     "routeProvidersMap": {
         "ReactJS": [
             "a90e9ae0",
-            "fd1f8812",
             "f41811ee",
             "202c309f",
             "1e21dd27",

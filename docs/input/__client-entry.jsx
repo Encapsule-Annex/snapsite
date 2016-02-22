@@ -1,6 +1,6 @@
 // ======================================================================
 /*
-  __client-entry.js
+  __client-entry.jsx
 
   Copyright (C) 2016 Replace w/your org name
 
@@ -8,8 +8,8 @@
   This script will be called when the HTML5 document published at
   URL 'https://mysite.com/' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.5 Sun Feb 21 2016 23:11:30 GMT-0800 (PST)
-  Site build instance: [1456125090677 Sh5MP100T96tzoq6vIibEQ]
+  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 00:00:20 GMT-0800 (PST)
+  Site build instance: [1456128020757 FwShkkuuTLiwO691lDe6ag]
 */
 // ======================================================================
 

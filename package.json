@@ -6,6 +6,9 @@
         "snapsite": "./bin/snapsite.js",
         "snap": "./bin/snapsite.js"
     },
+    "snapsite": {
+        "configFile": "docs/snapsite-config.js"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Encapsule/snapsite.git"
@@ -48,8 +51,5 @@
         "react-dom": "^0.14.6",
         "webpack": "^1.12.11",
         "webpack-dev-server": "^1.14.1"
-    },
-    "snapsite": {
-        "configFile": "test/snapsite-config.js"
     }
 }

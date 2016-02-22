@@ -1,14 +1,14 @@
 {
     "dirs": {
         "input": {
-            "routes": "/home/cdr/encapsule/snapsite/test/input"
+            "routes": "/home/cdr/encapsule/snapsite/docs/input"
         },
         "output": {
-            "client": "/home/cdr/encapsule/snapsite.gh-pages",
-            "server": "/home/cdr/encapsule/snapsite/test/output/server",
-            "cache": "/home/cdr/encapsule/snapsite/test/output/cache"
+            "client": "/home/cdr/encapsule/snapsite/docs/output/client",
+            "server": "/home/cdr/encapsule/snapsite/docs/output/server",
+            "cache": "/home/cdr/encapsule/snapsite/docs/output/cache"
         },
-        "package": "/home/cdr/encapsule/snapsite/"
+        "package": "/home/cdr/encapsule/snapsite"
     },
     "org": {
         "seed": "replace this with an IRUT",
@@ -28,13 +28,13 @@
         "ReactJS": {}
     },
     "paths": {
-        "config": "/home/cdr/encapsule/snapsite/test/snapsite-config.js"
+        "config": "/home/cdr/encapsule/snapsite/docs/snapsite-config.js"
     },
     "generator": {
         "build": {
-            "time": 1456125090677,
-            "date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
-            "hash": "Sh5MP100T96tzoq6vIibEQ"
+            "time": 1456128020757,
+            "date": "Mon Feb 22 2016 00:00:20 GMT-0800 (PST)",
+            "hash": "FwShkkuuTLiwO691lDe6ag"
         },
         "agent": {
             "name": "snapsite",

@@ -59,8 +59,8 @@ module.exports =
 	  webserver process for website's that leverage custom server-side business
 	  logic.
 
-	  Produced by Encapsule/snapsite v0.0.5 Sun Feb 21 2016 23:11:30 GMT-0800 (PST)
-	  Site build instance: [1456125090677 Sh5MP100T96tzoq6vIibEQ]
+	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 00:00:20 GMT-0800 (PST)
+	  Site build instance: [1456128020757 FwShkkuuTLiwO691lDe6ag]
 	*/
 	// ======================================================================
 
@@ -19225,7 +19225,7 @@ module.exports =
 
 	// ======================================================================
 	/*
-	  __snaprt.js
+	  __snaprt.jsx
 
 	  Copyright (C) 2016 Replace w/your org name
 
@@ -19236,8 +19236,8 @@ module.exports =
 	  access to theme bindings (array of named function points to React
 	  JS components specific to the the current snapsite theme).
 
-	  Produced by Encapsule/snapsite v0.0.5 Sun Feb 21 2016 23:11:30 GMT-0800 (PST)
-	  Site build instance: [1456125090677 Sh5MP100T96tzoq6vIibEQ]
+	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 00:00:20 GMT-0800 (PST)
+	  Site build instance: [1456128020757 FwShkkuuTLiwO691lDe6ag]
 	*/
 	// ======================================================================
 
@@ -19265,9 +19265,9 @@ module.exports =
 		},
 		"generator": {
 			"build": {
-				"time": 1456125090677,
-				"date": "Sun Feb 21 2016 23:11:30 GMT-0800 (PST)",
-				"hash": "Sh5MP100T96tzoq6vIibEQ"
+				"time": 1456128020757,
+				"date": "Mon Feb 22 2016 00:00:20 GMT-0800 (PST)",
+				"hash": "FwShkkuuTLiwO691lDe6ag"
 			},
 			"agent": {
 				"name": "snapsite",
@@ -19286,17 +19286,6 @@ module.exports =
 						"title": "Route Title",
 						"description": "A route is associated with a ReactJS page by default.",
 						"tooltip": "Some tooltip...",
-						"rank": 0
-					}
-				},
-				{
-					"u": "fd1f8812",
-					"p": {
-						"primaryRouteHash": "fd1f8812",
-						"primaryRoute": "/installation",
-						"title": "Test Route",
-						"description": "A quick test route.",
-						"tooltip": "Jump to the test route...",
 						"rank": 0
 					}
 				},
@@ -19393,12 +19382,6 @@ module.exports =
 				{
 					"e": {
 						"u": "a90e9ae0",
-						"v": "fd1f8812"
-					}
-				},
-				{
-					"e": {
-						"u": "a90e9ae0",
 						"v": "f41811ee"
 					}
 				},
@@ -19458,7 +19441,6 @@ module.exports =
 		"lookup": {
 			"routeHashToRouteMap": {
 				"a90e9ae0": "/",
-				"fd1f8812": "/installation",
 				"f41811ee": "/testsite",
 				"202c309f": "/testsite/about",
 				"1e21dd27": "/testsite/blog",
@@ -19471,7 +19453,6 @@ module.exports =
 			},
 			"routeToRouteHashMap": {
 				"/": "a90e9ae0",
-				"/installation": "fd1f8812",
 				"/testsite": "f41811ee",
 				"/testsite/about": "202c309f",
 				"/testsite/blog": "1e21dd27",
