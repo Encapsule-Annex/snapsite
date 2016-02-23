@@ -1,14 +1,14 @@
 {
     "dirs": {
         "input": {
-            "routes": "/home/cdr/code/encapsule/snapsite/docs/input"
+            "routes": "/home/cdr/encapsule/snapsite/docs/input"
         },
         "output": {
-            "client": "/home/cdr/code/encapsule/snapsite/docs/output/client",
-            "server": "/home/cdr/code/encapsule/snapsite/docs/output/server",
-            "cache": "/home/cdr/code/encapsule/snapsite/docs/output/cache"
+            "client": "/home/cdr/encapsule/snapsite/docs/output/client",
+            "server": "/home/cdr/encapsule/snapsite/docs/output/server",
+            "cache": "/home/cdr/encapsule/snapsite/docs/output/cache"
         },
-        "package": "/home/cdr/code/encapsule/snapsite"
+        "package": "/home/cdr/encapsule/snapsite"
     },
     "org": {
         "seed": "koJdft_STGCMJe6dZcq5kg",
@@ -28,7 +28,7 @@
         "ReactJS": {}
     },
     "paths": {
-        "config": "/home/cdr/code/encapsule/snapsite/docs/snapsite-config.js"
+        "config": "/home/cdr/encapsule/snapsite/docs/snapsite-config.js"
     },
     "generator": {
         "build": {

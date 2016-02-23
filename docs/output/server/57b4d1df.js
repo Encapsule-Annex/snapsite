@@ -9215,7 +9215,6 @@ module.exports =
 	 */
 	var EventInterface = {
 	  type: null,
-	  target: null,
 	  // currentTarget is set when dispatching; no use in copying it here
 	  currentTarget: emptyFunction.thatReturnsNull,
 	  eventPhase: null,
@@ -9249,6 +9248,8 @@ module.exports =
 	  this.dispatchConfig = dispatchConfig;
 	  this.dispatchMarker = dispatchMarker;
 	  this.nativeEvent = nativeEvent;
+	  this.target = nativeEventTarget;
+	  this.currentTarget = nativeEventTarget;
 
 	  var Interface = this.constructor.Interface;
 	  for (var propName in Interface) {
@@ -9259,11 +9260,7 @@ module.exports =
 	    if (normalize) {
 	      this[propName] = normalize(nativeEvent);
 	    } else {
-	      if (propName === 'target') {
-	        this.target = nativeEventTarget;
-	      } else {
-	        this[propName] = nativeEvent[propName];
-	      }
+	      this[propName] = nativeEvent[propName];
 	    }
 	  }
 
@@ -13105,10 +13102,7 @@ module.exports =
 	      }
 	    });
 
-	    if (content) {
-	      nativeProps.children = content;
-	    }
-
+	    nativeProps.children = content;
 	    return nativeProps;
 	  }
 
@@ -18569,7 +18563,7 @@ module.exports =
 
 	'use strict';
 
-	module.exports = '0.14.7';
+	module.exports = '0.14.6';
 
 /***/ },
 /* 149 */
@@ -18748,7 +18742,6 @@ module.exports =
 
 	var RouteHashLink = React.createClass({
 	    displayName: 'RouteHashLink',
-
 
 	    render: function render() {
 

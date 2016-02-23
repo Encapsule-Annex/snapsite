@@ -215,7 +215,7 @@
                 "target": "node",
                 "resolveLoader": {
                     "modulesDirectories": [
-                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                        "/home/cdr/encapsule/snapsite/node_modules"
                     ]
                 },
                 "externals": [
@@ -224,20 +224,20 @@
                     "react"
                 ],
                 "entry": {
-                    "02413fb0": "/home/cdr/code/encapsule/snapsite/docs/input/__server-entry.jsx",
-                    "556295b3": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/__server-entry.jsx",
-                    "f243d161": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/about/__server-entry.jsx",
-                    "587cc689": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/blog/__server-entry.jsx",
-                    "57b4d1df": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/colter/__server-entry.jsx",
-                    "b0f90273": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/docs/__server-entry.jsx",
-                    "0261711c": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/new-page/__server-entry.jsx",
-                    "7d516a9c": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/tiffany/__server-entry.jsx",
-                    "3ecfb36e": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/about/contact/__server-entry.jsx"
+                    "02413fb0": "/home/cdr/encapsule/snapsite/docs/input/__server-entry.jsx",
+                    "556295b3": "/home/cdr/encapsule/snapsite/docs/input/testsite/__server-entry.jsx",
+                    "f243d161": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/__server-entry.jsx",
+                    "587cc689": "/home/cdr/encapsule/snapsite/docs/input/testsite/blog/__server-entry.jsx",
+                    "57b4d1df": "/home/cdr/encapsule/snapsite/docs/input/testsite/colter/__server-entry.jsx",
+                    "b0f90273": "/home/cdr/encapsule/snapsite/docs/input/testsite/docs/__server-entry.jsx",
+                    "0261711c": "/home/cdr/encapsule/snapsite/docs/input/testsite/new-page/__server-entry.jsx",
+                    "7d516a9c": "/home/cdr/encapsule/snapsite/docs/input/testsite/tiffany/__server-entry.jsx",
+                    "3ecfb36e": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/contact/__server-entry.jsx"
                 },
                 "output": {
                     "filename": "[name].js",
                     "chunkFilename": "[id].js",
-                    "path": "/home/cdr/code/encapsule/snapsite/docs/output/server",
+                    "path": "/home/cdr/encapsule/snapsite/docs/output/server",
                     "libraryTarget": "commonjs2"
                 },
                 "module": {
@@ -280,24 +280,24 @@
                 "target": "web",
                 "resolveLoader": {
                     "modulesDirectories": [
-                        "/home/cdr/code/encapsule/snapsite/node_modules"
+                        "/home/cdr/encapsule/snapsite/node_modules"
                     ]
                 },
                 "entry": {
-                    "02413fb0": "/home/cdr/code/encapsule/snapsite/docs/input/__client-entry.jsx",
-                    "556295b3": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/__client-entry.jsx",
-                    "f243d161": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/about/__client-entry.jsx",
-                    "587cc689": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/blog/__client-entry.jsx",
-                    "57b4d1df": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/colter/__client-entry.jsx",
-                    "b0f90273": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/docs/__client-entry.jsx",
-                    "0261711c": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/new-page/__client-entry.jsx",
-                    "7d516a9c": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/tiffany/__client-entry.jsx",
-                    "3ecfb36e": "/home/cdr/code/encapsule/snapsite/docs/input/testsite/about/contact/__client-entry.jsx"
+                    "02413fb0": "/home/cdr/encapsule/snapsite/docs/input/__client-entry.jsx",
+                    "556295b3": "/home/cdr/encapsule/snapsite/docs/input/testsite/__client-entry.jsx",
+                    "f243d161": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/__client-entry.jsx",
+                    "587cc689": "/home/cdr/encapsule/snapsite/docs/input/testsite/blog/__client-entry.jsx",
+                    "57b4d1df": "/home/cdr/encapsule/snapsite/docs/input/testsite/colter/__client-entry.jsx",
+                    "b0f90273": "/home/cdr/encapsule/snapsite/docs/input/testsite/docs/__client-entry.jsx",
+                    "0261711c": "/home/cdr/encapsule/snapsite/docs/input/testsite/new-page/__client-entry.jsx",
+                    "7d516a9c": "/home/cdr/encapsule/snapsite/docs/input/testsite/tiffany/__client-entry.jsx",
+                    "3ecfb36e": "/home/cdr/encapsule/snapsite/docs/input/testsite/about/contact/__client-entry.jsx"
                 },
                 "output": {
                     "filename": "[name].js",
                     "chunkFilename": "[id].js",
-                    "path": "/home/cdr/code/encapsule/snapsite/docs/output/client",
+                    "path": "/home/cdr/encapsule/snapsite/docs/output/client",
                     "libraryTarget": "umd"
                 },
                 "module": {

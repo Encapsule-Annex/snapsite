@@ -13185,7 +13185,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	var EventInterface = {
 	  type: null,
-	  target: null,
 	  // currentTarget is set when dispatching; no use in copying it here
 	  currentTarget: emptyFunction.thatReturnsNull,
 	  eventPhase: null,
@@ -13219,6 +13218,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  this.dispatchConfig = dispatchConfig;
 	  this.dispatchMarker = dispatchMarker;
 	  this.nativeEvent = nativeEvent;
+	  this.target = nativeEventTarget;
+	  this.currentTarget = nativeEventTarget;
 
 	  var Interface = this.constructor.Interface;
 	  for (var propName in Interface) {
@@ -13229,11 +13230,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (normalize) {
 	      this[propName] = normalize(nativeEvent);
 	    } else {
-	      if (propName === 'target') {
-	        this.target = nativeEventTarget;
-	      } else {
-	        this[propName] = nativeEvent[propName];
-	      }
+	      this[propName] = nativeEvent[propName];
 	    }
 	  }
 
@@ -17082,10 +17079,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    });
 
-	    if (content) {
-	      nativeProps.children = content;
-	    }
-
+	    nativeProps.children = content;
 	    return nativeProps;
 	  }
 
@@ -22558,7 +22552,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 
-	module.exports = '0.14.7';
+	module.exports = '0.14.6';
 
 /***/ },
 /* 172 */
@@ -23685,7 +23679,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var RouteHashLink = React.createClass({
 	    displayName: 'RouteHashLink',
-
 
 	    render: function render() {
 
