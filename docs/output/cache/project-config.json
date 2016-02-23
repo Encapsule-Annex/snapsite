@@ -8,7 +8,7 @@
             "server": "/home/cdr/code/encapsule/snapsite/docs/output/server",
             "cache": "/home/cdr/code/encapsule/snapsite/docs/output/cache"
         },
-        "package": "/home/cdr/code/encapsule/snapsite/"
+        "package": "/home/cdr/code/encapsule/snapsite"
     },
     "org": {
         "seed": "koJdft_STGCMJe6dZcq5kg",
@@ -32,9 +32,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456173833358,
-            "date": "Mon Feb 22 2016 12:43:53 GMT-0800 (PST)",
-            "hash": "ePh2mf3HS0Cw_7yWS_d5Ig"
+            "time": 1456191776695,
+            "date": "Mon Feb 22 2016 17:42:56 GMT-0800 (PST)",
+            "hash": "uSXLJUWtRtyGXItRl_uJhQ"
         },
         "agent": {
             "name": "snapsite",

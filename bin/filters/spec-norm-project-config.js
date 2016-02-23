@@ -46,16 +46,19 @@ specNormProjectConfig.generator = {
             ____label: "Build Time",
             ____description: "Site generator build time (Epoch).",
             ____accept: "jsNumber",
+            ____defaultValue: 0
         },
         date: {
             ____label: "Date String",
             ____description: "Site generator build date (string).",
             ____accept: "jsString",
+            ____defaultValue: "[test build not watermarked]"
         },
         hash: {
             ____label: "IRUT Hash",
             ____description: "22-character IRUT hash string of this build.",
-            ____accept: "jsString"
+            ____accept: "jsString",
+            ____defaultValue: "[test build not assigned ID]"
         }
     },
     agent: {

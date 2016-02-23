@@ -91,13 +91,20 @@ var factoryResponse = ARCCORE.filter.create({
             webpackConfig.module = {
                 loaders: [
                     {
-                        test: /\.jsx$/,
+                        test: /\.jsx$/, // Only JSX files
                         loader: 'babel-loader',
                         query: {
                             presets: [ 'react', 'es2015' ]
                         }
-                    }
-                ]
+                    },
+                    {
+                        test: /\.css$/, // Only CSS files
+                        loader: 'style!css' // Run both css-loader and style-loader
+                    },
+                    {test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff'},
+                    {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream'},
+                    {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file'},
+                    {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'}                ]
             };
 
             // Re-enable when we get to optimizing the bundles.

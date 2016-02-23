@@ -8,13 +8,14 @@
   This script will be called when the HTML5 document published at
   URL 'http://github.com/Encapsule/snapsite/testsite/tiffany' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 12:43:53 GMT-0800 (PST)
-  Site build instance: [1456173833358 ePh2mf3HS0Cw_7yWS_d5Ig]
+  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 17:42:56 GMT-0800 (PST)
+  Site build instance: [1456191776695 uSXLJUWtRtyGXItRl_uJhQ]
 */
 // ======================================================================
 
 // Load the snapsite runtime library.
 const SNAPRT = require('./__snaprt.jsx');
+
 // Alias submodules.
 const ARCCORE = SNAPRT.arccore;
 const React = SNAPRT.react;

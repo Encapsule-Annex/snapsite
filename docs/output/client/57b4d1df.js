@@ -66,13 +66,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	  This script will be called when the HTML5 document published at
 	  URL 'http://github.com/Encapsule/snapsite/testsite/colter' loads in your browser.
 
-	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 12:43:53 GMT-0800 (PST)
-	  Site build instance: [1456173833358 ePh2mf3HS0Cw_7yWS_d5Ig]
+	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 17:42:56 GMT-0800 (PST)
+	  Site build instance: [1456191776695 uSXLJUWtRtyGXItRl_uJhQ]
 	*/
 	// ======================================================================
 
 	// Load the snapsite runtime library.
 	var SNAPRT = __webpack_require__(447);
+
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
 	var React = SNAPRT.react;
@@ -138,7 +139,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    arccore: __webpack_require__(3),
 	    react: __webpack_require__(27),
 	    reactDOM: __webpack_require__(183),
-	    reactTheme: __webpack_require__(184),
+	    reactTheme: __webpack_require__(184)
 	};
 
 
@@ -41019,8 +41020,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  access to theme bindings (array of named function points to React
 	  JS components specific to the the current snapsite theme).
 
-	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 12:43:53 GMT-0800 (PST)
-	  Site build instance: [1456173833358 ePh2mf3HS0Cw_7yWS_d5Ig]
+	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 17:42:56 GMT-0800 (PST)
+	  Site build instance: [1456191776695 uSXLJUWtRtyGXItRl_uJhQ]
 	*/
 	// ======================================================================
 
@@ -41048,9 +41049,9 @@ return /******/ (function(modules) { // webpackBootstrap
 		},
 		"generator": {
 			"build": {
-				"time": 1456173833358,
-				"date": "Mon Feb 22 2016 12:43:53 GMT-0800 (PST)",
-				"hash": "ePh2mf3HS0Cw_7yWS_d5Ig"
+				"time": 1456191776695,
+				"date": "Mon Feb 22 2016 17:42:56 GMT-0800 (PST)",
+				"hash": "uSXLJUWtRtyGXItRl_uJhQ"
 			},
 			"agent": {
 				"name": "snapsite",

@@ -59,8 +59,8 @@ module.exports =
 	  webserver process for website's that leverage custom server-side business
 	  logic.
 
-	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 12:43:53 GMT-0800 (PST)
-	  Site build instance: [1456173833358 ePh2mf3HS0Cw_7yWS_d5Ig]
+	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 17:42:56 GMT-0800 (PST)
+	  Site build instance: [1456191776695 uSXLJUWtRtyGXItRl_uJhQ]
 	*/
 	// ======================================================================
 
@@ -131,8 +131,8 @@ module.exports =
 	  access to theme bindings (array of named function points to React
 	  JS components specific to the the current snapsite theme).
 
-	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 12:43:53 GMT-0800 (PST)
-	  Site build instance: [1456173833358 ePh2mf3HS0Cw_7yWS_d5Ig]
+	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 17:42:56 GMT-0800 (PST)
+	  Site build instance: [1456191776695 uSXLJUWtRtyGXItRl_uJhQ]
 	*/
 	// ======================================================================
 
@@ -147,7 +147,7 @@ module.exports =
 	    arccore: __webpack_require__(3),
 	    react: __webpack_require__(4),
 	    reactDOM: __webpack_require__(5),
-	    reactTheme: __webpack_require__(150),
+	    reactTheme: __webpack_require__(150)
 	};
 
 
@@ -36342,9 +36342,9 @@ module.exports =
 		},
 		"generator": {
 			"build": {
-				"time": 1456173833358,
-				"date": "Mon Feb 22 2016 12:43:53 GMT-0800 (PST)",
-				"hash": "ePh2mf3HS0Cw_7yWS_d5Ig"
+				"time": 1456191776695,
+				"date": "Mon Feb 22 2016 17:42:56 GMT-0800 (PST)",
+				"hash": "uSXLJUWtRtyGXItRl_uJhQ"
 			},
 			"agent": {
 				"name": "snapsite",
