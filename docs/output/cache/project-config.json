@@ -8,7 +8,7 @@
             "server": "/home/cdr/code/encapsule/snapsite/docs/output/server",
             "cache": "/home/cdr/code/encapsule/snapsite/docs/output/cache"
         },
-        "package": "/home/cdr/code/encapsule/snapsite/"
+        "package": "/home/cdr/code/encapsule/snapsite"
     },
     "org": {
         "seed": "koJdft_STGCMJe6dZcq5kg",

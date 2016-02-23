@@ -1,5 +1,5 @@
 module.exports = {
-    title: "home",
-    description: "snapsite website generator command line tool docs.",
-    tooltip: "Jump back to the top..."
+    title: "snapsite",
+    description: "Encapsule/snapsite website generator homepage.",
+    tooltip: "Jump back to the top of the site..."
 };

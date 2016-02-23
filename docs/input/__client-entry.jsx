@@ -33,7 +33,7 @@ if (factoryResponse.error) {
 reactContextData.pagesGraph = factoryResponse.result;
 
 console.log("snapsite client app initializing on route '/'...");
-console.log("Page [snapsite :: home] (02413fb0) Copyright (C) 2016 Encapsule.io");
+console.log("Page [snapsite :: snapsite] (02413fb0) Copyright (C) 2016 Encapsule.io");
 console.log("Powered by Encapsule/snapsite v0.0.5 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);

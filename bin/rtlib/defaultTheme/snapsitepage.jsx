@@ -12,12 +12,12 @@ const Breadcrumbs = require('./breadcrumbs.jsx');
 const Copyright = require('./copyright.jsx');
 const Sitemap = require('./sitemap.jsx');
 
+const ReactBootstrap = require('react-bootstrap');
+const PageHeader = ReactBootstrap.PageHeader;
+
 const styles = {
-    fontFamily: 'Verdana, Geneva, sans-serif',
-    fontSize: '12pt',
     margin: '1em'
 };
-
 
 var SnapPage = React.createClass({
     className: "SnapPage",
@@ -31,20 +31,18 @@ var SnapPage = React.createClass({
 
         var isRootPage = (this.props.pagesGraph.inDegree(this.props.page.primaryRouteHash) === 0);
 
-        if (isRootPage) {
-            content.push(<h1 key={makeKey()}>{this.props.site.title}</h1>);
-        } else {
+        if (!isRootPage || isRootPage) {
             content.push(<Breadcrumbs {...this.props} key={makeKey()} />);
-            content.push(<h1 key={makeKey()}>{this.props.page.title}</h1>);
-            content.push(<p key={makeKey()}><i>{this.props.page.description}</i></p>);
         }
+
+        content.push(<PageHeader key={makeKey()}>{this.props.page.title} <small>{this.props.page.description}</small></PageHeader>);
 
 
         var contentRendered = React.createElement(this.props.renderContent, this.props);
         content.push(<span key={makeKey()}>{contentRendered}</span>);
 
         content.push(<hr key={makeKey()} />);
-        content.push(<Sitemap {...this.props} key={makeKey()} />);
+        content.push(<Sitemap {...this.props} routeHash={this.props.page.primaryRouteHash} key={makeKey()} />);
 
         content.push(<Copyright {...this.props} key={makeKey()} />);
 

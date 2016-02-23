@@ -5,11 +5,17 @@
 const ARCCORE = require('arccore');
 const React = require('react');
 
+const RouteHashLink = require('./routehashlink.jsx');
+
 var Sitemap = React.createClass({
     render: function() {
 
         var digraph = this.props.pagesGraph;
+        var routeHash = this.props.routeHash;
+
         var routesCount = digraph.verticesCount();
+
+        var self = this;
 
         var renderRoute = function(route_) {
             var routeProps = digraph.getVertexProperty(route_);
@@ -23,10 +29,11 @@ var Sitemap = React.createClass({
                 });
             }
             var routeProps = digraph.getVertexProperty(route_);
+
             if (children.length) {
-                return (<ul key={"list"+route_}><li key={route_}><a href={route_ + '.html'}>{routeProps.title}</a> - {routeProps.description}{children}</li></ul>);
+                return (<ul key={"list"+route_}><li key={route_}><RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} /> - {routeProps.description}{children}</li></ul>);
             } else {
-                return (<ul key={"list"+route_}><li key={route_}><a href={route_ + '.html'}>{routeProps.title}</a> - {routeProps.description}</li></ul>);
+                return (<ul key={"list"+route_}><li key={route_}><RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} /> - {routeProps.description}</li></ul>);
             }
         }
 

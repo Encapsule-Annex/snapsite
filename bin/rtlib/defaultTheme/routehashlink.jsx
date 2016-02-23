@@ -15,7 +15,7 @@ var RouteHashLink = React.createClass({
         var routeProps = digraph.getVertexProperty(routeHash);
 
         if (active) {
-            return (<span>{routeProps.title}</span>);
+            return (<span><strong>{routeProps.title}</strong></span>);
         } else {
             return (<a href={"./" + routeHash + ".html"} title={routeProps.tooltip}>{routeProps.title}</a>);
         }
