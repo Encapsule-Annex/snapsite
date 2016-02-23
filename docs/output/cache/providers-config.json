@@ -17,9 +17,9 @@
             },
             "generator": {
                 "build": {
-                    "time": 1456191776695,
-                    "date": "Mon Feb 22 2016 17:42:56 GMT-0800 (PST)",
-                    "hash": "uSXLJUWtRtyGXItRl_uJhQ"
+                    "time": 0,
+                    "date": "[test build not watermarked]",
+                    "hash": "[test build not assigned ID]"
                 },
                 "agent": {
                     "name": "snapsite",

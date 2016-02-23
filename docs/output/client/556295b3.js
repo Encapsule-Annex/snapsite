@@ -66,8 +66,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  This script will be called when the HTML5 document published at
 	  URL 'http://github.com/Encapsule/snapsite/testsite' loads in your browser.
 
-	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 17:42:56 GMT-0800 (PST)
-	  Site build instance: [1456191776695 uSXLJUWtRtyGXItRl_uJhQ]
+	  Produced by Encapsule/snapsite v0.0.5 [test build not watermarked]
+	  Site build instance: [0 [test build not assigned ID]]
 	*/
 	// ======================================================================
 
@@ -41016,8 +41016,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  access to theme bindings (array of named function points to React
 	  JS components specific to the the current snapsite theme).
 
-	  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 17:42:56 GMT-0800 (PST)
-	  Site build instance: [1456191776695 uSXLJUWtRtyGXItRl_uJhQ]
+	  Produced by Encapsule/snapsite v0.0.5 [test build not watermarked]
+	  Site build instance: [0 [test build not assigned ID]]
 	*/
 	// ======================================================================
 
@@ -41045,9 +41045,9 @@ return /******/ (function(modules) { // webpackBootstrap
 		},
 		"generator": {
 			"build": {
-				"time": 1456191776695,
-				"date": "Mon Feb 22 2016 17:42:56 GMT-0800 (PST)",
-				"hash": "uSXLJUWtRtyGXItRl_uJhQ"
+				"time": 0,
+				"date": "[test build not watermarked]",
+				"hash": "[test build not assigned ID]"
 			},
 			"agent": {
 				"name": "snapsite",

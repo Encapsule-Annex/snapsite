@@ -10,8 +10,8 @@
   webserver process for website's that leverage custom server-side business
   logic.
 
-  Produced by Encapsule/snapsite v0.0.5 Mon Feb 22 2016 17:42:56 GMT-0800 (PST)
-  Site build instance: [1456191776695 uSXLJUWtRtyGXItRl_uJhQ]
+  Produced by Encapsule/snapsite v0.0.5 [test build not watermarked]
+  Site build instance: [0 [test build not assigned ID]]
 */
 // ======================================================================
 

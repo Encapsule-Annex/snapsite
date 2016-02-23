@@ -43,6 +43,7 @@ specNormProjectConfig.generator = {
     build: {
         ____label: "Build Info",
         ____types: "jsObject",
+        ____defaultValue: {},
         time: {
             ____label: "Build Time",
             ____description: "Site generator build time (Epoch).",
