@@ -39,6 +39,7 @@ specNormProjectConfig.generator = {
     ____label: "Generator Metadata",
     ____description: "Metadata identitying this site generator.",
     ____types: "jsObject",
+    ____defaultValue: {},
     build: {
         ____label: "Build Info",
         ____types: "jsObject",
