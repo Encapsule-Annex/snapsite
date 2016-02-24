@@ -63,7 +63,7 @@ var renderPageContent = function() {
 console.log("... re-rendering the page client-side...");
 renderPageContent();
 
-const clientAppEntry = require('/home/cdr/code/encapsule/snapsite/bin/rtlib/default-client-extension');
+const clientAppEntry = require('/home/cdr/encapsule/snapsite/bin/rtlib/default-client-extension');
 
 console.log("... calling client runtime extension...");
 clientAppEntry({

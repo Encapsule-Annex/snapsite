@@ -63,7 +63,7 @@ var renderPageContent = function() {
 console.log("... re-rendering the page client-side...");
 renderPageContent();
 
-const clientAppEntry = require('/home/cdr/code/encapsule/snapsite/docs/input/testsite/colter/client-runtime.js');
+const clientAppEntry = require('/home/cdr/encapsule/snapsite/docs/input/testsite/colter/client-runtime.js');
 
 console.log("... calling client runtime extension...");
 clientAppEntry({

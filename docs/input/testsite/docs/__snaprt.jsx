@@ -16,4 +16,4 @@
 */
 // ======================================================================
 
-module.exports = require('/home/cdr/code/encapsule/snapsite/bin/rtlib');
+module.exports = require('/home/cdr/encapsule/snapsite/bin/rtlib');
