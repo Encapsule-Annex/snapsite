@@ -62,25 +62,25 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for snapsite snapsite route '556295b3'.
+	  Main client entry point for snapsite  route '556295b3'.
 	  This script will be called when the HTML5 document published at
 	  URL 'http://github.com/Encapsule/snapsite/testsite' loads in your browser.
 
-	  Produced by Encapsule/snapsite v0.0.5 [test build not watermarked]
-	  Site build instance: [0 [test build not assigned ID]]
+	  Produced by Encapsule/ v 
+	  Site build instance: [ ]
 	*/
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(443);
+	var SNAPRT = __webpack_require__(444);
 
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
 	var React = SNAPRT.react;
 	var ReactDOM = SNAPRT.reactDOM;
 
-	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(444);
+	// Load the React data context prepared by .
+	var reactContextData = __webpack_require__(445);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -90,16 +90,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Replace the serialized digraph model with a runtime DirectedGraph container.
 	reactContextData.pagesGraph = factoryResponse.result;
 
-	console.log("snapsite client app initializing on route '/testsite'...");
+	console.log(" client app initializing on route '/testsite'...");
 	console.log("Page [snapsite :: Test Pages] (556295b3) Copyright (C) 2016 Encapsule.io");
-	console.log("Powered by Encapsule/snapsite v0.0.5 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
-	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
+	console.log("Powered by Encapsule/ v // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
+	console.log("Please follow @Encapsule on Twitter for  news & updates. https://twitter.com/Encapsule");
 
 	// Load the developer-defined React component responsible for rendering
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
 
-	var reactContentComponent = __webpack_require__(445);
+	var reactContentComponent = __webpack_require__(446);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -116,7 +116,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	console.log("... re-rendering the page client-side...");
 	renderPageContent();
 
-	var clientAppEntry = __webpack_require__(446);
+	var clientAppEntry = __webpack_require__(447);
 
 	console.log("... calling client runtime extension...");
 	clientAppEntry({
@@ -23622,14 +23622,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	            contentRendered
 	        ));
 
-	        content.push(React.createElement(Sitemap, _extends({}, this.props, { routeHash: this.props.page.primaryRouteHash, key: makeKey() })));
-
 	        content.push(React.createElement(Copyright, _extends({}, this.props, { key: makeKey(), style: theme.copyrightBlock })));
 
 	        return React.createElement(
 	            'div',
 	            { style: theme.pageBlock },
-	            content
+	            content,
+	            React.createElement('br', null)
 	        );
 	    }
 	});
@@ -23671,7 +23670,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return React.createElement(
 	            'div',
 	            { style: theme.breadcrumbsBlock },
-	            '>> ',
 	            breadcrumbs
 	        );
 	    }
@@ -23770,8 +23768,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	////
-	// sitemap.jsx - a simple ReactJS component.
-	//
+	// sitemap.jsx - renders a simple sitemap indicating the
+	// currently selected page if a route hash is specified
+	// via React props.
 
 	var ARCCORE = __webpack_require__(3);
 	var React = __webpack_require__(27);
@@ -23782,62 +23781,44 @@ return /******/ (function(modules) { // webpackBootstrap
 	    displayName: 'Sitemap',
 
 	    render: function render() {
-
-	        var digraph = this.props.pagesGraph;
+	        var pagesGraph = this.props.pagesGraph;
 	        var routeHash = this.props.routeHash;
-
-	        var routesCount = digraph.verticesCount();
+	        var routesCount = pagesGraph.verticesCount();
 
 	        var self = this;
-
-	        var renderRoute = function renderRoute(route_) {
-	            var routeProps = digraph.getVertexProperty(route_);
-	            var outDegree = digraph.outDegree(route_);
+	        // inner render is recursive.
+	        var renderRoute = function renderRoute(route_, rank_) {
 	            var children = [];
-	            if (outDegree) {
-	                var outEdges = digraph.outEdges(route_);
-	                var adjacent = outEdges.map(function (e) {
-	                    return e.v;
-	                });
-	                adjacent.forEach(function (r_) {
-	                    children.push(renderRoute(r_));
-	                });
-	            }
-	            var routeProps = digraph.getVertexProperty(route_);
+	            var routeProps = pagesGraph.getVertexProperty(route_);
+	            children = routeProps.children.map(function (r_) {
+	                return renderRoute(r_, rank_ + 1);
+	            });
 
-	            if (children.length) {
-	                return React.createElement(
-	                    'ul',
-	                    { key: "list" + route_ },
-	                    React.createElement(
-	                        'li',
-	                        { key: route_ },
-	                        React.createElement(RouteHashLink, _extends({}, self.props, { routeHash: route_, active: route_ === routeHash })),
-	                        ' - ',
-	                        routeProps.description,
-	                        children
-	                    )
-	                );
-	            } else {
-	                return React.createElement(
-	                    'ul',
-	                    { key: "list" + route_ },
-	                    React.createElement(
-	                        'li',
-	                        { key: route_ },
-	                        React.createElement(RouteHashLink, _extends({}, self.props, { routeHash: route_, active: route_ === routeHash })),
-	                        ' - ',
-	                        routeProps.description
-	                    )
-	                );
-	            }
-	        };
-
+	            var indentStyle = {
+	                paddingLeft: '' + rank_ + 'em',
+	                marginLeft: '0px'
+	            };
+	            return React.createElement(
+	                'div',
+	                { key: "list" + route_, style: indentStyle },
+	                React.createElement(
+	                    'span',
+	                    null,
+	                    '• ',
+	                    React.createElement(RouteHashLink, _extends({}, self.props, { routeHash: route_, active: route_ === routeHash })),
+	                    '- ',
+	                    routeProps.description,
+	                    children
+	                )
+	            );
+	        }; // end renderRoute
+	        // render the sitemap recursively.
 	        return React.createElement(
 	            'div',
 	            null,
-	            renderRoute(digraph.getRootVertices()[0])
+	            renderRoute(pagesGraph.getRootVertices()[0], 0)
 	        );
+	        rankLevel++;
 	    }
 	});
 
@@ -40991,7 +40972,8 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 440 */,
 /* 441 */,
 /* 442 */,
-/* 443 */
+/* 443 */,
+/* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41002,22 +40984,24 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Shared runtime dependencies of snapsite client and
+	  Shared runtime dependencies of  client and
 	  server scripts for input route '/testsite'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
 	  JS components specific to the the current snapsite theme).
 
-	  Produced by Encapsule/snapsite v0.0.5 [test build not watermarked]
-	  Site build instance: [0 [test build not assigned ID]]
+	  Produced by Encapsule/ v 
+	  Site build instance: [ ]
 	*/
 	// ======================================================================
 
-	module.exports = __webpack_require__(2);
+	var snaprt = __webpack_require__(2);
+	snaprt.generator = '{&quot;build&quot;:{&quot;time&quot;:1456355116089,&quot;date&quot;:&quot;Wed Feb 24 2016 15:05:16 GMT-0800 (PST)&quot;,&quot;hash&quot;:&quot;AAWDkbeWTDewGjBiVjAyKA&quot;},&quot;agent&quot;:{&quot;name&quot;:&quot;snapsite&quot;,&quot;version&quot;:&quot;0.0.5&quot;}}';
+	module.exports = snaprt;
 
 /***/ },
-/* 444 */
+/* 445 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -41042,8 +41026,9 @@ return /******/ (function(modules) { // webpackBootstrap
 					},
 					"pageBlock": {},
 					"breadcrumbsBlock": {
-						"backgroundColor": "#F0F0F0",
+						"backgroundColor": "#F7F7F7",
 						"padding": "0.25em",
+						"paddingLeft": "1em",
 						"boxShadow": "0px 4px 8px 1px #DDDDDD"
 					},
 					"titleBlock": {
@@ -41064,10 +41049,10 @@ return /******/ (function(modules) { // webpackBootstrap
 						"margin": "1em"
 					},
 					"copyrightBlock": {
-						"backgroundColor": "#F0F0F0",
+						"backgroundColor": "#F7F7F7",
 						"padding": "0.25em",
 						"paddingRight": "1em",
-						"boxShadow": "0px 4px 8px 1px #DDDDDD",
+						"boxShadow": "0px 1px 8px 0px #CCCCCC inset",
 						"textAlign": "right"
 					}
 				}
@@ -41075,9 +41060,9 @@ return /******/ (function(modules) { // webpackBootstrap
 		},
 		"generator": {
 			"build": {
-				"time": 0,
-				"date": "[test build not watermarked]",
-				"hash": "[test build not assigned ID]"
+				"time": 1456355116089,
+				"date": "Wed Feb 24 2016 15:05:16 GMT-0800 (PST)",
+				"hash": "AAWDkbeWTDewGjBiVjAyKA"
 			},
 			"agent": {
 				"name": "snapsite",
@@ -41094,9 +41079,25 @@ return /******/ (function(modules) { // webpackBootstrap
 						"primaryRouteHash": "02413fb0",
 						"primaryRoute": "/",
 						"title": "snapsite",
-						"description": "Encapsule/snapsite website generator project homepage.",
-						"tooltip": "Jump to the snapsite homepage...",
-						"rank": 0
+						"description": "website generator project",
+						"tooltip": "Jump to the homepage...",
+						"rank": 0,
+						"children": [
+							"556295b3",
+							"bbaf163f"
+						]
+					}
+				},
+				{
+					"u": "bbaf163f",
+					"p": {
+						"primaryRouteHash": "bbaf163f",
+						"primaryRoute": "/about",
+						"title": "About",
+						"description": "snapsite homepage build info & runtime dependencies",
+						"tooltip": "Review snapsite build and dependencies...",
+						"rank": 100,
+						"children": []
 					}
 				},
 				{
@@ -41107,7 +41108,15 @@ return /******/ (function(modules) { // webpackBootstrap
 						"title": "Test Pages",
 						"description": "A collection of simple test pages for experimentation.",
 						"tooltip": "Jump to test pages...",
-						"rank": 9
+						"rank": 9,
+						"children": [
+							"f243d161",
+							"587cc689",
+							"57b4d1df",
+							"b0f90273",
+							"0261711c",
+							"7d516a9c"
+						]
 					}
 				},
 				{
@@ -41118,7 +41127,10 @@ return /******/ (function(modules) { // webpackBootstrap
 						"title": "About",
 						"description": "Learn about Encapsule.io.",
 						"tooltip": "About Encapsule.io...",
-						"rank": 0
+						"rank": 0,
+						"children": [
+							"3ecfb36e"
+						]
 					}
 				},
 				{
@@ -41129,7 +41141,8 @@ return /******/ (function(modules) { // webpackBootstrap
 						"title": "Blog",
 						"description": "Encapsule.io web development blog.",
 						"tooltip": "Encapsule.io blog...",
-						"rank": 0
+						"rank": 0,
+						"children": []
 					}
 				},
 				{
@@ -41140,7 +41153,8 @@ return /******/ (function(modules) { // webpackBootstrap
 						"title": "Hello, Colter",
 						"description": "This is a test. Hello!",
 						"tooltip": "Jump to Hello, Colter...",
-						"rank": 0
+						"rank": 0,
+						"children": []
 					}
 				},
 				{
@@ -41151,7 +41165,8 @@ return /******/ (function(modules) { // webpackBootstrap
 						"title": "Documentation",
 						"description": "Encapsule tools, and libaries documentation library.",
 						"tooltip": "Browse technical documentation...",
-						"rank": 0
+						"rank": 0,
+						"children": []
 					}
 				},
 				{
@@ -41162,7 +41177,8 @@ return /******/ (function(modules) { // webpackBootstrap
 						"title": "Hello, John",
 						"description": "A test page to demonstrate some basic capabilities.",
 						"tooltip": "Jump to the Hello, John demo page...",
-						"rank": 0
+						"rank": 0,
+						"children": []
 					}
 				},
 				{
@@ -41173,7 +41189,8 @@ return /******/ (function(modules) { // webpackBootstrap
 						"title": "Hello, Tiffany",
 						"description": "This is a simple demo page.",
 						"tooltip": "Jump to Tiff's demo page...",
-						"rank": 0
+						"rank": 0,
+						"children": []
 					}
 				},
 				{
@@ -41184,11 +41201,18 @@ return /******/ (function(modules) { // webpackBootstrap
 						"title": "Contact",
 						"description": "Contact information and directions to Encapsule.io.",
 						"tooltip": "Contact information...",
-						"rank": 0
+						"rank": 0,
+						"children": []
 					}
 				}
 			],
 			"elist": [
+				{
+					"e": {
+						"u": "02413fb0",
+						"v": "bbaf163f"
+					}
+				},
 				{
 					"e": {
 						"u": "02413fb0",
@@ -41246,6 +41270,14 @@ return /******/ (function(modules) { // webpackBootstrap
 			"description": "A collection of simple test pages for experimentation.",
 			"tooltip": "Jump to test pages...",
 			"rank": 9,
+			"children": [
+				"f243d161",
+				"587cc689",
+				"57b4d1df",
+				"b0f90273",
+				"0261711c",
+				"7d516a9c"
+			],
 			"context": {
 				"content": "Testing 1,2,3",
 				"something": {
@@ -41261,6 +41293,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		"lookup": {
 			"routeHashToRouteMap": {
 				"02413fb0": "/",
+				"bbaf163f": "/about",
 				"556295b3": "/testsite",
 				"f243d161": "/testsite/about",
 				"587cc689": "/testsite/blog",
@@ -41273,6 +41306,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			},
 			"routeToRouteHashMap": {
 				"/": "02413fb0",
+				"/about": "bbaf163f",
 				"/testsite": "556295b3",
 				"/testsite/about": "f243d161",
 				"/testsite/blog": "587cc689",
@@ -41287,12 +41321,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 445 */
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var COMMON = __webpack_require__(443);
+	var COMMON = __webpack_require__(444);
 	var ARCCORE = COMMON.arccore;
 	var React = COMMON.react;
 
@@ -41469,7 +41503,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = rootComponent;
 
 /***/ },
-/* 446 */
+/* 447 */
 /***/ function(module, exports) {
 
 	// client-runtime.js

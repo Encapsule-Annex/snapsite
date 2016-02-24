@@ -62,9 +62,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for snapsite  route '0261711c'.
+	  Main client entry point for snapsite  route 'bbaf163f'.
 	  This script will be called when the HTML5 document published at
-	  URL 'http://github.com/Encapsule/snapsite/testsite/new-page' loads in your browser.
+	  URL 'http://github.com/Encapsule/snapsite/about' loads in your browser.
 
 	  Produced by Encapsule/ v 
 	  Site build instance: [ ]
@@ -72,7 +72,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(438);
+	var SNAPRT = __webpack_require__(460);
 
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
@@ -80,7 +80,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ReactDOM = SNAPRT.reactDOM;
 
 	// Load the React data context prepared by .
-	var reactContextData = __webpack_require__(439);
+	var reactContextData = __webpack_require__(461);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -90,8 +90,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Replace the serialized digraph model with a runtime DirectedGraph container.
 	reactContextData.pagesGraph = factoryResponse.result;
 
-	console.log(" client app initializing on route '/testsite/new-page'...");
-	console.log("Page [snapsite :: Hello, John] (0261711c) Copyright (C) 2016 Encapsule.io");
+	console.log(" client app initializing on route '/about'...");
+	console.log("Page [snapsite :: About] (bbaf163f) Copyright (C) 2016 Encapsule.io");
 	console.log("Powered by Encapsule/ v // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for  news & updates. https://twitter.com/Encapsule");
 
@@ -99,7 +99,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
 
-	var reactContentComponent = __webpack_require__(440);
+	var reactContentComponent = __webpack_require__(462);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -40978,7 +40978,29 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ },
-/* 438 */
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40990,7 +41012,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Copyright (C) 2016 Encapsule.io
 
 	  Shared runtime dependencies of  client and
-	  server scripts for input route '/testsite/new-page'.
+	  server scripts for input route '/about'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -41006,7 +41028,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = snaprt;
 
 /***/ },
-/* 439 */
+/* 461 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -41269,12 +41291,12 @@ return /******/ (function(modules) { // webpackBootstrap
 			]
 		},
 		"page": {
-			"primaryRouteHash": "0261711c",
-			"primaryRoute": "/testsite/new-page",
-			"title": "Hello, John",
-			"description": "A test page to demonstrate some basic capabilities.",
-			"tooltip": "Jump to the Hello, John demo page...",
-			"rank": 0,
+			"primaryRouteHash": "bbaf163f",
+			"primaryRoute": "/about",
+			"title": "About",
+			"description": "snapsite homepage build info & runtime dependencies",
+			"tooltip": "Review snapsite build and dependencies...",
+			"rank": 100,
 			"children": [],
 			"context": {}
 		},
@@ -41309,88 +41331,71 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 440 */
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	var snaprt = __webpack_require__(460);
+	var ARCcore = snaprt.arccore;
+	var React = snaprt.react;
 
-	var COMMON = __webpack_require__(438);
-	var ARCCORE = COMMON.arccore;
-	var React = COMMON.react;
+	var AboutSnapsite = React.createClass({
+	    displayName: "AboutSnapsite",
 
-	var ReactTheme = COMMON.reactTheme;
-
-	var renderContent = React.createClass({
-	  displayName: 'renderContent',
-
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      null,
-	      React.createElement(
-	        'p',
-	        null,
-	        'Since yesterday:'
-	      ),
-	      React.createElement(
-	        'ul',
-	        null,
-	        React.createElement(
-	          'li',
-	          null,
-	          'Hand-created client and server entry points in route directories are gone. This logic is now generated at build-time.'
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          'I\'ve created the basis for a powerful theme system that will be super simple to use. Install an npm package, change a line in your config, and recompile will reskin any site generated with ',
-	          this.props.generator.agent.name,
-	          '.'
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          'This little demo uses several basic widgets implemented by the default theme.',
-	          React.createElement(
-	            'ul',
+	    className: "AboutSnapsite",
+	    render: function render() {
+	        var generator = this.props.generator;
+	        return React.createElement(
+	            "div",
 	            null,
 	            React.createElement(
-	              'li',
-	              null,
-	              'breadcrumbs at the top of the page'
+	                "h2",
+	                null,
+	                "site details"
 	            ),
 	            React.createElement(
-	              'li',
-	              null,
-	              'page title'
+	                "p",
+	                null,
+	                this.props.pagesGraph.verticesCount(),
+	                " pages generated on ",
+	                generator.build.date,
+	                ".",
+	                React.createElement("br", null),
+	                "Timestamp: ",
+	                generator.build.time,
+	                " ",
+	                "//",
+	                " ID: ",
+	                generator.build.hash,
+	                React.createElement("br", null)
 	            ),
 	            React.createElement(
-	              'li',
-	              null,
-	              'sitemap / copyright footer'
+	                "h2",
+	                null,
+	                "generator"
 	            ),
 	            React.createElement(
-	              'li',
-	              null,
-	              'In-site link helpers that abstract the details of URL\'s (can get tricky). For example: ',
-	              React.createElement(ReactTheme.RouteHashLink, _extends({}, this.props, { routeHash: this.props.lookup.routeToRouteHashMap['/'] })),
-	              ' links back to the top of the site using a hash signature I don\'t know off the top of my head. In this case I use the route \'/\''
+	                "p",
+	                null,
+	                "Encapsule/",
+	                generator.agent.name,
+	                " v",
+	                generator.agent.version,
+	                React.createElement("br", null),
+	                "Encapsule/",
+	                ARCcore.__meta.name,
+	                " v",
+	                ARCcore.__meta.version,
+	                React.createElement("br", null),
+	                "Facebook/react v",
+	                React.version
 	            )
-	          )
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          'This little demo is a raw copy of the generated client app to github pages (free hosting).'
-	        )
-	      )
-	    );
-	  }
+	        );
+	    }
 	});
 
-	module.exports = renderContent;
+	module.exports = AboutSnapsite;
 
 /***/ }
 /******/ ])
