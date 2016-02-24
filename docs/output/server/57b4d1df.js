@@ -18651,41 +18651,47 @@ module.exports =
 	            return keyBase + keyIndex++;
 	        };
 
+	        var theme = this.props.site.context.theme;
+
 	        var content = [];
 
 	        var isRootPage = this.props.pagesGraph.inDegree(this.props.page.primaryRouteHash) === 0;
 
-	        if (!isRootPage || isRootPage) {
+	        if (!isRootPage) {
 	            content.push(React.createElement(Breadcrumbs, _extends({}, this.props, { key: makeKey() })));
 	        }
 
 	        content.push(React.createElement(
-	            PageHeader,
-	            { key: makeKey() },
-	            this.props.page.title,
+	            'div',
+	            { key: makeKey(), style: theme.titleBlock },
+	            React.createElement(
+	                'span',
+	                { style: theme.title },
+	                this.props.page.title
+	            ),
 	            ' ',
 	            React.createElement(
-	                'small',
-	                null,
+	                'span',
+	                { style: theme.subtitle },
+	                '- ',
 	                this.props.page.description
 	            )
 	        ));
 
 	        var contentRendered = React.createElement(this.props.renderContent, this.props);
 	        content.push(React.createElement(
-	            'span',
-	            { key: makeKey() },
+	            'div',
+	            { key: makeKey(), style: theme.contentBlock },
 	            contentRendered
 	        ));
 
-	        content.push(React.createElement('hr', { key: makeKey() }));
 	        content.push(React.createElement(Sitemap, _extends({}, this.props, { routeHash: this.props.page.primaryRouteHash, key: makeKey() })));
 
-	        content.push(React.createElement(Copyright, _extends({}, this.props, { key: makeKey() })));
+	        content.push(React.createElement(Copyright, _extends({}, this.props, { key: makeKey(), style: theme.copyrightBlock })));
 
 	        return React.createElement(
 	            'div',
-	            { style: styles },
+	            { style: theme.pageBlock },
 	            content
 	        );
 	    }
@@ -18716,8 +18722,9 @@ module.exports =
 	        var digraph = this.props.pagesGraph;
 	        var routeHash = this.props.routeHash === undefined ? this.props.page.primaryRouteHash : this.props.routeHash;
 	        var active = this.props.active === undefined ? true : this.props.active;
+	        var theme = this.props.site.context.theme;
 	        var breadcrumbs = [];
-	        breadcrumbs.push(React.createElement(RouteHashLink, { pagesGraph: digraph, routeHash: routeHash, active: true, key: "breadcrumbs" + routeHash }));
+	        breadcrumbs.push(React.createElement(RouteHashLink, _extends({}, this.props, { routeHash: routeHash, active: true, key: "breadcrumbs" + routeHash })));
 	        while (digraph.inDegree(routeHash) === 1) {
 	            var inEdges = digraph.inEdges(routeHash);
 	            routeHash = inEdges[0].u;
@@ -18726,7 +18733,8 @@ module.exports =
 	        }
 	        return React.createElement(
 	            'div',
-	            null,
+	            { style: theme.breadcrumbsBlock },
+	            '>> ',
 	            breadcrumbs
 	        );
 	    }
@@ -18749,15 +18757,13 @@ module.exports =
 	var RouteHashLink = React.createClass({
 	    displayName: 'RouteHashLink',
 
-
 	    render: function render() {
-
 	        var digraph = this.props.pagesGraph;
 	        var routeHash = this.props.routeHash;
 	        var active = this.props.active;
-
 	        var routeProps = digraph.getVertexProperty(routeHash);
-
+	        var rootRoute = digraph.inDegree(routeHash) === 0;
+	        var title = rootRoute ? this.props.site.title : routeProps.title;
 	        if (active) {
 	            return React.createElement(
 	                'span',
@@ -18765,18 +18771,17 @@ module.exports =
 	                React.createElement(
 	                    'strong',
 	                    null,
-	                    routeProps.title
+	                    title
 	                )
 	            );
 	        } else {
 	            return React.createElement(
 	                'a',
 	                { href: "./" + routeHash + ".html", title: routeProps.tooltip },
-	                routeProps.title
+	                title
 	            );
 	        }
 	    }
-
 	});
 
 	module.exports = RouteHashLink;
@@ -18793,16 +18798,16 @@ module.exports =
 	var React = __webpack_require__(4);
 
 	var year = new Date().getFullYear();
-	var styles = { borderTop: '1px solid #DDDDDD', textAlign: 'right', fontSize: '10pt', paddingTop: '0.5em' };
 
 	var Copyright = React.createClass({
 	    displayName: 'Copyright',
 
 	    className: "Copyright",
 	    render: function render() {
+	        var theme = this.props.site.context.theme;
 	        return React.createElement(
 	            'div',
-	            { style: styles },
+	            { style: theme.copyrightBlock },
 	            'Copyright © ',
 	            year,
 	            ' ',
@@ -36335,9 +36340,46 @@ module.exports =
 			"seed": "4pJr9UX5Q9aIn2yudW138Q",
 			"url": "http://github.com/Encapsule/snapsite",
 			"title": "snapsite",
-			"description": "snapsite website generator documentation.",
+			"description": "Encapsule.io snapsite website generator project homepage.",
 			"copyright": "Copyright (C) 2016 Encapsule.io",
-			"context": {}
+			"context": {
+				"theme": {
+					"body": {
+						"margin": "none",
+						"padding": "0px"
+					},
+					"pageBlock": {},
+					"breadcrumbsBlock": {
+						"backgroundColor": "#F0F0F0",
+						"padding": "0.25em",
+						"boxShadow": "0px 4px 8px 1px #DDDDDD"
+					},
+					"titleBlock": {
+						"margin": "1em",
+						"borderBottom": "1px solid #EEEEEE"
+					},
+					"title": {
+						"fontSize": "26pt",
+						"fontWeight": "bold",
+						"color": "#999999"
+					},
+					"subtitle": {
+						"fontSize": "14pt",
+						"fontWeight": "medium",
+						"color": "#CCCCCC"
+					},
+					"contentBlock": {
+						"margin": "1em"
+					},
+					"copyrightBlock": {
+						"backgroundColor": "#F0F0F0",
+						"padding": "0.25em",
+						"paddingRight": "1em",
+						"boxShadow": "0px 4px 8px 1px #DDDDDD",
+						"textAlign": "right"
+					}
+				}
+			}
 		},
 		"generator": {
 			"build": {
@@ -36360,8 +36402,8 @@ module.exports =
 						"primaryRouteHash": "02413fb0",
 						"primaryRoute": "/",
 						"title": "snapsite",
-						"description": "Encapsule/snapsite website generator homepage.",
-						"tooltip": "Jump back to the top of the site...",
+						"description": "Encapsule/snapsite website generator project homepage.",
+						"tooltip": "Jump to the snapsite homepage...",
 						"rank": 0
 					}
 				},

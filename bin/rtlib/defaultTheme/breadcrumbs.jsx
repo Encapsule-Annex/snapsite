@@ -11,15 +11,16 @@ var Breadcrumbs = React.createClass({
         var digraph = this.props.pagesGraph;
         var routeHash = (this.props.routeHash === undefined)?this.props.page.primaryRouteHash:this.props.routeHash;
         var active = (this.props.active === undefined)?true:this.props.active;
+        var theme = this.props.site.context.theme;
         var breadcrumbs = [];
-        breadcrumbs.push(<RouteHashLink pagesGraph={digraph} routeHash={routeHash} active={true} key={"breadcrumbs" + routeHash} />);
+        breadcrumbs.push(<RouteHashLink {...this.props} routeHash={routeHash} active={true} key={"breadcrumbs" + routeHash} />);
         while (digraph.inDegree(routeHash) === 1) {
             var inEdges = digraph.inEdges(routeHash);
             routeHash = inEdges[0].u;
             breadcrumbs.unshift(" / ");
             breadcrumbs.unshift(<RouteHashLink {...this.props} routeHash={routeHash} active={false} key={"breadcrumbs" + routeHash} />);
         }
-        return (<div>{breadcrumbs}</div>);
+        return (<div style={theme.breadcrumbsBlock}>>> {breadcrumbs}</div>);
     }
 });
 

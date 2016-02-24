@@ -10,9 +10,46 @@
         "seed": "4pJr9UX5Q9aIn2yudW138Q",
         "url": "http://github.com/Encapsule/snapsite",
         "title": "snapsite",
-        "description": "snapsite website generator documentation.",
+        "description": "Encapsule.io snapsite website generator project homepage.",
         "copyright": "Copyright (C) 2016 Encapsule.io",
-        "context": {}
+        "context": {
+            "theme": {
+                "body": {
+                    "margin": "none",
+                    "padding": "0px"
+                },
+                "pageBlock": {},
+                "breadcrumbsBlock": {
+                    "backgroundColor": "#F0F0F0",
+                    "padding": "0.25em",
+                    "boxShadow": "0px 4px 8px 1px #DDDDDD"
+                },
+                "titleBlock": {
+                    "margin": "1em",
+                    "borderBottom": "1px solid #EEEEEE"
+                },
+                "title": {
+                    "fontSize": "26pt",
+                    "fontWeight": "bold",
+                    "color": "#999999"
+                },
+                "subtitle": {
+                    "fontSize": "14pt",
+                    "fontWeight": "medium",
+                    "color": "#CCCCCC"
+                },
+                "contentBlock": {
+                    "margin": "1em"
+                },
+                "copyrightBlock": {
+                    "backgroundColor": "#F0F0F0",
+                    "padding": "0.25em",
+                    "paddingRight": "1em",
+                    "boxShadow": "0px 4px 8px 1px #DDDDDD",
+                    "textAlign": "right"
+                }
+            }
+        }
     },
     "generator": {
         "build": {
@@ -35,8 +72,8 @@
                     "primaryRouteHash": "02413fb0",
                     "primaryRoute": "/",
                     "title": "snapsite",
-                    "description": "Encapsule/snapsite website generator homepage.",
-                    "tooltip": "Jump back to the top of the site...",
+                    "description": "Encapsule/snapsite website generator project homepage.",
+                    "tooltip": "Jump to the snapsite homepage...",
                     "rank": 0
                 }
             },
@@ -184,8 +221,8 @@
         "primaryRouteHash": "02413fb0",
         "primaryRoute": "/",
         "title": "snapsite",
-        "description": "Encapsule/snapsite website generator homepage.",
-        "tooltip": "Jump back to the top of the site...",
+        "description": "Encapsule/snapsite website generator project homepage.",
+        "tooltip": "Jump to the snapsite homepage...",
         "rank": 0,
         "context": {}
     },

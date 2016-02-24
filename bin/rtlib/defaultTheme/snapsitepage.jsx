@@ -27,26 +27,27 @@ var SnapPage = React.createClass({
         var keyBase = "SnapPage";
         var makeKey = function() { return (keyBase + keyIndex++); };
 
+        var theme = this.props.site.context.theme;
+
         var content = [];
 
         var isRootPage = (this.props.pagesGraph.inDegree(this.props.page.primaryRouteHash) === 0);
 
-        if (!isRootPage || isRootPage) {
+        if (!isRootPage) {
             content.push(<Breadcrumbs {...this.props} key={makeKey()} />);
         }
 
-        content.push(<PageHeader key={makeKey()}>{this.props.page.title} <small>{this.props.page.description}</small></PageHeader>);
+        content.push(<div key={makeKey()} style={theme.titleBlock}><span style={theme.title}>{this.props.page.title}</span> <span style={theme.subtitle}>- {this.props.page.description}</span></div>);
 
 
         var contentRendered = React.createElement(this.props.renderContent, this.props);
-        content.push(<span key={makeKey()}>{contentRendered}</span>);
+        content.push(<div key={makeKey()} style={theme.contentBlock}>{contentRendered}</div>);
 
-        content.push(<hr key={makeKey()} />);
         content.push(<Sitemap {...this.props} routeHash={this.props.page.primaryRouteHash} key={makeKey()} />);
 
-        content.push(<Copyright {...this.props} key={makeKey()} />);
+        content.push(<Copyright {...this.props} key={makeKey()} style={theme.copyrightBlock} />);
 
-        return (<div style={styles}>{content}</div>);
+        return (<div style={theme.pageBlock}>{content}</div>);
 
     }
 });

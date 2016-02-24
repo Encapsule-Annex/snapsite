@@ -12,7 +12,7 @@
                 "seed": "4pJr9UX5Q9aIn2yudW138Q",
                 "url": "http://github.com/Encapsule/snapsite",
                 "title": "snapsite",
-                "description": "snapsite website generator documentation.",
+                "description": "Encapsule.io snapsite website generator project homepage.",
                 "copyright": "Copyright (C) 2016 Encapsule.io"
             },
             "generator": {
@@ -36,8 +36,8 @@
                             "primaryRouteHash": "02413fb0",
                             "primaryRoute": "/",
                             "title": "snapsite",
-                            "description": "Encapsule/snapsite website generator homepage.",
-                            "tooltip": "Jump back to the top of the site...",
+                            "description": "Encapsule/snapsite website generator project homepage.",
+                            "tooltip": "Jump to the snapsite homepage...",
                             "rank": 0
                         }
                     },
@@ -297,7 +297,7 @@
                 "output": {
                     "filename": "[name].js",
                     "chunkFilename": "[id].js",
-                    "path": "/home/cdr/code/encapsule/snapsite/docs/output/client",
+                    "path": "/home/cdr/code/encapsule/snapsite.gh-pages",
                     "libraryTarget": "umd"
                 },
                 "module": {
