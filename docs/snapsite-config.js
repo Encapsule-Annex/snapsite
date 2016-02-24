@@ -38,7 +38,7 @@ module.exports = {
                 },
                 // Styles to apply to breadcrumbs block
                 breadcrumbsBlock: {
-                    backgroundColor: '#F0F0F0',
+                    backgroundColor: '#F7F7F7',
                     padding: '0.25em',
                     paddingLeft: '1em',
                     boxShadow: '0px 4px 8px 1px #DDDDDD'
@@ -66,10 +66,10 @@ module.exports = {
                 },
                 // Styles to apply to DIV containing the copyright
                 copyrightBlock: {
-                    backgroundColor: '#F0F0F0',
+                    backgroundColor: "#F7F7F7",
                     padding: '0.25em',
                     paddingRight: '1em',
-                    boxShadow: '0px 4px 8px 1px #DDDDDD',
+                    boxShadow: '0px 2px 8px 0px #F0F0F0 inset',
                     textAlign: 'right'
                 }
             }

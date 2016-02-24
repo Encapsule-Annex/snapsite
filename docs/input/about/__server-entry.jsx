@@ -4,14 +4,14 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Server UX render entry entry point for snapsite snapsite route 'bbaf163f'.
-  This script is called by the snapsite compilation process to pre-render
+  Server UX render entry entry point for snapsite  route 'bbaf163f'.
+  This script is called by the  compilation process to pre-render
   HTML5  pages. This script is also leveraged at runtime by the  Node.js
   webserver process for website's that leverage custom server-side business
   logic.
 
-  Produced by Encapsule/snapsite v0.0.5 [test build not watermarked]
-  Site build instance: [0 [test build not assigned ID]]
+  Produced by Encapsule/ v 
+  Site build instance: [ ]
 */
 // ======================================================================
 
@@ -22,7 +22,7 @@ const ARCCORE = SNAPRT.arccore;
 const React = SNAPRT.react;
 const ReactDOMServer = require('react-dom/server');
 
-// Load the React data context prepared by snapsite.
+// Load the React data context prepared by .
 var reactContextData = require('json!./__page-context');
 
 // Convert the serialized pages digraph model into an in-memory graph DB.
@@ -36,7 +36,7 @@ reactContextData.pagesGraph = factoryResponse.result;
 // Load the developer-defined React component responsible for rendering
 // page-specific content from (a) the React data context (b) user input
 // (c) local storage (d) communication with remote servers.
-var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
+var reactContentComponent = require('./content.jsx');
 
 // Specialize the content rendering behavior of <SnapPage>.
 reactContextData.renderContent = reactContentComponent;

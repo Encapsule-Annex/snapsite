@@ -43,11 +43,9 @@ var SnapPage = React.createClass({
         var contentRendered = React.createElement(this.props.renderContent, this.props);
         content.push(<div key={makeKey()} style={theme.contentBlock}>{contentRendered}</div>);
 
-        content.push(<Sitemap {...this.props} routeHash={this.props.page.primaryRouteHash} key={makeKey()} />);
-
         content.push(<Copyright {...this.props} key={makeKey()} style={theme.copyrightBlock} />);
 
-        return (<div style={theme.pageBlock}>{content}</div>);
+        return (<div style={theme.pageBlock}>{content}<br /></div>);
 
     }
 });

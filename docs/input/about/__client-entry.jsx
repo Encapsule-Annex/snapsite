@@ -4,12 +4,12 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Main client entry point for snapsite snapsite route 'bbaf163f'.
+  Main client entry point for snapsite  route 'bbaf163f'.
   This script will be called when the HTML5 document published at
   URL 'http://github.com/Encapsule/snapsite/about' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.5 [test build not watermarked]
-  Site build instance: [0 [test build not assigned ID]]
+  Produced by Encapsule/ v 
+  Site build instance: [ ]
 */
 // ======================================================================
 
@@ -21,7 +21,7 @@ const ARCCORE = SNAPRT.arccore;
 const React = SNAPRT.react;
 const ReactDOM = SNAPRT.reactDOM;
 
-// Load the React data context prepared by snapsite.
+// Load the React data context prepared by .
 var reactContextData = require('json!./__page-context');
 
 // Convert the serialized pages digraph model into an in-memory graph DB.
@@ -32,18 +32,18 @@ if (factoryResponse.error) {
 // Replace the serialized digraph model with a runtime DirectedGraph container.
 reactContextData.pagesGraph = factoryResponse.result;
 
-console.log("snapsite client app initializing on route '/about'...");
+console.log(" client app initializing on route '/about'...");
 console.log("Page [snapsite :: About] (bbaf163f) Copyright (C) 2016 Encapsule.io");
-console.log("Powered by Encapsule/snapsite v0.0.5 // " +
+console.log("Powered by Encapsule/ v // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);
-console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
+console.log("Please follow @Encapsule on Twitter for  news & updates. https://twitter.com/Encapsule");
 
 // Load the developer-defined React component responsible for rendering
 // page-specific content from (a) the React data context (b) user input
 // (c) local storage (d) communication with remote servers.
 
-var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
+var reactContentComponent = require('./content.jsx');
 
 // Specialize the content rendering behavior of <SnapPage>.
 reactContextData.renderContent = reactContentComponent;

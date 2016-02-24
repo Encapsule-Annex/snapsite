@@ -16,4 +16,6 @@
 */
 // ======================================================================
 
-module.exports = require('{{snapsiteModule}}');
+var snaprt = require('{{snapsiteModule}}');
+snaprt.generator = '{{generator}}';
+module.exports = snaprt;

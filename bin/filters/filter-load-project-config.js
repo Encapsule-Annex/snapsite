@@ -100,7 +100,6 @@ var factoryResponse = ARCCORE.filter.create({
                 normalizedConfig.dirs.output[property] = PATH.join(runtimeDirs.projectRootDirectory, relativePath);
             }
 
-            /*
             normalizedConfig.generator = {
                 build: {
                     time: buildTimeDefault,
@@ -108,7 +107,6 @@ var factoryResponse = ARCCORE.filter.create({
                     hash: ARCCORE.identifier.irut.fromEther()
                 }
             };
-            */
 
             normalizedConfig.site.copyright = "Copyright (C) " + date.getFullYear() + " " + normalizedConfig.org.name;
 

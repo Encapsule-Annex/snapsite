@@ -20,7 +20,7 @@
                 },
                 "pageBlock": {},
                 "breadcrumbsBlock": {
-                    "backgroundColor": "#F0F0F0",
+                    "backgroundColor": "#F7F7F7",
                     "padding": "0.25em",
                     "paddingLeft": "1em",
                     "boxShadow": "0px 4px 8px 1px #DDDDDD"
@@ -43,10 +43,10 @@
                     "margin": "1em"
                 },
                 "copyrightBlock": {
-                    "backgroundColor": "#F0F0F0",
+                    "backgroundColor": "#F7F7F7",
                     "padding": "0.25em",
                     "paddingRight": "1em",
-                    "boxShadow": "0px 4px 8px 1px #DDDDDD",
+                    "boxShadow": "0px 2px 8px 0px #F0F0F0 inset",
                     "textAlign": "right"
                 }
             }
@@ -54,9 +54,9 @@
     },
     "generator": {
         "build": {
-            "time": 0,
-            "date": "[test build not watermarked]",
-            "hash": "[test build not assigned ID]"
+            "time": 1456313024363,
+            "date": "Wed Feb 24 2016 03:23:44 GMT-0800 (PST)",
+            "hash": "On9lk2n8RfehwzEk-QU_Pg"
         },
         "agent": {
             "name": "snapsite",
@@ -88,7 +88,7 @@
                     "primaryRouteHash": "bbaf163f",
                     "primaryRoute": "/about",
                     "title": "About",
-                    "description": "Library dependencies, build details.",
+                    "description": "snapsite homepage build info & runtime dependencies",
                     "tooltip": "Review snapsite build and dependencies...",
                     "rank": 100,
                     "children": []
