@@ -51,6 +51,34 @@ var factoryResponse = ARCCORE.filter.create({
                 var thisRouteDescriptor = routeHashGraph.getVertexProperty(routeHash);
                 var thisRouteConfig = thisRouteDescriptor.routeConfig;
 
+                // Sort the children by rank (useful for building menus).
+                var children = [];
+                var outEdges = routeHashGraph.outEdges(routeHash);
+                for (var edge of outEdges) {
+                    if (-1 === routeHashes.indexOf(edge.v))
+                        continue; // skip routes not bound to ReactJS provider
+                    console.log(JSON.stringify(edge));
+                    var childRouteDescriptor = routeHashGraph.getVertexProperty(edge.v);
+                    var childRank = childRouteDescriptor.routeConfig.rank;
+                    console.log(" child " + edge.v + " rank=" + childRank);
+                    if (children[childRank] === undefined) {
+                        children[childRank] = {};
+                    }
+                    children[childRank][childRouteDescriptor.routeConfig.title] = edge.v;
+                }
+
+                var childrenFinal = []
+                var index = 0;
+
+                while (index < children.length) {
+                    if (children[index] !== null) {
+                        for (var key in children[index]) {
+                            childrenFinal.push(children[index][key]);
+                        }
+                    }
+                    index++;
+                }
+
                 var pageContext = {
                     primaryRouteHash: thisRouteDescriptor.primaryRouteHash,
                     primaryRoute: thisRouteDescriptor.primaryRoute,
@@ -58,6 +86,7 @@ var factoryResponse = ARCCORE.filter.create({
                     description: thisRouteConfig.description,
                     tooltip: thisRouteConfig.tooltip,
                     rank: thisRouteConfig.rank,
+                    children: childrenFinal
                 };
                 pagesGraph.addVertex({ u: routeHash, p: pageContext });
                 pagesContext[routeHash] = thisRouteConfig.providers.ReactJS;

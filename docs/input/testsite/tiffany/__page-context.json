@@ -22,6 +22,7 @@
                 "breadcrumbsBlock": {
                     "backgroundColor": "#F0F0F0",
                     "padding": "0.25em",
+                    "paddingLeft": "1em",
                     "boxShadow": "0px 4px 8px 1px #DDDDDD"
                 },
                 "titleBlock": {
@@ -72,9 +73,25 @@
                     "primaryRouteHash": "02413fb0",
                     "primaryRoute": "/",
                     "title": "snapsite",
-                    "description": "Encapsule/snapsite website generator project homepage.",
-                    "tooltip": "Jump to the snapsite homepage...",
-                    "rank": 0
+                    "description": "website generator project",
+                    "tooltip": "Jump to the homepage...",
+                    "rank": 0,
+                    "children": [
+                        "556295b3",
+                        "bbaf163f"
+                    ]
+                }
+            },
+            {
+                "u": "bbaf163f",
+                "p": {
+                    "primaryRouteHash": "bbaf163f",
+                    "primaryRoute": "/about",
+                    "title": "About",
+                    "description": "Library dependencies, build details.",
+                    "tooltip": "Review snapsite build and dependencies...",
+                    "rank": 100,
+                    "children": []
                 }
             },
             {
@@ -85,7 +102,15 @@
                     "title": "Test Pages",
                     "description": "A collection of simple test pages for experimentation.",
                     "tooltip": "Jump to test pages...",
-                    "rank": 9
+                    "rank": 9,
+                    "children": [
+                        "f243d161",
+                        "587cc689",
+                        "57b4d1df",
+                        "b0f90273",
+                        "0261711c",
+                        "7d516a9c"
+                    ]
                 }
             },
             {
@@ -96,7 +121,10 @@
                     "title": "About",
                     "description": "Learn about Encapsule.io.",
                     "tooltip": "About Encapsule.io...",
-                    "rank": 0
+                    "rank": 0,
+                    "children": [
+                        "3ecfb36e"
+                    ]
                 }
             },
             {
@@ -107,7 +135,8 @@
                     "title": "Blog",
                     "description": "Encapsule.io web development blog.",
                     "tooltip": "Encapsule.io blog...",
-                    "rank": 0
+                    "rank": 0,
+                    "children": []
                 }
             },
             {
@@ -118,7 +147,8 @@
                     "title": "Hello, Colter",
                     "description": "This is a test. Hello!",
                     "tooltip": "Jump to Hello, Colter...",
-                    "rank": 0
+                    "rank": 0,
+                    "children": []
                 }
             },
             {
@@ -129,7 +159,8 @@
                     "title": "Documentation",
                     "description": "Encapsule tools, and libaries documentation library.",
                     "tooltip": "Browse technical documentation...",
-                    "rank": 0
+                    "rank": 0,
+                    "children": []
                 }
             },
             {
@@ -140,7 +171,8 @@
                     "title": "Hello, John",
                     "description": "A test page to demonstrate some basic capabilities.",
                     "tooltip": "Jump to the Hello, John demo page...",
-                    "rank": 0
+                    "rank": 0,
+                    "children": []
                 }
             },
             {
@@ -151,7 +183,8 @@
                     "title": "Hello, Tiffany",
                     "description": "This is a simple demo page.",
                     "tooltip": "Jump to Tiff's demo page...",
-                    "rank": 0
+                    "rank": 0,
+                    "children": []
                 }
             },
             {
@@ -162,11 +195,18 @@
                     "title": "Contact",
                     "description": "Contact information and directions to Encapsule.io.",
                     "tooltip": "Contact information...",
-                    "rank": 0
+                    "rank": 0,
+                    "children": []
                 }
             }
         ],
         "elist": [
+            {
+                "e": {
+                    "u": "02413fb0",
+                    "v": "bbaf163f"
+                }
+            },
             {
                 "e": {
                     "u": "02413fb0",
@@ -224,11 +264,13 @@
         "description": "This is a simple demo page.",
         "tooltip": "Jump to Tiff's demo page...",
         "rank": 0,
+        "children": [],
         "context": {}
     },
     "lookup": {
         "routeHashToRouteMap": {
             "02413fb0": "/",
+            "bbaf163f": "/about",
             "556295b3": "/testsite",
             "f243d161": "/testsite/about",
             "587cc689": "/testsite/blog",
@@ -241,6 +283,7 @@
         },
         "routeToRouteHashMap": {
             "/": "02413fb0",
+            "/about": "bbaf163f",
             "/testsite": "556295b3",
             "/testsite/about": "f243d161",
             "/testsite/blog": "587cc689",

@@ -20,7 +20,7 @@ var Breadcrumbs = React.createClass({
             breadcrumbs.unshift(" / ");
             breadcrumbs.unshift(<RouteHashLink {...this.props} routeHash={routeHash} active={false} key={"breadcrumbs" + routeHash} />);
         }
-        return (<div style={theme.breadcrumbsBlock}>>> {breadcrumbs}</div>);
+        return (<div style={theme.breadcrumbsBlock}>{breadcrumbs}</div>);
     }
 });
 

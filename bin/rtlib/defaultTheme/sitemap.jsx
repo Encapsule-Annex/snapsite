@@ -9,36 +9,23 @@ const RouteHashLink = require('./routehashlink.jsx');
 
 var Sitemap = React.createClass({
     render: function() {
-
-        var digraph = this.props.pagesGraph;
+        var pagesGraph = this.props.pagesGraph;
         var routeHash = this.props.routeHash;
-
-        var routesCount = digraph.verticesCount();
-
+        var routesCount = pagesGraph.verticesCount();
         var self = this;
-
+        // inner render is recursive.
         var renderRoute = function(route_) {
-            var routeProps = digraph.getVertexProperty(route_);
-            var outDegree = digraph.outDegree(route_);
             var children = [];
-            if (outDegree) {
-                var outEdges = digraph.outEdges(route_);
-                var adjacent = outEdges.map(function(e) { return e.v; });
-                adjacent.forEach(function(r_) {
-                    children.push(renderRoute(r_));
-                });
-            }
-            var routeProps = digraph.getVertexProperty(route_);
-
-            if (children.length) {
-                return (<ul key={"list"+route_}><li key={route_}><RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} /> - {routeProps.description}{children}</li></ul>);
-            } else {
-                return (<ul key={"list"+route_}><li key={route_}><RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} /> - {routeProps.description}</li></ul>);
-            }
-        }
-
-        return (<div>{renderRoute(digraph.getRootVertices()[0])}</div>);
-
+            var routeProps = pagesGraph.getVertexProperty(route_);
+            children = routeProps.children.map(function(r_) { return renderRoute(r_); });
+            return (<ul key={"list"+route_}><li key={route_}>
+                    <RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} />
+                    - {routeProps.description}{children}
+                    </li></ul>
+                   );
+        } // end renderRoute
+        // render the sitemap recursively.
+        return (<div>{renderRoute(pagesGraph.getRootVertices()[0])}</div>);
     }
 });
 

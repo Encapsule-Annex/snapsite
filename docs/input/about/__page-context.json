@@ -258,16 +258,13 @@
         ]
     },
     "page": {
-        "primaryRouteHash": "02413fb0",
-        "primaryRoute": "/",
-        "title": "snapsite",
-        "description": "website generator project",
-        "tooltip": "Jump to the homepage...",
-        "rank": 0,
-        "children": [
-            "556295b3",
-            "bbaf163f"
-        ],
+        "primaryRouteHash": "bbaf163f",
+        "primaryRoute": "/about",
+        "title": "About",
+        "description": "Library dependencies, build details.",
+        "tooltip": "Review snapsite build and dependencies...",
+        "rank": 100,
+        "children": [],
         "context": {}
     },
     "lookup": {

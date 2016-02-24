@@ -23,9 +23,6 @@ var factoryResponse = ARCCORE.filter.create({
             const providerLoaderRequest = request_.providerLoadRequest;
             const projectManifest = providerLoaderRequest.projectManifest;
 
-            console.log("This is webpack config generator and I think I'm installed in directory " + __dirname);
-
-
             var webpackConfig = {
                 target: request_.options.target,
                 resolveLoader: {

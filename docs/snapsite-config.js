@@ -40,6 +40,7 @@ module.exports = {
                 breadcrumbsBlock: {
                     backgroundColor: '#F0F0F0',
                     padding: '0.25em',
+                    paddingLeft: '1em',
                     boxShadow: '0px 4px 8px 1px #DDDDDD'
                 },
                 // Styles to apply to the title block
