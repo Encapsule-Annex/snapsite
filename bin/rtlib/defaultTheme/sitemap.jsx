@@ -1,6 +1,7 @@
 ////
-// sitemap.jsx - a simple ReactJS component.
-//
+// sitemap.jsx - renders a simple sitemap indicating the
+// currently selected page if a route hash is specified
+// via React props.
 
 const ARCCORE = require('arccore');
 const React = require('react');
@@ -12,20 +13,28 @@ var Sitemap = React.createClass({
         var pagesGraph = this.props.pagesGraph;
         var routeHash = this.props.routeHash;
         var routesCount = pagesGraph.verticesCount();
+
+
         var self = this;
         // inner render is recursive.
-        var renderRoute = function(route_) {
+        var renderRoute = function(route_, rank_) {
             var children = [];
             var routeProps = pagesGraph.getVertexProperty(route_);
-            children = routeProps.children.map(function(r_) { return renderRoute(r_); });
-            return (<ul key={"list"+route_}><li key={route_}>
-                    <RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} />
+            children = routeProps.children.map(function(r_) { return renderRoute(r_, rank_+1); });
+
+            var indentStyle = {
+                paddingLeft: '' + rank_ + 'em',
+                marginLeft: '0px'
+            }
+            return (<div key={"list"+route_} style={indentStyle}><span>
+                    &bull; <RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} />
                     - {routeProps.description}{children}
-                    </li></ul>
+                    </span></div>
                    );
         } // end renderRoute
         // render the sitemap recursively.
-        return (<div>{renderRoute(pagesGraph.getRootVertices()[0])}</div>);
+        return (<div>{renderRoute(pagesGraph.getRootVertices()[0],0)}</div>);
+        rankLevel++;
     }
 });
 

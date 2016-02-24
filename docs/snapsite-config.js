@@ -69,7 +69,7 @@ module.exports = {
                     backgroundColor: "#F7F7F7",
                     padding: '0.25em',
                     paddingRight: '1em',
-                    boxShadow: '0px 2px 8px 0px #F0F0F0 inset',
+                    boxShadow: '0px 1px 8px 0px #CCCCCC inset',
                     textAlign: 'right'
                 }
             }

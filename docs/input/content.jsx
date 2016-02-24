@@ -7,7 +7,7 @@ module.exports = React.createClass({
     render: function() {
         return (<span>
                <span>Hello, world!</span>
-               <Sitemap {...this.props} />
+               <Sitemap {...this.props} routeHash={this.props.page.primaryRouteHash} />
                </span>
                );
     }

@@ -17,5 +17,5 @@
 // ======================================================================
 
 var snaprt = require('/home/cdr/encapsule/snapsite/bin/rtlib');
-snaprt.generator = '{&quot;build&quot;:{&quot;time&quot;:1456313024363,&quot;date&quot;:&quot;Wed Feb 24 2016 03:23:44 GMT-0800 (PST)&quot;,&quot;hash&quot;:&quot;On9lk2n8RfehwzEk-QU_Pg&quot;},&quot;agent&quot;:{&quot;name&quot;:&quot;snapsite&quot;,&quot;version&quot;:&quot;0.0.5&quot;}}';
+snaprt.generator = '{&quot;build&quot;:{&quot;time&quot;:1456348208054,&quot;date&quot;:&quot;Wed Feb 24 2016 13:10:08 GMT-0800 (PST)&quot;,&quot;hash&quot;:&quot;BQR_pV96R4GFXTKp3NYdIQ&quot;},&quot;agent&quot;:{&quot;name&quot;:&quot;snapsite&quot;,&quot;version&quot;:&quot;0.0.5&quot;}}';
 module.exports = snaprt;

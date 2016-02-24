@@ -46,7 +46,7 @@
                     "backgroundColor": "#F7F7F7",
                     "padding": "0.25em",
                     "paddingRight": "1em",
-                    "boxShadow": "0px 2px 8px 0px #F0F0F0 inset",
+                    "boxShadow": "0px 1px 8px 0px #CCCCCC inset",
                     "textAlign": "right"
                 }
             }
@@ -54,9 +54,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456313024363,
-            "date": "Wed Feb 24 2016 03:23:44 GMT-0800 (PST)",
-            "hash": "On9lk2n8RfehwzEk-QU_Pg"
+            "time": 1456348208054,
+            "date": "Wed Feb 24 2016 13:10:08 GMT-0800 (PST)",
+            "hash": "BQR_pV96R4GFXTKp3NYdIQ"
         },
         "agent": {
             "name": "snapsite",
