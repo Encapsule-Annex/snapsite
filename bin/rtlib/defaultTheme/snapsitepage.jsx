@@ -11,6 +11,7 @@ const ARRCORE = require('arccore');
 const Breadcrumbs = require('./breadcrumbs.jsx');
 const Copyright = require('./copyright.jsx');
 const Sitemap = require('./sitemap.jsx');
+const SnapBug = require('./snapsitebug.jsx');
 
 const ReactBootstrap = require('react-bootstrap');
 const PageHeader = ReactBootstrap.PageHeader;
@@ -33,17 +34,20 @@ var SnapPage = React.createClass({
 
         var isRootPage = (this.props.pagesGraph.inDegree(this.props.page.primaryRouteHash) === 0);
 
-        if (!isRootPage) {
+        if (isRootPage) {
+            content.push(<div key={makeKey()} style={theme.titleBlock}><span style={theme.title}>{this.props.site.title}</span> <span style={theme.subtitle}>- {this.props.page.description}</span></div>);
+        } else {
             content.push(<Breadcrumbs {...this.props} key={makeKey()} />);
+            content.push(<div key={makeKey()} style={theme.titleBlock}><span style={theme.title}>{this.props.page.title}</span> <span style={theme.subtitle}>- {this.props.page.description}</span></div>)
         }
 
-        content.push(<div key={makeKey()} style={theme.titleBlock}><span style={theme.title}>{this.props.page.title}</span> <span style={theme.subtitle}>- {this.props.page.description}</span></div>);
 
 
         var contentRendered = React.createElement(this.props.renderContent, this.props);
         content.push(<div key={makeKey()} style={theme.contentBlock}>{contentRendered}</div>);
 
         content.push(<Copyright {...this.props} key={makeKey()} style={theme.copyrightBlock} />);
+        content.push(<SnapBug {...this.props} key={makeKey()} />);
 
         return (<div style={theme.pageBlock}>{content}<br /></div>);
 

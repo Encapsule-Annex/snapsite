@@ -138,7 +138,6 @@ var factoryResponse = ARCCORE.filter.create({
 
                 // pageDataContextSerialize.snapsiteModule = PATH.join(routeToRootRelativePath, 'client-libs');
                 pageDataContextSerialize.snapsiteModule = PATH.join(__dirname, '../rtlib');
-                pageDataContextSerialize.generator = JSON.stringify(pageDataContextSerialize.generator);
 
                 var clientRuntimeExtensionPath = PATH.join(routeSourcePath, 'client-runtime.js');
                 if (FS.existsSync(clientRuntimeExtensionPath) && FS.statSync(clientRuntimeExtensionPath).isFile()) {

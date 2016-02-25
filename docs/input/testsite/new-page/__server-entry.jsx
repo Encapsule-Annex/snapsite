@@ -4,14 +4,14 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Server UX render entry entry point for snapsite  route '0261711c'.
-  This script is called by the  compilation process to pre-render
+  Server UX render entry entry point for snapsite snapsite route '0261711c'.
+  This script is called by the snapsite compilation process to pre-render
   HTML5  pages. This script is also leveraged at runtime by the  Node.js
   webserver process for website's that leverage custom server-side business
   logic.
 
-  Produced by Encapsule/ v 
-  Site build instance: [ ]
+  Produced by Encapsule/snapsite v0.0.7 Wed Feb 24 2016 23:08:10 GMT-0800 (PST)
+  Site build instance: [1456384090785 KM_Byw2vRgqvW0JwbHuNug]
 */
 // ======================================================================
 
@@ -22,7 +22,7 @@ const ARCCORE = SNAPRT.arccore;
 const React = SNAPRT.react;
 const ReactDOMServer = require('react-dom/server');
 
-// Load the React data context prepared by .
+// Load the React data context prepared by snapsite.
 var reactContextData = require('json!./__page-context');
 
 // Convert the serialized pages digraph model into an in-memory graph DB.

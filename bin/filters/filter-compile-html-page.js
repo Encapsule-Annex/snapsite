@@ -58,14 +58,9 @@ var factoryResponse = ARCCORE.filter.create({
             reactDataContext.pagesGraph = graphResponse.result;
             reactDataContext.contentRender = serverViewRenderFunction;
 
-
-            // Render (i.e. generate) an UTF8 encode string containing the innerHTML
-            // to be inserted into <html><body><div id="content" /></body></html>.
             try {
-                //reactDataContext.contentHtml = REACTDOMSERVER.renderToStaticMarkup(
-                // REACT.createElement(serverViewRenderFunction, reactDataContext)
-                //);
-
+                // Render (i.e. generate) an UTF8 encode string containing the innerHTML
+                // to be inserted into <html><body><div id="content" /></body></html>.
                 renderResponse = serverViewRenderFunction();
                 if (renderResponse.error) {
                     errors.unshift(renderResponse.error);

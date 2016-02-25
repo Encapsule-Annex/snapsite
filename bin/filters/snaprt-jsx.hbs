@@ -17,5 +17,14 @@
 // ======================================================================
 
 var snaprt = require('{{snapsiteModule}}');
-snaprt.generator = '{{generator}}';
+snaprt.generator = {
+    build: {
+        time: '{{generator.build.time}}',
+        date: '{{generator.build.date}}'
+    },
+    agent: {
+        name: '{{generator.agent.name}}',
+        version: '{{generator.agent.version}}'
+    }
+};
 module.exports = snaprt;

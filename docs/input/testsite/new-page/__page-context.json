@@ -3,7 +3,7 @@
         "seed": "koJdft_STGCMJe6dZcq5kg",
         "name": "Encapsule.io",
         "location": "Bellevue, WA USA",
-        "url": "https://encapsule.io",
+        "url": "http://encapsule.github.io/snapsite",
         "email": "admin@mysite.com"
     },
     "site": {
@@ -30,12 +30,57 @@
                     "fontDecoration": "underline",
                     "color": "#990099"
                 },
+                "header1": {
+                    "fontSize": "22pt",
+                    "fontWeight": "bold",
+                    "color": "#CCCCCC",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header2": {
+                    "fontSize": "20pt",
+                    "fontWeight": "bold",
+                    "color": "#BBBBBB",
+                    "borderBottom": "1px solid #EEEEEE",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header3": {
+                    "fontSize": "18pt",
+                    "fontWeight": "bold",
+                    "color": "#AAAAAA",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header4": {
+                    "fontSize": "16pt",
+                    "fontWeight": "bold",
+                    "color": "#999999",
+                    "borderBottom": "1px solid #EEEEEE",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header5": {
+                    "fontSize": "14pt",
+                    "fontWeight": "bold",
+                    "color": "#888888",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
+                "header6": {
+                    "fontSize": "12pt",
+                    "fontWeight": "bold",
+                    "color": "#777777",
+                    "borderBottom": "1px solid #EEEEEE",
+                    "marginTop": "0.5em",
+                    "marginBottom": "0.25em"
+                },
                 "pageBlock": {},
                 "breadcrumbsBlock": {
-                    "backgroundColor": "#FCFCFC",
+                    "backgroundColor": "#EEE",
                     "padding": "0.25em",
                     "paddingLeft": "1em",
-                    "boxShadow": "0px 4px 8px 1px #DDDDDD"
+                    "boxShadow": "0px 0px 4px 2px #CCC"
                 },
                 "titleBlock": {
                     "margin": "1em",
@@ -55,24 +100,38 @@
                     "margin": "1em"
                 },
                 "copyrightBlock": {
-                    "backgroundColor": "#FCFCFC",
+                    "backgroundColor": "#EEE",
                     "padding": "0.25em",
                     "paddingRight": "1em",
-                    "boxShadow": "0px 1px 8px 0px #DDD inset",
+                    "boxShadow": "0px 1px 4px 0px #CCC inset",
                     "textAlign": "right"
+                },
+                "snapBugBlock": {
+                    "fontFamily": "Courier",
+                    "fontSize": "6pt",
+                    "color": "#ACB",
+                    "paddingBotton": "1em",
+                    "margin": "0px",
+                    "marginTop": "2em",
+                    "marginRight": "1em",
+                    "textAlign": "right"
+                },
+                "snapBugLink": {
+                    "textDecoration": "none",
+                    "color": "#999"
                 }
             }
         }
     },
     "generator": {
         "build": {
-            "time": 1456363986996,
-            "date": "Wed Feb 24 2016 17:33:06 GMT-0800 (PST)",
-            "hash": "vYfSWpAKS0im8z5LzG0ihQ"
+            "time": 1456384090785,
+            "date": "Wed Feb 24 2016 23:08:10 GMT-0800 (PST)",
+            "hash": "KM_Byw2vRgqvW0JwbHuNug"
         },
         "agent": {
             "name": "snapsite",
-            "version": "0.0.6"
+            "version": "0.0.7"
         }
     },
     "pagesGraph": {

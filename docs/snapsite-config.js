@@ -3,7 +3,7 @@
 module.exports = {
     org: {
         name: "Encapsule.io",
-        url: "https://encapsule.io",
+        url: "http://encapsule.github.io/snapsite",
         location: "Bellevue, WA USA",
         seed: "koJdft_STGCMJe6dZcq5kg"
     },
@@ -32,17 +32,65 @@ module.exports = {
                     padding: '0px',
                     margin: 'none'
                 },
+                // Default style for A tags
                 link: {
                     fontDecoration: 'none',
                     color: '#0099FF'
                 },
+                // Default style for A:hover (simulated)
                 linkHover: {
                     fontDecoration: 'underline',
                     color: '#CC9900'
                 },
+                // Default style for A:active (simulated)
                 linkLoading: {
                     fontDecoration: 'underline',
                     color: '#990099'
+                },
+                header1: {
+                    fontSize: '22pt',
+                    fontWeight: 'bold',
+                    color: '#CCCCCC',
+                    marginTop: '0.5em',
+                    marginBottom: '0.25em'
+                },
+                header2: {
+                    fontSize: '20pt',
+                    fontWeight: 'bold',
+                    color: '#BBBBBB',
+                    borderBottom: '1px solid #EEEEEE',
+                    marginTop: '0.5em',
+                    marginBottom: '0.25em'
+                },
+                header3: {
+                    fontSize: '18pt',
+                    fontWeight: 'bold',
+                    color: '#AAAAAA',
+                    marginTop: '0.5em',
+                    marginBottom: '0.25em'
+                },
+                header4: {
+                    fontSize: '16pt',
+                    fontWeight: 'bold',
+                    color: '#999999',
+                    borderBottom: '1px solid #EEEEEE',
+                    marginTop: '0.5em',
+                    marginBottom: '0.25em'
+                },
+                header5: {
+                    fontSize: '14pt',
+                    fontWeight: 'bold',
+                    color: '#888888',
+                    marginTop: '0.5em',
+                    marginBottom: '0.25em'
+                },
+                header6: {
+                    fontSize: '12pt',
+                    fontWeight: 'bold',
+                    color: '#777777',
+                    borderBottom: '1px solid #EEEEEE',
+                    marginTop: '0.5em',
+                    marginBottom: '0.25em'
                 },
                 // Styles to apply to top-level page content DIV within BODY (all visible HTML)
                 pageBlock: {
@@ -50,10 +98,10 @@ module.exports = {
                 },
                 // Styles to apply to breadcrumbs block
                 breadcrumbsBlock: {
-                    backgroundColor: '#FCFCFC',
+                    backgroundColor: '#EEE',
                     padding: '0.25em',
                     paddingLeft: '1em',
-                    boxShadow: '0px 4px 8px 1px #DDDDDD'
+                    boxShadow: '0px 0px 4px 2px #CCC'
                 },
                 // Styles to apply to the title block
                 titleBlock: {
@@ -78,11 +126,25 @@ module.exports = {
                 },
                 // Styles to apply to DIV containing the copyright
                 copyrightBlock: {
-                    backgroundColor: "#FCFCFC",
+                    backgroundColor: '#EEE',
                     padding: '0.25em',
                     paddingRight: '1em',
-                    boxShadow: '0px 1px 8px 0px #DDD inset',
+                    boxShadow: '0px 1px 4px 0px #CCC inset',
                     textAlign: 'right'
+                },
+                snapBugBlock: {
+                    fontFamily: 'Courier',
+                    fontSize: '6pt',
+                    color: '#ACB',
+                    paddingBotton: '1em',
+                    margin: '0px',
+                    marginTop: '2em',
+                    marginRight: '1em',
+                    textAlign: 'right'
+                },
+                snapBugLink: {
+                    textDecoration: 'none',
+                    color: '#999'
                 }
             }
         }

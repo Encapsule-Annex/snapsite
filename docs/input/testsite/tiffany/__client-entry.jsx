@@ -4,12 +4,12 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Main client entry point for snapsite  route '7d516a9c'.
+  Main client entry point for snapsite snapsite route '7d516a9c'.
   This script will be called when the HTML5 document published at
   URL 'http://github.com/Encapsule/snapsite/testsite/tiffany' loads in your browser.
 
-  Produced by Encapsule/ v 
-  Site build instance: [ ]
+  Produced by Encapsule/snapsite v0.0.7 Wed Feb 24 2016 23:08:10 GMT-0800 (PST)
+  Site build instance: [1456384090785 KM_Byw2vRgqvW0JwbHuNug]
 */
 // ======================================================================
 
@@ -21,7 +21,7 @@ const ARCCORE = SNAPRT.arccore;
 const React = SNAPRT.react;
 const ReactDOM = SNAPRT.reactDOM;
 
-// Load the React data context prepared by .
+// Load the React data context prepared by snapsite.
 var reactContextData = require('json!./__page-context');
 
 // Convert the serialized pages digraph model into an in-memory graph DB.
@@ -32,12 +32,12 @@ if (factoryResponse.error) {
 // Replace the serialized digraph model with a runtime DirectedGraph container.
 reactContextData.pagesGraph = factoryResponse.result;
 
-console.log(" client app initializing on route '/testsite/tiffany'...");
+console.log("snapsite client app initializing on route '/testsite/tiffany'...");
 console.log("Page [snapsite :: Hello, Tiffany] (7d516a9c) Copyright (C) 2016 Encapsule.io");
-console.log("Powered by Encapsule/ v // " +
+console.log("Powered by Encapsule/snapsite v0.0.7 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);
-console.log("Please follow @Encapsule on Twitter for  news & updates. https://twitter.com/Encapsule");
+console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
 // Load the developer-defined React component responsible for rendering
 // page-specific content from (a) the React data context (b) user input
