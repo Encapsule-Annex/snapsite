@@ -4,7 +4,7 @@
 
 ## Summary
 
-[Encapsule/snapsite](https://github.com/Encapsule/snapsite] is an experimental command line tool for compiling React JS websites from configuration files that's being developed to automate the task of documenting Encapsule libraries.
+[Encapsule/snapsite](https://github.com/Encapsule/snapsite) is an experimental command line tool for compiling React JS websites from configuration files that's being developed to reduce the time/effort required to build sophisticated documentation portals for technical projects.
 
 ## Status
 
