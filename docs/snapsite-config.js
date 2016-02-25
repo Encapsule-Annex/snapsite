@@ -32,13 +32,25 @@ module.exports = {
                     padding: '0px',
                     margin: 'none'
                 },
+                link: {
+                    fontDecoration: 'none',
+                    color: '#0099FF'
+                },
+                linkHover: {
+                    fontDecoration: 'underline',
+                    color: '#CC9900'
+                },
+                linkLoading: {
+                    fontDecoration: 'underline',
+                    color: '#990099'
+                },
                 // Styles to apply to top-level page content DIV within BODY (all visible HTML)
                 pageBlock: {
                     // margin: '1em'
                 },
                 // Styles to apply to breadcrumbs block
                 breadcrumbsBlock: {
-                    backgroundColor: '#F7F7F7',
+                    backgroundColor: '#FCFCFC',
                     padding: '0.25em',
                     paddingLeft: '1em',
                     boxShadow: '0px 4px 8px 1px #DDDDDD'
@@ -66,10 +78,10 @@ module.exports = {
                 },
                 // Styles to apply to DIV containing the copyright
                 copyrightBlock: {
-                    backgroundColor: "#F7F7F7",
+                    backgroundColor: "#FCFCFC",
                     padding: '0.25em',
                     paddingRight: '1em',
-                    boxShadow: '0px 1px 8px 0px #CCCCCC inset',
+                    boxShadow: '0px 1px 8px 0px #DDD inset',
                     textAlign: 'right'
                 }
             }

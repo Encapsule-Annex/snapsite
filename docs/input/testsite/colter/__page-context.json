@@ -18,9 +18,21 @@
                     "margin": "none",
                     "padding": "0px"
                 },
+                "link": {
+                    "fontDecoration": "none",
+                    "color": "#0099FF"
+                },
+                "linkHover": {
+                    "fontDecoration": "underline",
+                    "color": "#CC9900"
+                },
+                "linkLoading": {
+                    "fontDecoration": "underline",
+                    "color": "#990099"
+                },
                 "pageBlock": {},
                 "breadcrumbsBlock": {
-                    "backgroundColor": "#F7F7F7",
+                    "backgroundColor": "#FCFCFC",
                     "padding": "0.25em",
                     "paddingLeft": "1em",
                     "boxShadow": "0px 4px 8px 1px #DDDDDD"
@@ -43,10 +55,10 @@
                     "margin": "1em"
                 },
                 "copyrightBlock": {
-                    "backgroundColor": "#F7F7F7",
+                    "backgroundColor": "#FCFCFC",
                     "padding": "0.25em",
                     "paddingRight": "1em",
-                    "boxShadow": "0px 1px 8px 0px #CCCCCC inset",
+                    "boxShadow": "0px 1px 8px 0px #DDD inset",
                     "textAlign": "right"
                 }
             }
@@ -54,9 +66,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456359175607,
-            "date": "Wed Feb 24 2016 16:12:55 GMT-0800 (PST)",
-            "hash": "adjn98iOQ7aSo3m-T0rxVw"
+            "time": 1456363986996,
+            "date": "Wed Feb 24 2016 17:33:06 GMT-0800 (PST)",
+            "hash": "vYfSWpAKS0im8z5LzG0ihQ"
         },
         "agent": {
             "name": "snapsite",

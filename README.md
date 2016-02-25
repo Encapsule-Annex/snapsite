@@ -1,6 +1,18 @@
-# snapsite (prototype)
+![Encapsule.io](https://encapsule.io/images/blue-burst-encapsule.io-logo-251x64.png "Encapsule.io")
 
-`Encapsule/snapsite` is an experimental command line tool for compiling React JS websites from configuration files that's being developed to automate the task of documenting Encapsule libraries.
+# snapsite (prerelease)
+
+## Summary
+
+[Encapsule/snapsite](https://github.com/Encapsule/snapsite] is an experimental command line tool for compiling React JS websites from configuration files that's being developed to automate the task of documenting Encapsule libraries.
+
+## Status
+
+This project is under active development and is likely to change substantially before I make any effort to publicize its feature set and encourage others to try for themselves on their own projects. Please follow [@Encapsule.io](https://twitter.com/Encapsule) for update notifications.
+
+## Test Output
+
+It's still very crude (mostly disposable test pages linked into a simple site), but you can view a small static website (with client-side dynamism powered by React JS) that's been published to [this project's GitHub Project Page](http://encapsule.github.io/snapsite). To view the generated client source code (not yet optimized through webpack), view the gh-pages branch of the the [Encapsule/snapsite](https://github.com/Encapsule/snapsite) repository.
 
 ## Design Goals
 
