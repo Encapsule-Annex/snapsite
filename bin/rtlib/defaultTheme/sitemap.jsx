@@ -27,7 +27,7 @@ var Sitemap = React.createClass({
                 marginLeft: '0px'
             }
             return (<div key={"list"+route_} style={indentStyle}><span>
-                    &bull; <RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} />
+                    <RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} />
                     - {routeProps.description}{children}
                     </span></div>
                    );

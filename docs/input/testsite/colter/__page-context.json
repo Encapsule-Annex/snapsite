@@ -3,7 +3,7 @@
         "seed": "koJdft_STGCMJe6dZcq5kg",
         "name": "Encapsule.io",
         "location": "Bellevue, WA USA",
-        "url": "http://encapsule.github.io/snapsite",
+        "url": "https://encapsule.io",
         "email": "admin@mysite.com"
     },
     "site": {
@@ -20,27 +20,27 @@
                 },
                 "link": {
                     "fontDecoration": "none",
-                    "color": "#0099FF"
+                    "color": "#06C"
                 },
                 "linkHover": {
                     "fontDecoration": "underline",
-                    "color": "#CC9900"
+                    "color": "#090"
                 },
                 "linkLoading": {
                     "fontDecoration": "underline",
-                    "color": "#990099"
+                    "color": "#C00"
                 },
                 "xlink": {
                     "fontDecoration": "none",
-                    "color": "#00CC00"
+                    "color": "#090"
                 },
                 "xlinkHover": {
                     "fontDecoration": "underline",
-                    "color": "#CC9900"
+                    "color": "#06C"
                 },
                 "xlinkLoading": {
                     "fontDecoration": "underline",
-                    "color": "#990099"
+                    "color": "#C00"
                 },
                 "header1": {
                     "fontSize": "22pt",
@@ -137,9 +137,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456394332193,
-            "date": "Thu Feb 25 2016 01:58:52 GMT-0800 (PST)",
-            "hash": "Ybcgn7-wQB62zK65tjytEA"
+            "time": 1456400354379,
+            "date": "Thu Feb 25 2016 03:39:14 GMT-0800 (PST)",
+            "hash": "psXwuzzrQzy_NrenNhDMSw"
         },
         "agent": {
             "name": "snapsite",

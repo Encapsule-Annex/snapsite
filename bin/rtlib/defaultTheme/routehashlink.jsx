@@ -2,6 +2,7 @@
 // routehashlink.jsx
 
 const React = require('react');
+const Glyphicon = require('react-bootstrap').Glyphicon;
 
 var RouteHashLink = React.createClass({
     className: "RouteHashLink",
@@ -26,9 +27,9 @@ var RouteHashLink = React.createClass({
         var linkStyles = this.props.site.context.theme[this.state.loading?'linkLoading':(this.state.hover?'linkHover':'link')];
         var title = rootRoute?this.props.site.title:routeProps.title;
         if (active) {
-            return (<span><strong>{title}</strong></span>);
+            return (<span><strong>{title}</strong><Glyphicon glyph='pushpin' style={{fontSize: '8pt', color: '#666', marginLeft: '2px'}} /></span>);
         } else {
-            return (<a href={"./" + routeHash + ".html"} title={routeProps.tooltip} style={linkStyles} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onClick={this.clickLink}>{title}</a>);
+            return (<a href={"./" + routeHash + ".html"} title={routeProps.tooltip} style={linkStyles} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onClick={this.clickLink}><Glyphicon glyph='flash' style={{fontSize: '8pt', color: '#9CF'}} />{title}</a>);
         }
     }
 });

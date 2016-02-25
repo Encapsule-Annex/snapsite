@@ -3,7 +3,7 @@
 module.exports = {
     org: {
         name: "Encapsule.io",
-        url: "http://encapsule.github.io/snapsite",
+        url: "https://encapsule.io",
         location: "Bellevue, WA USA",
         seed: "koJdft_STGCMJe6dZcq5kg"
     },
@@ -35,32 +35,32 @@ module.exports = {
                 // Default style for internal A tags
                 link: {
                     fontDecoration: 'none',
-                    color: '#0099FF'
+                    color: '#06C'
                 },
                 // Default style for internal A:hover (simulated)
                 linkHover: {
                     fontDecoration: 'underline',
-                    color: '#CC9900'
+                    color: '#090',
                 },
                 // Default style for internal A:active (simulated)
                 linkLoading: {
                     fontDecoration: 'underline',
-                    color: '#990099'
+                    color: '#C00'
                 },
                 // Default style of external A tags
                 xlink: {
                     fontDecoration: 'none',
-                    color: '#00CC00'
+                    color: '#090'
                 },
                 // Default style for external A:hover (simulated)
                 xlinkHover: {
                     fontDecoration: 'underline',
-                    color: '#CC9900'
+                    color: '#06C'
                 },
                 // Default style for external A:active (simulated)
                 xlinkLoading: {
                     fontDecoration: 'underline',
-                    color: '#990099'
+                    color: '#C00'
                 },
                 header1: {
                     fontSize: '22pt',
