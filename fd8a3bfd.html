@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-----------------------------------------------------------------------
+    Encapsule.io snapsite :: overview
+    http://github.com/Encapsule/snapsite/about/overview
+    Copyright (C) 2016 Encapsule.io, Bellevue, WA USA
+
+    Built with Encapsule/snapsite v0.0.8
+    Thu Feb 25 2016 04:18:55 GMT-0800 (PST)
+    1456402735013 8l90KsV8SOmV7kguFA99dw
+    ----------------------------------------------------------------------->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>snapsite :: overview</title>
+    <meta name="description" content="A high-level overview of the tasks automated by snapsite." />
+    <!-- This site leverages react-bootstrap with bootstrap's CSS and glyphicon fonts. -->
+    <!-- Load just the Twitter bootstrap CSS and theme modules from CDN. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  </head>
+  <!-- Page content rendered with Facebook's React JS library. -->
+  <body style="margin: 0px; padding: 0px; border: none;"><div id="content"><div><div style="background-color:#EEE;padding:0.25em;padding-left:1em;box-shadow:0px 0px 4px 2px #CCC;"><a href="./02413fb0.html" title="Jump to the homepage..." style="font-decoration:none;color:#06C;"><span style="font-size:8pt;color:#9CF;" class="glyphicon glyphicon-flash"></span>snapsite</a> / <a href="./bbaf163f.html" title="Review snapsite build and dependencies..." style="font-decoration:none;color:#06C;"><span style="font-size:8pt;color:#9CF;" class="glyphicon glyphicon-flash"></span>About</a> / <span><strong>overview</strong><span style="font-size:8pt;color:#666;margin-left:2px;" class="glyphicon glyphicon-pushpin"></span></span></div><div style="margin:1em;border-bottom:1px solid #EEEEEE;"><span style="font-size:26pt;font-weight:bold;color:#999999;">overview</span> <span style="font-size:14pt;font-weight:medium;color:#CCCCCC;">- A high-level overview of the tasks automated by snapsite.</span></div><div style="margin:1em;"><div><div style="font-size:22pt;font-weight:bold;color:#CCCCCC;margin-top:0.5em;margin-bottom:0.25em;">snapsite task automation overview</div><p>snapsite v0.0.8 performs the following tasks in order to generate a website:</p><ul><li>Finds your package.json and checks for an optionally-specified location of the snapsite configuration module (JavaScript CommonJS module)</li><li>Loads your project configuration module</li><li>Enumerates a local directory structure specified in your configuration looking for route config modules</li><li>As route configuration modules are discovered, they are added to an in-memory graph of the site</li><li>The graph is analyzed and page-specific context views produced and serialized into each route input directory served by React JS</li><li>Server and client JavaScript entry point stubs are synthesized and written into each route input directory served by React JS</li><li>Server and client bundles for each route served by React JS are bundled via webpack and babel</li><li>The resultant server-side page render functions are loaded and used to pre-render the body content for all pages using context produced by snapsite from input sources.</li><li>HTML5 pages are generated for each route page from a common template that sets common headers appropriately, includes in the pre-rendered page content from the previous step, and links the page to client-side application bundle JavaScript responsible for client-side UX dynamism.</li></ul></div></div><div style="background-color:#EEE;padding:0.25em;padding-right:1em;box-shadow:0px 1px 4px 0px #CCC inset;text-align:right;">Copyright © 2016 <a href="https://encapsule.io" title="Follow link..." style="font-decoration:none;color:#090;"><span style="font-size:8pt;color:#CCC;" class="glyphicon glyphicon-link"></span>Encapsule.io</a> Bellevue, WA USA</div><div style="font-family:Courier;font-size:6pt;color:#ACB;padding-botton:1em;margin:0px;margin-top:2em;margin-right:1em;text-align:right;"><span class="glyphicon glyphicon-cog"></span> <a href="https://github.com/Encapsule/snapsite" title="View source on GitHub..." style="text-decoration:none;color:#999;">Encapsule/snapsite</a> v0.0.8</div><br/></div></div><script type="text/JavaScript" src="./fd8a3bfd.js" ></script></body>
+</html>

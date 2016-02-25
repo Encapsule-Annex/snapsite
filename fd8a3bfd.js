@@ -62,9 +62,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for snapsite snapsite route '556295b3'.
+	  Main client entry point for snapsite snapsite route 'fd8a3bfd'.
 	  This script will be called when the HTML5 document published at
-	  URL 'http://github.com/Encapsule/snapsite/testsite' loads in your browser.
+	  URL 'http://github.com/Encapsule/snapsite/about/overview' loads in your browser.
 
 	  Produced by Encapsule/snapsite v0.0.8 Thu Feb 25 2016 04:18:55 GMT-0800 (PST)
 	  Site build instance: [1456402735013 8l90KsV8SOmV7kguFA99dw]
@@ -72,7 +72,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(448);
+	var SNAPRT = __webpack_require__(470);
 
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
@@ -80,7 +80,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ReactDOM = SNAPRT.reactDOM;
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(449);
+	var reactContextData = __webpack_require__(471);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -90,8 +90,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Replace the serialized digraph model with a runtime DirectedGraph container.
 	reactContextData.pagesGraph = factoryResponse.result;
 
-	console.log("snapsite client app initializing on route '/testsite'...");
-	console.log("Page [snapsite :: Test Pages] (556295b3) Copyright (C) 2016 Encapsule.io");
+	console.log("snapsite client app initializing on route '/about/overview'...");
+	console.log("Page [snapsite :: overview] (fd8a3bfd) Copyright (C) 2016 Encapsule.io");
 	console.log("Powered by Encapsule/snapsite v0.0.8 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
@@ -99,7 +99,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
 
-	var reactContentComponent = __webpack_require__(450);
+	var reactContentComponent = __webpack_require__(472);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -116,7 +116,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	console.log("... re-rendering the page client-side...");
 	renderPageContent();
 
-	var clientAppEntry = __webpack_require__(451);
+	var clientAppEntry = __webpack_require__(441);
 
 	console.log("... calling client runtime extension...");
 	clientAppEntry({
@@ -41200,14 +41200,47 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ },
 /* 439 */,
 /* 440 */,
-/* 441 */,
+/* 441 */
+/***/ function(module, exports) {
+
+	// default-client-extension.js
+
+	module.exports = function(request_) {
+	    console.log("Default client extension called (NOOP).");
+	    return;
+	};
+
+
+/***/ },
 /* 442 */,
 /* 443 */,
 /* 444 */,
 /* 445 */,
 /* 446 */,
 /* 447 */,
-/* 448 */
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41219,7 +41252,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Copyright (C) 2016 Encapsule.io
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/testsite'.
+	  server scripts for input route '/about/overview'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -41244,7 +41277,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = snaprt;
 
 /***/ },
-/* 449 */
+/* 471 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -41610,31 +41643,14 @@ return /******/ (function(modules) { // webpackBootstrap
 			]
 		},
 		"page": {
-			"primaryRouteHash": "556295b3",
-			"primaryRoute": "/testsite",
-			"title": "Test Pages",
-			"description": "A collection of simple test pages for experimentation.",
-			"tooltip": "Jump to test pages...",
-			"rank": 9,
-			"children": [
-				"f243d161",
-				"587cc689",
-				"57b4d1df",
-				"b0f90273",
-				"0261711c",
-				"7d516a9c"
-			],
-			"context": {
-				"content": "Testing 1,2,3",
-				"something": {
-					"x": [
-						"apple",
-						"oranges",
-						"grapes",
-						"bannanas"
-					]
-				}
-			}
+			"primaryRouteHash": "fd8a3bfd",
+			"primaryRoute": "/about/overview",
+			"title": "overview",
+			"description": "A high-level overview of the tasks automated by snapsite.",
+			"tooltip": "How snapsite works and the task it automates...",
+			"rank": 0,
+			"children": [],
+			"context": {}
 		},
 		"lookup": {
 			"routeHashToRouteMap": {
@@ -41669,202 +41685,87 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 450 */
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var COMMON = __webpack_require__(448);
-	var ARCCORE = COMMON.arccore;
-	var React = COMMON.react;
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var ReactBootstrap = __webpack_require__(188);
-	var Button = ReactBootstrap.Button;
-	var ButtonToolbar = ReactBootstrap.ButtonToolbar;
-	var Navbar = ReactBootstrap.Navbar;
+	var snaprt = __webpack_require__(470);
+	var React = snaprt.react;
+	var theme = snaprt.reactTheme;
 
-	var ReactTheme = COMMON.reactTheme;
-
-	// const Sitemap = require('./sitemap.jsx');
-	// const Breadcrumbs = require('./breadcrumbs.jsx');
-
-	var rootComponent = React.createClass({
-	    displayName: 'rootComponent',
-
-	    getInitialState: function getInitialState() {
-	        return {
-	            charHistory: [],
-	            checktime: new Date().getTime()
-	        };
-	    },
+	module.exports = React.createClass({
+	    displayName: 'exports',
 
 	    render: function render() {
-	        var charHistory = this.state.charHistory;
-
-	        var date = new Date();
-	        var timestring = date.getTime();
-	        var datestring = date.toString();
-	        var irut = ARCCORE.identifier.irut.fromReference(datestring).result;
-	        var irut2 = ARCCORE.identifier.irut.fromReference(timestring).result;
-
-	        charHistory.push(irut2.charAt(irut.length - 8));
-	        if (charHistory.length > 60) {
-	            charHistory.shift();
-	        }
-	        this.state.charHistory = charHistory;
-
-	        var elapsed = timestring - this.state.checktime;
-	        this.state.checktime = timestring;
-
-	        var fps = Math.floor(1000 / elapsed);
-
-	        var irutStyles = {
-	            fontFamily: "Courier"
-	        };
-
-	        var propsString = JSON.stringify(this.props, undefined, 4);
-
-	        var jsonStyles = {
-	            backgroundColor: '#DDEEFF',
-	            padding: '1em',
-	            margin: '1em',
-	            border: '1px solid #AABBCC'
-	        };
-
+	        var version = this.props.generator.agent.version;
+	        var heading = this.props.generator.agent.name + " task automation overview";
 	        return React.createElement(
 	            'div',
 	            null,
+	            React.createElement(theme.SnapHeader, _extends({}, this.props, { heading: heading, size: '1' })),
 	            React.createElement(
 	                'p',
-	                null,
-	                React.createElement(
-	                    'strong',
-	                    null,
-	                    'Not much eye candy yet but there\'s a whole lot going on in this little demo!'
-	                )
-	            ),
-	            React.createElement(
-	                'i',
-	                null,
-	                'If the little ASCII spaceship launches, then the client app is working as expected!'
-	            ),
-	            React.createElement(
-	                'h2',
-	                { style: irutStyles },
-	                irut
-	            ),
-	            React.createElement(
-	                'div',
-	                { style: irutStyles },
-	                charHistory.join(''),
-	                ' >=[oooo]>-'
-	            ),
-	            React.createElement(
-	                'p',
-	                null,
-	                'It\'s now ',
-	                datestring,
-	                ' Epoch=',
-	                timestring,
-	                '(msec) period=',
-	                elapsed,
-	                '(msec) framerate=',
-	                fps,
-	                '(fps)'
-	            ),
-	            React.createElement(
-	                'h3',
 	                null,
 	                this.props.generator.agent.name,
-	                ' ',
+	                ' v',
 	                this.props.generator.agent.version,
-	                ' React JS data context'
+	                ' performs the following tasks in order to generate a website:'
 	            ),
 	            React.createElement(
-	                'h2',
-	                null,
-	                'Try out React Bootstrap'
-	            ),
-	            React.createElement(
-	                'div',
+	                'ul',
 	                null,
 	                React.createElement(
-	                    ButtonToolbar,
+	                    'li',
 	                    null,
-	                    React.createElement(
-	                        Button,
-	                        null,
-	                        'Default'
-	                    ),
-	                    React.createElement(
-	                        Button,
-	                        { bsStyle: 'primary' },
-	                        'Primary'
-	                    ),
-	                    React.createElement(
-	                        Button,
-	                        { bsStyle: 'success' },
-	                        'Success'
-	                    ),
-	                    React.createElement(
-	                        Button,
-	                        { bsStyle: 'info' },
-	                        'Info'
-	                    ),
-	                    React.createElement(
-	                        Button,
-	                        { bsStyle: 'warning' },
-	                        'Warning'
-	                    ),
-	                    React.createElement(
-	                        Button,
-	                        { bsStyle: 'danger' },
-	                        'Danger'
-	                    ),
-	                    React.createElement(
-	                        Button,
-	                        { bsStyle: 'link' },
-	                        'Link'
-	                    )
-	                )
-	            ),
-	            React.createElement(
-	                'i',
-	                null,
-	                'Every ReactJS page generated by ',
-	                this.props.generator.agent.name,
-	                ' is passed a JSON document to render that looks like this:'
-	            ),
-	            React.createElement(
-	                'div',
-	                { style: jsonStyles },
+	                    'Finds your package.json and checks for an optionally-specified location of the snapsite configuration module (JavaScript CommonJS module)'
+	                ),
 	                React.createElement(
-	                    'pre',
+	                    'li',
 	                    null,
-	                    propsString
+	                    'Loads your project configuration module'
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    'Enumerates a local directory structure specified in your configuration looking for route config modules'
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    'As route configuration modules are discovered, they are added to an in-memory graph of the site'
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    'The graph is analyzed and page-specific context views produced and serialized into each route input directory served by React JS'
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    'Server and client JavaScript entry point stubs are synthesized and written into each route input directory served by React JS'
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    'Server and client bundles for each route served by React JS are bundled via webpack and babel'
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    'The resultant server-side page render functions are loaded and used to pre-render the body content for all pages using context produced by snapsite from input sources.'
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    'HTML5 pages are generated for each route page from a common template that sets common headers appropriately, includes in the pre-rendered page content from the previous step, and links the page to client-side application bundle JavaScript responsible for client-side UX dynamism.'
 	                )
 	            )
 	        );
 	    }
 	});
-
-	module.exports = rootComponent;
-
-/***/ },
-/* 451 */
-/***/ function(module, exports) {
-
-	// client-runtime.js
-
-	module.exports = function(request_) {
-
-	    console.log("Route '" + request_.context.page.primaryRoute + "' + client extension entry...");
-
-	    console.log("... setting a timer to refresh page.");
-	    setInterval(request_.renderContent, 1000/24);
-
-	};
-
 
 /***/ }
 /******/ ])
