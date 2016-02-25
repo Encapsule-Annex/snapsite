@@ -4,9 +4,9 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Main client entry point for snapsite snapsite route '7d516a9c'.
+  Main client entry point for snapsite snapsite route 'fd8a3bfd'.
   This script will be called when the HTML5 document published at
-  URL 'http://github.com/Encapsule/snapsite/testsite/tiffany' loads in your browser.
+  URL 'http://github.com/Encapsule/snapsite/about/overview' loads in your browser.
 
   Produced by Encapsule/snapsite v0.0.8 Thu Feb 25 2016 04:18:55 GMT-0800 (PST)
   Site build instance: [1456402735013 8l90KsV8SOmV7kguFA99dw]
@@ -32,8 +32,8 @@ if (factoryResponse.error) {
 // Replace the serialized digraph model with a runtime DirectedGraph container.
 reactContextData.pagesGraph = factoryResponse.result;
 
-console.log("snapsite client app initializing on route '/testsite/tiffany'...");
-console.log("Page [snapsite :: Hello, Tiffany] (7d516a9c) Copyright (C) 2016 Encapsule.io");
+console.log("snapsite client app initializing on route '/about/overview'...");
+console.log("Page [snapsite :: overview] (fd8a3bfd) Copyright (C) 2016 Encapsule.io");
 console.log("Powered by Encapsule/snapsite v0.0.8 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);
@@ -43,7 +43,7 @@ console.log("Please follow @Encapsule on Twitter for snapsite news & updates. ht
 // page-specific content from (a) the React data context (b) user input
 // (c) local storage (d) communication with remote servers.
 
-var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
+var reactContentComponent = require('./content.jsx');
 
 // Specialize the content rendering behavior of <SnapPage>.
 reactContextData.renderContent = reactContentComponent;

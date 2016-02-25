@@ -5,7 +5,7 @@
   Copyright (C) 2016 Encapsule.io
 
   Shared runtime dependencies of snapsite client and
-  server scripts for input route '/testsite/about/contact'.
+  server scripts for input route '/about/overview'.
 
   JSX authors should require __snaprt into scope in order to gain
   access to theme bindings (array of named function points to React

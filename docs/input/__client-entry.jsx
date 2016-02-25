@@ -8,8 +8,8 @@
   This script will be called when the HTML5 document published at
   URL 'http://github.com/Encapsule/snapsite/' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.8 Thu Feb 25 2016 03:39:14 GMT-0800 (PST)
-  Site build instance: [1456400354379 psXwuzzrQzy_NrenNhDMSw]
+  Produced by Encapsule/snapsite v0.0.8 Thu Feb 25 2016 04:18:55 GMT-0800 (PST)
+  Site build instance: [1456402735013 8l90KsV8SOmV7kguFA99dw]
 */
 // ======================================================================
 
