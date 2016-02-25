@@ -32,18 +32,33 @@ module.exports = {
                     padding: '0px',
                     margin: 'none'
                 },
-                // Default style for A tags
+                // Default style for internal A tags
                 link: {
                     fontDecoration: 'none',
                     color: '#0099FF'
                 },
-                // Default style for A:hover (simulated)
+                // Default style for internal A:hover (simulated)
                 linkHover: {
                     fontDecoration: 'underline',
                     color: '#CC9900'
                 },
-                // Default style for A:active (simulated)
+                // Default style for internal A:active (simulated)
                 linkLoading: {
+                    fontDecoration: 'underline',
+                    color: '#990099'
+                },
+                // Default style of external A tags
+                xlink: {
+                    fontDecoration: 'none',
+                    color: '#00CC00'
+                },
+                // Default style for external A:hover (simulated)
+                xlinkHover: {
+                    fontDecoration: 'underline',
+                    color: '#CC9900'
+                },
+                // Default style for external A:active (simulated)
+                xlinkLoading: {
                     fontDecoration: 'underline',
                     color: '#990099'
                 },

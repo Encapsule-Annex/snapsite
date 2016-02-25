@@ -1,25 +1,22 @@
 ////
 // routehashlink.jsx
 
-const ARCCORE = require('arccore');
 const React = require('react');
 
 var RouteHashLink = React.createClass({
+    className: "RouteHashLink",
     getInitialState: function() {
         return {
             hover: false,
             loading: false
         };
     },
-
     toggleHover: function() {
         this.setState({ hover: !this.state.hover});
     },
-
     clickLink: function() {
         this.setState({ loading: true });
     },
-
     render: function() {
         var digraph = this.props.pagesGraph;
         var routeHash = this.props.routeHash;

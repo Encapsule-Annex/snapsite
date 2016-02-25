@@ -8,8 +8,8 @@
   This script will be called when the HTML5 document published at
   URL 'http://github.com/Encapsule/snapsite/' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.7 Wed Feb 24 2016 23:08:10 GMT-0800 (PST)
-  Site build instance: [1456384090785 KM_Byw2vRgqvW0JwbHuNug]
+  Produced by Encapsule/snapsite v0.0.8 Thu Feb 25 2016 01:58:52 GMT-0800 (PST)
+  Site build instance: [1456394332193 Ybcgn7-wQB62zK65tjytEA]
 */
 // ======================================================================
 
@@ -33,8 +33,8 @@ if (factoryResponse.error) {
 reactContextData.pagesGraph = factoryResponse.result;
 
 console.log("snapsite client app initializing on route '/'...");
-console.log("Page [snapsite :: snapsite] (02413fb0) Copyright (C) 2016 Encapsule.io");
-console.log("Powered by Encapsule/snapsite v0.0.7 // " +
+console.log("Page [snapsite :: Homepage] (02413fb0) Copyright (C) 2016 Encapsule.io");
+console.log("Powered by Encapsule/snapsite v0.0.8 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);
 console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");

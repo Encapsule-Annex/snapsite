@@ -3,23 +3,61 @@ const React = snaprt.react;
 const theme = snaprt.reactTheme;
 const Sitemap = theme.Sitemap;
 const SnapHeader = theme.SnapHeader;
+const ExternalLink = theme.ExternalLink;
 
 module.exports = React.createClass({
     render: function() {
+        const repoTitle = "Encapsule/snapsite v" + this.props.generator.agent.version;
+        const repoTooltip = "View project source code on GitHub...";
+        const repoTarget = "https://github.com/Encapsule/snapsite";
+
+        const inputTitle = "project's ./doc directory";
+        const inputTooltip = "View generator input directory sources...";
+        const inputTarget = "https://github.com/Encapsule/snapsite/tree/master/docs";
+
         return (<div>
-                <SnapHeader {...this.props} heading="Header 1" size={1} />
-                <p>djskfh  ksjdhfks sdkjf skdjf ksjdf s asdjkf aksjdhf kajsdf auihsdfajsf jljdfjklasd asdf jkladfkl jhasdf a</p>
-                <SnapHeader {...this.props} heading="Header 2" size={2} />
-                <p>djskfh  ksjdhfks sdkjf skdjf ksjdf s asdjkf aksjdhf kajsdf auihsdfajsf jljdfjklasd asdf jkladfkl jhasdf a</p>
-                <SnapHeader {...this.props} heading="Header 3" size={3} />
-                <p>djskfh  ksjdhfks sdkjf skdjf ksjdf s asdjkf aksjdhf kajsdf auihsdfajsf jljdfjklasd asdf jkladfkl jhasdf a</p>
-                <SnapHeader {...this.props} heading="Header 4" size={4} />
-                <p>djskfh  ksjdhfks sdkjf skdjf ksjdf s asdjkf aksjdhf kajsdf auihsdfajsf jljdfjklasd asdf jkladfkl jhasdf a</p>
-                <SnapHeader {...this.props} heading="Header 5" size={5} />
-                <p>djskfh  ksjdhfks sdkjf skdjf ksjdf s asdjkf aksjdhf kajsdf auihsdfajsf jljdfjklasd asdf jkladfkl jhasdf a</p>
-                <SnapHeader {...this.props} heading="Header 8" size={6} />
-                <p>djskfh  ksjdhfks sdkjf skdjf ksjdf s asdjkf aksjdhf kajsdf auihsdfajsf jljdfjklasd asdf jkladfkl jhasdf a</p>
-                <SnapHeader {...this.props} heading="Sitemap" size='2' />
+                <SnapHeader {...this.props} heading="welcome to snapsite" size={1} />
+                <p>Encapsule/snapsite is an experimental command line tool for compiling React JS websites
+                {' '}from configuration files that's being developed to reduce the time/effort required to build
+                {' '}sophisticated documentation portals for technical projects.</p>
+
+                <p><strong>pre-release:</strong> {this.props.generator.agent.name} v{this.props.generator.agent.version}
+                {' '}is not ready for prime time. There are still a number of sigificant features still
+                to be implemented (e.g. the generated Node.js server) and quite a bit of churn is expected here over the
+                coming months.</p>
+
+                <p>Please follow <ExternalLink {...this.props} target="https://twitter.com/Encapsule" tooltip="Please follow @Encapsule on Twitter..." title="@Encapsule" /> on Twitter for news and updates.</p>
+
+                <SnapHeader {...this.props} heading="what are you looking at?" size={2} />
+                <p>What you're looking at now is a simple test site built with the
+                {' '}<ExternalLink {...this.props} target={repoTarget} tooltip={repoTooltip} title={repoTitle} />
+                {' '}website generator tool for Node.js.
+                </p>
+
+                <p>
+                In slightly more detail, the {this.props.generator.agent.version} tool:
+                <ul>
+                <li>finds your package.json and checks for an optionally-specified location of the snapsite configuration module (JavaScript CommonJS module)</li>
+                <li>loads your project configuration module</li>
+                <li>enumerates a local directory structure specified in your configuration looking for route config modules</li>
+                <li>as route configuration modules are discovered, they are added to an in-memory graph of the site</li>
+                <li>the graph is analyzed and page-specific context views produced and serialized into each route input directory served by React JS</li>
+                <li>server and client JavaScript entry point stubs are synthesized and written into each route input directory served by React JS</li>
+                <li>server and client bundles for each route served by React JS are bundled via webpack and babel</li>
+                <li>the resultant server-side page render functions are loaded and used to pre-render all page content at built time</li>
+                <li>HTML5 pages are generated for each route served by React JS that link the client-side app JavaScript bundle prepared by webpack</li>
+                </ul>
+                </p>
+
+                <p>You can look at the input sources for this website in the <ExternalLink {...this.props} target={inputTarget} tooltip={inputTooltip} title={inputTitle} />.</p>
+
+                <p>And, you can inspect the current client-side application generated by this process by visiting the
+                {' '}<ExternalLink {...this.props} target="https://github.com/Encapsule/snapsite/tree/gh-pages" tooltip="Browse generator output files on GitHub..." title="project's #gh-pages branch" />.</p>
+
+                <SnapHeader {...this.props} heading="sitemap" size='2' />
+                <p>Having the page graph automatically fed into each page and accessible via the
+                {' '}<ExternalLink {...this.props} target="https://github.com/Encapsule/jsgraph" tooltip="Encapsule/jsgraph on GitHub..." title="Encapsule/jsgraph API" />
+                {' '}is handy for building sitemaps, menus, and as the basis for all manner of application-specific state.</p>
                 <Sitemap {...this.props} routeHash={this.props.page.primaryRouteHash} />
                 </div>
                );

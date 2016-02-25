@@ -1,5 +1,5 @@
 module.exports = {
-    title: "snapsite",
+    title: "Homepage",
     description: "website generator project",
     tooltip: "Jump to the homepage...",
     providers: {
