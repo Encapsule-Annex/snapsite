@@ -18,7 +18,7 @@ var renderContent = React.createClass({
                     <li>breadcrumbs at the top of the page</li>
                     <li>page title</li>
                     <li>sitemap / copyright footer</li>
-                    <li>In-site link helpers that abstract the details of URL's (can get tricky). For example: <ReactTheme.RouteHashLink {...this.props} routeHash={this.props.lookup.routeToRouteHashMap['/']} /> links back to the top of the site using a hash signature I don't know off the top of my head. In this case I use the route '/'</li>
+                    <li>In-site link helpers that abstract the details of URL's (can get tricky). For example: <ReactTheme.RouteLink {...this.props} route='/' /> links back to the top of the site using a hash signature I don't know off the top of my head. In this case I use the route '/'</li>
                   </ul></li>
                 <li>This little demo is a raw copy of the generated client app to github pages (free hosting).</li>
                 </ul>

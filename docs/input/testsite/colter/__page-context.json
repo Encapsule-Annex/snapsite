@@ -54,13 +54,13 @@
     },
     "generator": {
         "build": {
-            "time": 1456355116089,
-            "date": "Wed Feb 24 2016 15:05:16 GMT-0800 (PST)",
-            "hash": "AAWDkbeWTDewGjBiVjAyKA"
+            "time": 1456359175607,
+            "date": "Wed Feb 24 2016 16:12:55 GMT-0800 (PST)",
+            "hash": "adjn98iOQ7aSo3m-T0rxVw"
         },
         "agent": {
             "name": "snapsite",
-            "version": "0.0.5"
+            "version": "0.0.6"
         }
     },
     "pagesGraph": {

@@ -1,6 +1,6 @@
 {
   "name": "snapsite",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Node.js command line tools for rendering ReactJS websites in a snap.",
   "bin": {
     "snapsite": "./bin/snapsite.js",

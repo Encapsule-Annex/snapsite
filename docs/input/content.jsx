@@ -5,10 +5,9 @@ const Sitemap = theme.Sitemap;
 
 module.exports = React.createClass({
     render: function() {
-        return (<span>
-               <span>Hello, world!</span>
+        return (<div>
                <Sitemap {...this.props} routeHash={this.props.page.primaryRouteHash} />
-               </span>
+               </div>
                );
     }
 });
