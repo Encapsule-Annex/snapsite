@@ -8,8 +8,8 @@
   This script will be called when the HTML5 document published at
   URL 'http://github.com/Encapsule/snapsite/test-range' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.8 Thu Feb 25 2016 17:28:15 GMT-0800 (PST)
-  Site build instance: [1456450095282 8mwgnxfhSGiB_qHlZDZ2PQ]
+  Produced by Encapsule/snapsite v0.0.8 Fri Feb 26 2016 03:33:14 GMT-0800 (PST)
+  Site build instance: [1456486394606 cw64GwSaR7uVcFq9FrzpNA]
 */
 // ======================================================================
 
@@ -43,7 +43,7 @@ console.log("Please follow @Encapsule on Twitter for snapsite news & updates. ht
 // page-specific content from (a) the React data context (b) user input
 // (c) local storage (d) communication with remote servers.
 
-var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
+var reactContentComponent = require('./content.jsx');
 
 // Specialize the content rendering behavior of <SnapPage>.
 reactContextData.renderContent = reactContentComponent;

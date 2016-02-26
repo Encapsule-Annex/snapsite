@@ -86,7 +86,8 @@ var factoryResponse = ARCCORE.filter.create({
                     description: thisRouteConfig.description,
                     tooltip: thisRouteConfig.tooltip,
                     rank: thisRouteConfig.rank,
-                    children: childrenFinal
+                    children: childrenFinal,
+                    ts: thisRouteDescriptor.ts
                 };
                 pagesGraph.addVertex({ u: routeHash, p: pageContext });
                 pagesContext[routeHash] = thisRouteConfig.providers.ReactJS;

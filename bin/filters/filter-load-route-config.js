@@ -116,6 +116,27 @@ var factoryResponse = ARCCORE.filter.create({
             if (errors.length) {
                 break;
             }
+
+            var snapcount = 0;
+            var traversalResponse = ARCCORE.graph.directed.depthFirstTraverse({
+                digraph: routeGraph,
+                visitor: {
+                    discoverVertex: function(gcb_) {
+                        var props = gcb_.g.getVertexProperty(gcb_.u);
+                        props.ts = { i: snapcount++ };
+                        gcb_.g.setVertexProperty({u:gcb_.u, props});
+                        return true;
+                    },
+                    finishVertex: function(gcb_) {
+                        var props = gcb_.g.getVertexProperty(gcb_.u);
+                        props.ts.o = snapcount++;
+                        gcb_.g.setVertexProperty({u:gcb_.u, props});
+                        return true;
+                    }
+                }
+            });
+
+
             response.result = {
                 routeHashGraph: routeGraph,
                 routeHashToRouteMap: routeHashToRouteMap,

@@ -145,9 +145,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456450095282,
-            "date": "Thu Feb 25 2016 17:28:15 GMT-0800 (PST)",
-            "hash": "8mwgnxfhSGiB_qHlZDZ2PQ"
+            "time": 1456486394606,
+            "date": "Fri Feb 26 2016 03:33:14 GMT-0800 (PST)",
+            "hash": "cw64GwSaR7uVcFq9FrzpNA"
         },
         "agent": {
             "name": "snapsite",
@@ -171,7 +171,11 @@
                         "78f0037c",
                         "556295b3",
                         "bbaf163f"
-                    ]
+                    ],
+                    "ts": {
+                        "i": 0,
+                        "o": 27
+                    }
                 }
             },
             {
@@ -185,7 +189,11 @@
                     "rank": 100,
                     "children": [
                         "fd8a3bfd"
-                    ]
+                    ],
+                    "ts": {
+                        "i": 1,
+                        "o": 4
+                    }
                 }
             },
             {
@@ -199,7 +207,11 @@
                     "rank": 0,
                     "children": [
                         "cefa9ed3"
-                    ]
+                    ],
+                    "ts": {
+                        "i": 5,
+                        "o": 8
+                    }
                 }
             },
             {
@@ -218,7 +230,11 @@
                         "b0f90273",
                         "0261711c",
                         "7d516a9c"
-                    ]
+                    ],
+                    "ts": {
+                        "i": 9,
+                        "o": 26
+                    }
                 }
             },
             {
@@ -230,7 +246,11 @@
                     "description": "A high-level overview of the tasks automated by snapsite.",
                     "tooltip": "How snapsite works and the task it automates...",
                     "rank": 0,
-                    "children": []
+                    "children": [],
+                    "ts": {
+                        "i": 2,
+                        "o": 3
+                    }
                 }
             },
             {
@@ -242,7 +262,11 @@
                     "description": "A test of <SnapHeader> theme component.",
                     "tooltip": "View <SnapHeader> test page...",
                     "rank": 0,
-                    "children": []
+                    "children": [],
+                    "ts": {
+                        "i": 6,
+                        "o": 7
+                    }
                 }
             },
             {
@@ -256,7 +280,11 @@
                     "rank": 0,
                     "children": [
                         "3ecfb36e"
-                    ]
+                    ],
+                    "ts": {
+                        "i": 10,
+                        "o": 13
+                    }
                 }
             },
             {
@@ -268,7 +296,11 @@
                     "description": "Encapsule.io web development blog.",
                     "tooltip": "Encapsule.io blog...",
                     "rank": 0,
-                    "children": []
+                    "children": [],
+                    "ts": {
+                        "i": 14,
+                        "o": 15
+                    }
                 }
             },
             {
@@ -280,7 +312,11 @@
                     "description": "This is a test. Hello!",
                     "tooltip": "Jump to Hello, Colter...",
                     "rank": 0,
-                    "children": []
+                    "children": [],
+                    "ts": {
+                        "i": 16,
+                        "o": 17
+                    }
                 }
             },
             {
@@ -292,7 +328,11 @@
                     "description": "Encapsule tools, and libaries documentation library.",
                     "tooltip": "Browse technical documentation...",
                     "rank": 0,
-                    "children": []
+                    "children": [],
+                    "ts": {
+                        "i": 18,
+                        "o": 19
+                    }
                 }
             },
             {
@@ -304,7 +344,11 @@
                     "description": "A test page to demonstrate some basic capabilities.",
                     "tooltip": "Jump to the Hello, John demo page...",
                     "rank": 0,
-                    "children": []
+                    "children": [],
+                    "ts": {
+                        "i": 20,
+                        "o": 21
+                    }
                 }
             },
             {
@@ -316,7 +360,11 @@
                     "description": "This is a simple demo page.",
                     "tooltip": "Jump to Tiff's demo page...",
                     "rank": 0,
-                    "children": []
+                    "children": [],
+                    "ts": {
+                        "i": 24,
+                        "o": 25
+                    }
                 }
             },
             {
@@ -328,7 +376,11 @@
                     "description": "Contact information and directions to Encapsule.io.",
                     "tooltip": "Contact information...",
                     "rank": 0,
-                    "children": []
+                    "children": [],
+                    "ts": {
+                        "i": 11,
+                        "o": 12
+                    }
                 }
             }
         ],
@@ -417,6 +469,10 @@
         "children": [
             "3ecfb36e"
         ],
+        "ts": {
+            "i": 10,
+            "o": 13
+        },
         "context": {
             "content": [
                 "This is supposed to be presented as a paragraph.",
