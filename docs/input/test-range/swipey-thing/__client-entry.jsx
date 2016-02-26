@@ -4,9 +4,9 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Main client entry point for snapsite snapsite route 'fd8a3bfd'.
+  Main client entry point for snapsite snapsite route '5d87245d'.
   This script will be called when the HTML5 document published at
-  URL 'http://github.com/Encapsule/snapsite/about/overview' loads in your browser.
+  URL 'http://github.com/Encapsule/snapsite/test-range/swipey-thing' loads in your browser.
 
   Produced by Encapsule/snapsite v0.0.8 Fri Feb 26 2016 13:28:09 GMT-0800 (PST)
   Site build instance: [1456522089562 re3OrQRVTTylY8mF-IK18A]
@@ -32,8 +32,8 @@ if (factoryResponse.error) {
 // Replace the serialized digraph model with a runtime DirectedGraph container.
 reactContextData.pagesGraph = factoryResponse.result;
 
-console.log("snapsite client app initializing on route '/about/overview'...");
-console.log("Page [snapsite :: overview] (fd8a3bfd) Copyright (C) 2016 Encapsule.io");
+console.log("snapsite client app initializing on route '/test-range/swipey-thing'...");
+console.log("Page [snapsite :: Swipey Thing] (5d87245d) Copyright (C) 2016 Encapsule.io");
 console.log("Powered by Encapsule/snapsite v0.0.8 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);

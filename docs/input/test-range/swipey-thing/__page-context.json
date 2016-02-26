@@ -483,20 +483,16 @@
         ]
     },
     "page": {
-        "primaryRouteHash": "02413fb0",
-        "primaryRoute": "/",
-        "title": "homepage",
-        "description": "website generator project",
-        "tooltip": "Jump to the homepage...",
+        "primaryRouteHash": "5d87245d",
+        "primaryRoute": "/test-range/swipey-thing",
+        "title": "Swipey Thing",
+        "description": "A test page to experiment with swipey things.",
+        "tooltip": "Check out the swipey thing...",
         "rank": 0,
-        "children": [
-            "78f0037c",
-            "556295b3",
-            "bbaf163f"
-        ],
+        "children": [],
         "ts": {
-            "i": 0,
-            "o": 29
+            "i": 8,
+            "o": 9
         },
         "context": {}
     },

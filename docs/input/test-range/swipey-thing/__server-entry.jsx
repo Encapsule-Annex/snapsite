@@ -4,7 +4,7 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Server UX render entry entry point for snapsite snapsite route '3ecfb36e'.
+  Server UX render entry entry point for snapsite snapsite route '5d87245d'.
   This script is called by the snapsite compilation process to pre-render
   HTML5  pages. This script is also leveraged at runtime by the  Node.js
   webserver process for website's that leverage custom server-side business
@@ -53,7 +53,7 @@ module.exports = function() {
             );
         } catch (error_) {
             errors.unshift(error_.toString());
-            errors.unshift("Failed to render '/testsite/about/contact' due to error:");
+            errors.unshift("Failed to render '/test-range/swipey-thing' due to error:");
             break;
         }
         break;

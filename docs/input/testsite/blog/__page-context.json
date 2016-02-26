@@ -145,9 +145,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456486394606,
-            "date": "Fri Feb 26 2016 03:33:14 GMT-0800 (PST)",
-            "hash": "cw64GwSaR7uVcFq9FrzpNA"
+            "time": 1456522089562,
+            "date": "Fri Feb 26 2016 13:28:09 GMT-0800 (PST)",
+            "hash": "re3OrQRVTTylY8mF-IK18A"
         },
         "agent": {
             "name": "snapsite",
@@ -174,7 +174,7 @@
                     ],
                     "ts": {
                         "i": 0,
-                        "o": 27
+                        "o": 29
                     }
                 }
             },
@@ -206,11 +206,12 @@
                     "tooltip": "Check out snapsite theme element tests...",
                     "rank": 0,
                     "children": [
-                        "cefa9ed3"
+                        "cefa9ed3",
+                        "5d87245d"
                     ],
                     "ts": {
                         "i": 5,
-                        "o": 8
+                        "o": 10
                     }
                 }
             },
@@ -232,8 +233,8 @@
                         "7d516a9c"
                     ],
                     "ts": {
-                        "i": 9,
-                        "o": 26
+                        "i": 11,
+                        "o": 28
                     }
                 }
             },
@@ -270,6 +271,22 @@
                 }
             },
             {
+                "u": "5d87245d",
+                "p": {
+                    "primaryRouteHash": "5d87245d",
+                    "primaryRoute": "/test-range/swipey-thing",
+                    "title": "Swipey Thing",
+                    "description": "A test page to experiment with swipey things.",
+                    "tooltip": "Check out the swipey thing...",
+                    "rank": 0,
+                    "children": [],
+                    "ts": {
+                        "i": 8,
+                        "o": 9
+                    }
+                }
+            },
+            {
                 "u": "f243d161",
                 "p": {
                     "primaryRouteHash": "f243d161",
@@ -282,8 +299,8 @@
                         "3ecfb36e"
                     ],
                     "ts": {
-                        "i": 10,
-                        "o": 13
+                        "i": 12,
+                        "o": 15
                     }
                 }
             },
@@ -298,8 +315,8 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 14,
-                        "o": 15
+                        "i": 16,
+                        "o": 17
                     }
                 }
             },
@@ -314,8 +331,8 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 16,
-                        "o": 17
+                        "i": 18,
+                        "o": 19
                     }
                 }
             },
@@ -330,8 +347,8 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 18,
-                        "o": 19
+                        "i": 20,
+                        "o": 21
                     }
                 }
             },
@@ -346,8 +363,8 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 20,
-                        "o": 21
+                        "i": 22,
+                        "o": 23
                     }
                 }
             },
@@ -362,8 +379,8 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 24,
-                        "o": 25
+                        "i": 26,
+                        "o": 27
                     }
                 }
             },
@@ -378,8 +395,8 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 11,
-                        "o": 12
+                        "i": 13,
+                        "o": 14
                     }
                 }
             }
@@ -413,6 +430,12 @@
                 "e": {
                     "u": "78f0037c",
                     "v": "cefa9ed3"
+                }
+            },
+            {
+                "e": {
+                    "u": "78f0037c",
+                    "v": "5d87245d"
                 }
             },
             {
@@ -468,8 +491,8 @@
         "rank": 0,
         "children": [],
         "ts": {
-            "i": 14,
-            "o": 15
+            "i": 16,
+            "o": 17
         },
         "context": {}
     },
@@ -481,6 +504,7 @@
             "556295b3": "/testsite",
             "fd8a3bfd": "/about/overview",
             "cefa9ed3": "/test-range/headings",
+            "5d87245d": "/test-range/swipey-thing",
             "f243d161": "/testsite/about",
             "587cc689": "/testsite/blog",
             "57b4d1df": "/testsite/colter",
@@ -497,6 +521,7 @@
             "/testsite": "556295b3",
             "/about/overview": "fd8a3bfd",
             "/test-range/headings": "cefa9ed3",
+            "/test-range/swipey-thing": "5d87245d",
             "/testsite/about": "f243d161",
             "/testsite/blog": "587cc689",
             "/testsite/colter": "57b4d1df",
