@@ -1,7 +1,7 @@
 // 'default' theme.
 
 module.exports = {
-
+    ReactBootstrap: require('react-bootstrap'),
     SnapPage: require('./snapsitepage.jsx'),
     SnapHeader: require('./snapheader.jsx'),
     Breadcrumbs: require('./breadcrumbs.jsx'),

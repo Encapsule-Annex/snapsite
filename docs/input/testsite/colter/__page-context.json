@@ -145,9 +145,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456450095282,
-            "date": "Thu Feb 25 2016 17:28:15 GMT-0800 (PST)",
-            "hash": "8mwgnxfhSGiB_qHlZDZ2PQ"
+            "time": 1456455764351,
+            "date": "Thu Feb 25 2016 19:02:44 GMT-0800 (PST)",
+            "hash": "9NtAQ_8kQSeen8S7akUo4w"
         },
         "agent": {
             "name": "snapsite",
@@ -198,7 +198,8 @@
                     "tooltip": "Check out snapsite theme element tests...",
                     "rank": 0,
                     "children": [
-                        "cefa9ed3"
+                        "cefa9ed3",
+                        "5d87245d"
                     ]
                 }
             },
@@ -241,6 +242,18 @@
                     "title": "headings",
                     "description": "A test of <SnapHeader> theme component.",
                     "tooltip": "View <SnapHeader> test page...",
+                    "rank": 0,
+                    "children": []
+                }
+            },
+            {
+                "u": "5d87245d",
+                "p": {
+                    "primaryRouteHash": "5d87245d",
+                    "primaryRoute": "/test-range/swipey-thing",
+                    "title": "Swipey Thing",
+                    "description": "A test page to experiment with swipey things.",
+                    "tooltip": "Check out the swipey thing...",
                     "rank": 0,
                     "children": []
                 }
@@ -365,6 +378,12 @@
             },
             {
                 "e": {
+                    "u": "78f0037c",
+                    "v": "5d87245d"
+                }
+            },
+            {
+                "e": {
                     "u": "556295b3",
                     "v": "f243d161"
                 }
@@ -427,6 +446,7 @@
             "556295b3": "/testsite",
             "fd8a3bfd": "/about/overview",
             "cefa9ed3": "/test-range/headings",
+            "5d87245d": "/test-range/swipey-thing",
             "f243d161": "/testsite/about",
             "587cc689": "/testsite/blog",
             "57b4d1df": "/testsite/colter",
@@ -443,6 +463,7 @@
             "/testsite": "556295b3",
             "/about/overview": "fd8a3bfd",
             "/test-range/headings": "cefa9ed3",
+            "/test-range/swipey-thing": "5d87245d",
             "/testsite/about": "f243d161",
             "/testsite/blog": "587cc689",
             "/testsite/colter": "57b4d1df",
