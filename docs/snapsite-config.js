@@ -34,33 +34,41 @@ module.exports = {
                 },
                 // Default style for internal A tags
                 link: {
-                    fontDecoration: 'none',
-                    color: '#06C'
+                    textDecoration: 'none',
+                    color: '#06C',
+                    borderBottom: '1px solid #F0F0F0'
                 },
                 // Default style for internal A:hover (simulated)
                 linkHover: {
-                    fontDecoration: 'underline',
+                    textDecoration: 'none',
                     color: '#090',
+                    borderBottom: '1px solid #090'
                 },
                 // Default style for internal A:active (simulated)
                 linkLoading: {
-                    fontDecoration: 'underline',
-                    color: '#C00'
+                    textDecoration: 'none',
+                    color: '#F0F',
+                    borderBottom: '1px solid #F0F',
+                    textShadow: '0px 0px 16px #666'
                 },
                 // Default style of external A tags
                 xlink: {
-                    fontDecoration: 'none',
-                    color: '#090'
+                    textDecoration: 'none',
+                    color: '#090',
+                    borderBottom: '1px solid #F0F0F0'
                 },
                 // Default style for external A:hover (simulated)
                 xlinkHover: {
-                    fontDecoration: 'underline',
-                    color: '#06C'
+                    textDecoration: 'none',
+                    color: '#06C',
+                    borderBottom: '1px solid #06C'
                 },
                 // Default style for external A:active (simulated)
                 xlinkLoading: {
-                    fontDecoration: 'underline',
-                    color: '#C00'
+                    textDecoration: 'none',
+                    color: '#F0F',
+                    borderBottom: '1px solid #F0F',
+                    textShadow: '0px 0px 16px #666'
                 },
                 header1: {
                     fontSize: '22pt',

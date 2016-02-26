@@ -408,16 +408,14 @@
         ]
     },
     "page": {
-        "primaryRouteHash": "57b4d1df",
-        "primaryRoute": "/testsite/colter",
-        "title": "Hello, Colter",
-        "description": "This is a test. Hello!",
-        "tooltip": "Jump to Hello, Colter...",
+        "primaryRouteHash": "cefa9ed3",
+        "primaryRoute": "/test-range/headings",
+        "title": "headings",
+        "description": "A test of <SnapHeader> theme component.",
+        "tooltip": "View <SnapHeader> test page...",
         "rank": 0,
         "children": [],
-        "context": {
-            "testData": "Hey this is some test data."
-        }
+        "context": {}
     },
     "lookup": {
         "routeHashToRouteMap": {

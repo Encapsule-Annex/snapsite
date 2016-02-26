@@ -11,16 +11,16 @@
   access to theme bindings (array of named function points to React
   JS components specific to the the current snapsite theme).
 
-  Produced by Encapsule/snapsite v0.0.8 Thu Feb 25 2016 04:18:55 GMT-0800 (PST)
-  Site build instance: [1456402735013 8l90KsV8SOmV7kguFA99dw]
+  Produced by Encapsule/snapsite v0.0.8 Thu Feb 25 2016 17:28:15 GMT-0800 (PST)
+  Site build instance: [1456450095282 8mwgnxfhSGiB_qHlZDZ2PQ]
 */
 // ======================================================================
 
 var snaprt = require('/home/cdr/encapsule/snapsite/bin/rtlib');
 snaprt.generator = {
     build: {
-        time: '1456402735013',
-        date: 'Thu Feb 25 2016 04:18:55 GMT-0800 (PST)'
+        time: '1456450095282',
+        date: 'Thu Feb 25 2016 17:28:15 GMT-0800 (PST)'
     },
     agent: {
         name: 'snapsite',

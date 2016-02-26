@@ -29,7 +29,7 @@ var RouteHashLink = React.createClass({
         if (active) {
             return (<span><strong>{title}</strong><Glyphicon glyph='pushpin' style={{fontSize: '8pt', color: '#666', marginLeft: '2px'}} /></span>);
         } else {
-            return (<a href={"./" + routeHash + ".html"} title={routeProps.tooltip} style={linkStyles} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onClick={this.clickLink}><Glyphicon glyph='flash' style={{fontSize: '8pt', color: '#9CF'}} />{title}</a>);
+            return (<span><Glyphicon glyph='flash' style={{fontSize: '8pt', color: '#9CF'}} /><a href={"./" + routeHash + ".html"} title={routeProps.tooltip} style={linkStyles} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onClick={this.clickLink}>{title}</a></span>);
         }
     }
 });

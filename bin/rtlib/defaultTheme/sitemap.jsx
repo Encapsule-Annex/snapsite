@@ -23,12 +23,12 @@ var Sitemap = React.createClass({
             children = routeProps.children.map(function(r_) { return renderRoute(r_, rank_+1); });
 
             var indentStyle = {
-                paddingLeft: '' + rank_ + 'em',
+                paddingLeft: '' + (rank_/2) + 'em',
                 marginLeft: '0px'
             }
             return (<div key={"list"+route_} style={indentStyle}><span>
                     <RouteHashLink {...self.props} routeHash={route_} active={route_ === routeHash} />
-                    - {routeProps.description}{children}
+                    {' - '}{routeProps.description}{children}
                     </span></div>
                    );
         } // end renderRoute

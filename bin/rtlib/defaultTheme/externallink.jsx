@@ -23,7 +23,7 @@ var ExternalLink = React.createClass({
         const targetUrl = this.props.target;
         const tooltip = this.props.tooltip?this.props.tooltip:"Follow link...";
         var linkStyles = this.props.site.context.theme[this.state.loading?'xlinkLoading':(this.state.hover?'xlinkHover':'xlink')];
-        return(<a href={targetUrl} title={tooltip} style={linkStyles} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onClick={this.clickLink}><Glyphicon glyph='link' style={{fontSize: '8pt', color: '#CCC'}} />{title}</a>);
+        return(<span><Glyphicon glyph='link' style={{fontSize: '7pt', color: '#3C6', marginRight: '1px'}} /><a href={targetUrl} title={tooltip} style={linkStyles} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onClick={this.clickLink}>{title}</a></span>);
     }
 });
 
