@@ -123,7 +123,13 @@ var factoryResponse = ARCCORE.filter.create({
                 visitor: {
                     discoverVertex: function(gcb_) {
                         var props = gcb_.g.getVertexProperty(gcb_.u);
-                        props.ts = { i: snapcount++ };
+
+                        var d = 0;
+                        if (gcb_.g.inDegree(gcb_.u)) {
+                            d = gcb_.g.getVertexProperty(gcb_.g.inEdges(gcb_.u)[0].u).ts.d + 1;
+                        };
+
+                        props.ts = { i: snapcount++, d: d };
                         gcb_.g.setVertexProperty({u:gcb_.u, props});
                         return true;
                     },
