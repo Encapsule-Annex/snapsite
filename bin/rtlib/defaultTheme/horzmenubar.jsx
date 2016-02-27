@@ -50,7 +50,14 @@ module.exports = React.createClass({
 
         }
 
-        return (<div>{childMenuItems}</div>);
+        var styles = {
+            textAlign: 'right',
+            padding: '0.25em',
+            paddingRight: '1em',
+            backgroundColor: '#E0E0E0'
+        };
+
+        return (<div style={styles}>{childMenuItems}</div>);
 
     }
 });

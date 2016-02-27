@@ -12,6 +12,27 @@ const React = require('react');
 
 module.exports = React.createClass({
     className: "HorizontalMenuItem",
+    getInitialState: function() {
+        return ({
+            mouseMode: 'out' // 'over' or 'clicked' are legal values
+        });
+    },
+    onMouseEnter: function() {
+        if (this.state.mouseMode === 'clicked') {
+            console.log("ignoring mouse enter because we're clicked");
+            return;
+        }
+        console.log("setting mouse over state");
+        this.setState({ mouseMode: 'over' });
+    },
+    onMouseLeave: function() {
+        console.log("setting mouse out state");
+        this.setState({ mouseMode: 'out' });
+    },
+    onClick: function() {
+        console.log("setting mouse clicked state");
+        this.setState({ mouseMode: 'clicked' });
+    },
     render: function() {
 
         var content = [];
@@ -33,18 +54,77 @@ module.exports = React.createClass({
             return (<div>HorizontalMenuItem invalid selected route '{this.props.selectedRouteHash}' has no addressable page defined.</div>);
         }
 
-        var yayyoyo = {
+        var tsiTarget = targetRouteProps.ts.i;
+        var tsoTarget = targetRouteProps.ts.o;
+        var tsdTarget = targetRouteProps.ts.d;
+        var tsiSelected = selectedRouteProps.ts.i;
+
+        var mode;
+        if ((tsiSelected < tsiTarget) || (tsoTarget < tsiSelected)) {
+            mode = 'inactive';
+        } else {
+            if (tsiSelected === tsiTarget) {
+                mode = 'selected';
+            } else {
+                mode = 'active';
+            }
+        }
+
+        var baseStyles = {
             margin: '0px',
-            marginLeft: '0.25em',
-            marginRight: '0.25em',
-            padding: '0.25em',
-            border: '1px solid #DDD',
-            backgroundColor: ((this.props.selectedRouteHash === this.props.targetRouteHash)?'#FF0':'#CCC')
+            padding: '0.2em'
         };
 
+        const outOpacity = '0.5';
 
+        var modeStyles = {
+            inactive: {
+                out: {
+                    backgroundColor: '#CCCCCC',
+                    opacity: outOpacity
+                },
+                over: {
+                    backgroundColor: '#CCCCCC',
+                },
+                clicked: {
+                    backgroundColor: '#FF0'
+                }
+            },
+            selected: {
+                out: {
+                    backgroundColor: '#9CF',
+                    opacity: outOpacity
+                },
+                over: {
+                    backgroundColor: '#9CF',
+                },
+                clicked: {
+                    backgroundColor: '#FF0'
+                }
+            },
+            active: {
+                out: {
+                    backgroundColor: '#69C',
+                    opacity: outOpacity
+                },
+                over: {
+                    backgroundColor: '#69C',
+                },
+                clicked: {
+                    backgroundColor: '#FF0'
+                }
+            }
+        };
 
-        return (<span style={yayyoyo}>{targetRouteProps.title}</span>);
+        var mouseMode = this.state.mouseMode;
+
+        for (var name in modeStyles[mode][mouseMode]) {
+            baseStyles[name] = modeStyles[mode][mouseMode][name];
+        }
+
+        var targetUrl = './' + targetRouteProps.primaryRouteHash + '.html';
+
+        return (<span style={baseStyles} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} onClick={this.onClick}>{tsdTarget}:<a href={targetUrl} title={this.props.page.tooltip} style={baseStyles}>{targetRouteProps.title}</a></span>);
     }
 });
 

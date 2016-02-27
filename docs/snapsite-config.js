@@ -128,8 +128,9 @@ module.exports = {
                 },
                 // Styles to apply to the title block
                 titleBlock: {
-                    margin: '1em',
-                    borderBottom: '1px solid #EEEEEE'
+                    margin: '0px',
+                    padding: '1em',
+                    boxShadow: '0px 5px 5px 1em #CCC outset'
                 },
                 // Styles to apply to the title text within the title block
                 title: {

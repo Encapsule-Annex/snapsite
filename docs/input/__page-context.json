@@ -103,8 +103,9 @@
                     "boxShadow": "0px 0px 4px 2px #CCC"
                 },
                 "titleBlock": {
-                    "margin": "1em",
-                    "borderBottom": "1px solid #EEEEEE"
+                    "margin": "0px",
+                    "padding": "1em",
+                    "boxShadow": "0px 5px 5px 1em #CCC outset"
                 },
                 "title": {
                     "fontSize": "26pt",
@@ -145,9 +146,9 @@
     },
     "generator": {
         "build": {
-            "time": 1456522217895,
-            "date": "Fri Feb 26 2016 13:30:17 GMT-0800 (PST)",
-            "hash": "vP-0HGt4QOWJCGL2MhLU-w"
+            "time": 1456571290932,
+            "date": "Sat Feb 27 2016 03:08:10 GMT-0800 (PST)",
+            "hash": "i0rfhXRIRdqOvFiSiM_I0Q"
         },
         "agent": {
             "name": "snapsite",
@@ -174,6 +175,7 @@
                     ],
                     "ts": {
                         "i": 0,
+                        "d": 0,
                         "o": 29
                     }
                 }
@@ -192,6 +194,7 @@
                     ],
                     "ts": {
                         "i": 1,
+                        "d": 1,
                         "o": 4
                     }
                 }
@@ -211,6 +214,7 @@
                     ],
                     "ts": {
                         "i": 5,
+                        "d": 1,
                         "o": 10
                     }
                 }
@@ -234,6 +238,7 @@
                     ],
                     "ts": {
                         "i": 11,
+                        "d": 1,
                         "o": 28
                     }
                 }
@@ -250,6 +255,7 @@
                     "children": [],
                     "ts": {
                         "i": 2,
+                        "d": 2,
                         "o": 3
                     }
                 }
@@ -266,6 +272,7 @@
                     "children": [],
                     "ts": {
                         "i": 6,
+                        "d": 2,
                         "o": 7
                     }
                 }
@@ -282,6 +289,7 @@
                     "children": [],
                     "ts": {
                         "i": 8,
+                        "d": 2,
                         "o": 9
                     }
                 }
@@ -300,6 +308,7 @@
                     ],
                     "ts": {
                         "i": 12,
+                        "d": 2,
                         "o": 15
                     }
                 }
@@ -316,6 +325,7 @@
                     "children": [],
                     "ts": {
                         "i": 16,
+                        "d": 2,
                         "o": 17
                     }
                 }
@@ -332,6 +342,7 @@
                     "children": [],
                     "ts": {
                         "i": 18,
+                        "d": 2,
                         "o": 19
                     }
                 }
@@ -348,6 +359,7 @@
                     "children": [],
                     "ts": {
                         "i": 20,
+                        "d": 2,
                         "o": 21
                     }
                 }
@@ -364,6 +376,7 @@
                     "children": [],
                     "ts": {
                         "i": 22,
+                        "d": 2,
                         "o": 23
                     }
                 }
@@ -380,6 +393,7 @@
                     "children": [],
                     "ts": {
                         "i": 26,
+                        "d": 2,
                         "o": 27
                     }
                 }
@@ -396,6 +410,7 @@
                     "children": [],
                     "ts": {
                         "i": 13,
+                        "d": 3,
                         "o": 14
                     }
                 }
@@ -496,6 +511,7 @@
         ],
         "ts": {
             "i": 0,
+            "d": 0,
             "o": 29
         },
         "context": {}
