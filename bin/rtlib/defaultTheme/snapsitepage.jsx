@@ -37,23 +37,44 @@ var SnapPage = React.createClass({
         var isRootPage = (this.props.pagesGraph.inDegree(this.props.page.primaryRouteHash) === 0);
 
         if (isRootPage) {
-            content.push(<div key={makeKey()} style={theme.titleBlock}><span style={theme.title}>{this.props.site.title}</span> <span style={theme.subtitle}>- {this.props.page.description}</span></div>);
-            content.push(<HorizontalMenuBar {...this.props} parentRoute='/'  selectedRouteHash={this.props.page.primaryRouteHash} />);
+            // Title
+            content.push(<div key={makeKey()} style={theme.titleBlock}>
+                         <span style={theme.title}>{this.props.site.title}</span>{' '}
+                         <span style={theme.subtitle}>
+                         {' - '}
+                         {this.props.page.description}</span>
+                         </div>);
         } else {
+            // Breadcrumbs
             content.push(<Breadcrumbs {...this.props} key={makeKey()} />);
-            content.push(<div key={makeKey()} style={theme.titleBlock}><span style={theme.title}>{this.props.page.title}</span> <span style={theme.subtitle}>- {this.props.page.description}</span></div>);
-
-            var parentRouteHash = this.props.pagesGraph.inEdges(this.props.page.primaryRouteHash)[0].u;
-            var parentRoute = this.props.lookup.routeHashToRouteMap[parentRouteHash];
-            content.push(<HorizontalMenuBar {...this.props} parentRoute={parentRoute} selectedRouteHash={this.props.page.primaryRouteHash} />);
-
-            if (this.props.pagesGraph.outDegree(this.props.page.primaryRouteHash)) {
-               content.push(<HorizontalMenuBar {...this.props} parentRoute={this.props.page.primaryRoute} selectedRouteHash={this.props.page.primaryRouteHash} />);
-            }
-
+            // Title
+            content.push(<div key={makeKey()} style={theme.titleBlock}>
+                         <span style={theme.title}>{this.props.page.title}</span>
+                         {' '}
+                         <span style={theme.subtitle}>
+                         {' - '}
+                         {this.props.page.description}</span>
+                         </div>);
         }
 
+        // Do we need to render menu bars to reach the page routes above this page in the tree?
+        var horizontalMenuBars = [];
+        var menuRowsToRender = this.props.page.ts.d;
+        var currentRouteHash = this.props.page.primaryRouteHash;
+        while (menuRowsToRender) {
+            var parentRouteHash = this.props.pagesGraph.inEdges(currentRouteHash)[0].u;
+            var parentRoute = this.props.pagesGraph.getVertexProperty(parentRouteHash).primaryRoute;
+            horizontalMenuBars.unshift(<HorizontalMenuBar {...this.props} parentRoute={parentRoute} selectedRouteHash={this.props.page.primaryRouteHash} key={"menubar"+menuRowsToRender--} key={makeKey()} />);
+            currentRouteHash = parentRouteHash;
+        }
 
+        if (this.props.pagesGraph.outDegree(this.props.page.primaryRouteHash)) {
+            horizontalMenuBars.push(<HorizontalMenuBar {...this.props} parentRoute={this.props.page.primaryRoute} selectedRouteHash={this.props.page.primaryRouteHash} key={makeKey()}/>);
+        }
+
+        horizontalMenuBars.forEach(function(menuBar_) {
+            content.push(menuBar_);
+        });
 
         var contentRendered = React.createElement(this.props.renderContent, this.props);
         content.push(<div key={makeKey()} style={theme.contentBlock}>{contentRendered}</div>);

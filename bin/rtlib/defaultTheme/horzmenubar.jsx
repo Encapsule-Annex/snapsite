@@ -15,8 +15,11 @@ module.exports = React.createClass({
     className: 'HorizontalMenuBar',
     render: function() {
 
-        console.log(this.props.parentRoute + ";;;;" + this.props.selectedRouteHash);
-
+        var keyIndex = 0;
+        var self = this;
+        var makeKey = function() {
+            return "hmb" + self.props.page.ts.d + keyIndex++;
+        };
 
         var parentRouteHash = this.props.lookup.routeToRouteHashMap[this.props.parentRoute];
         if (parentRouteHash === undefined) {
@@ -39,22 +42,28 @@ module.exports = React.createClass({
         var childRouteHashes = parentRouteProps.children;
 
         if (!childRouteHashes.length) {
-            return(<div>No dog gamn children</div>);
+            return(<div>Empty menu bar probably should not be rendered...</div>);
         }
 
         var childMenuItems = [];
 
         for (var childRouteHash of childRouteHashes) {
-
-            childMenuItems.push(<HorizontalMenuItem {...this.props} targetRouteHash={childRouteHash} selectedRouteHash={this.props.selectedRouteHash} />);
-
+            childMenuItems.push(<HorizontalMenuItem {...this.props} targetRouteHash={childRouteHash} selectedRouteHash={this.props.selectedRouteHash} key={makeKey()}/>);
         }
 
+        var depth = parentRouteProps.ts.d + 1;
+        var shadeFactor = depth * 5;
+        var component = 255 - shadeFactor;
+        var color = '#' + ((component << 16) + (component << 8) + component).toString(16);
+
+        console.log("Color string we calculated was " + color);
+
         var styles = {
-            textAlign: 'right',
-            padding: '0.25em',
+            backgroundColor: color,
+            boxShadow: '0px 1px 1px #CCC inset',
+            padding: '0.5em',
             paddingRight: '1em',
-            backgroundColor: '#E0E0E0'
+            textAlign: 'left'
         };
 
         return (<div style={styles}>{childMenuItems}</div>);

@@ -35,6 +35,7 @@ module.exports = React.createClass({
     },
     render: function() {
 
+
         var content = [];
 
         var keyIndex = 0;
@@ -57,6 +58,8 @@ module.exports = React.createClass({
         var tsiTarget = targetRouteProps.ts.i;
         var tsoTarget = targetRouteProps.ts.o;
         var tsdTarget = targetRouteProps.ts.d;
+        var tsr = tsoTarget - tsiTarget;
+        var tswTarget = (tsr - 1) / 2;
         var tsiSelected = selectedRouteProps.ts.i;
 
         var mode;
@@ -75,43 +78,48 @@ module.exports = React.createClass({
             padding: '0.2em'
         };
 
-        const outOpacity = '0.5';
+        const outOpacity = '0.8';
 
         var modeStyles = {
             inactive: {
                 out: {
-                    backgroundColor: '#CCCCCC',
-                    opacity: outOpacity
+                    opacity: outOpacity,
+                    border: '1px solid #CCC'
                 },
                 over: {
-                    backgroundColor: '#CCCCCC',
+                    border: '1px solid #CCC'
                 },
                 clicked: {
+                    border: '1px solid #CCC',
                     backgroundColor: '#FF0'
                 }
             },
             selected: {
                 out: {
-                    backgroundColor: '#9CF',
+                    border: '1px solid #CCC',
+                    backgroundColor: "#FF0",
                     opacity: outOpacity
                 },
                 over: {
-                    backgroundColor: '#9CF',
+                    border: '1px solid #CCC',
+                    backgroundColor: '#FC0'
                 },
                 clicked: {
-                    backgroundColor: '#FF0'
+                    border: '1px solid #CCC'
                 }
             },
             active: {
                 out: {
-                    backgroundColor: '#69C',
+                    border: '1px solid #DDD',
+                    backgroundColor: 'rgba(0,0,0,0.1)',
                     opacity: outOpacity
                 },
                 over: {
-                    backgroundColor: '#69C',
+                    border: '1px solid #DDD'
                 },
                 clicked: {
-                    backgroundColor: '#FF0'
+                    border: '1px solid #DDD',
+                   backgroundColor: '#FF0'
                 }
             }
         };
@@ -124,7 +132,7 @@ module.exports = React.createClass({
 
         var targetUrl = './' + targetRouteProps.primaryRouteHash + '.html';
 
-        return (<span style={baseStyles} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} onClick={this.onClick}>{tsdTarget}:<a href={targetUrl} title={this.props.page.tooltip} style={baseStyles}>{targetRouteProps.title}</a></span>);
+        return (<span style={baseStyles} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} onClick={this.onClick}>{tsiTarget}.{tsdTarget}.{tsoTarget}.{tswTarget}:<a href={targetUrl} title={this.props.page.tooltip} style={baseStyles}>{targetRouteProps.title}</a></span>);
     }
 });
 
