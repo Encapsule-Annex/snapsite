@@ -62,9 +62,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for snapsite snapsite route '587cc689'.
+	  Main client entry point for snapsite snapsite route 'cefa9ed3'.
 	  This script will be called when the HTML5 document published at
-	  URL 'http://github.com/Encapsule/snapsite/testsite/blog' loads in your browser.
+	  URL 'http://github.com/Encapsule/snapsite/test-range/headings' loads in your browser.
 
 	  Produced by Encapsule/snapsite v0.0.8 Sun Feb 28 2016 13:15:42 GMT-0800 (PST)
 	  Site build instance: [1456694142980 b-OhLcGWQCKRn04_amH3CQ]
@@ -72,7 +72,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(470);
+	var SNAPRT = __webpack_require__(491);
 
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
@@ -80,7 +80,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ReactDOM = SNAPRT.reactDOM;
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(471);
+	var reactContextData = __webpack_require__(492);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -90,8 +90,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Replace the serialized digraph model with a runtime DirectedGraph container.
 	reactContextData.pagesGraph = factoryResponse.result;
 
-	console.log("snapsite client app initializing on route '/testsite/blog'...");
-	console.log("Page [snapsite :: Blog] (587cc689) Copyright (C) 2016 Encapsule.io");
+	console.log("snapsite client app initializing on route '/test-range/headings'...");
+	console.log("Page [snapsite :: headings] (cefa9ed3) Copyright (C) 2016 Encapsule.io");
 	console.log("Powered by Encapsule/snapsite v0.0.8 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
@@ -99,7 +99,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
 
-	var reactContentComponent = __webpack_require__(472);
+	var reactContentComponent = __webpack_require__(493);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -41614,7 +41614,28 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 467 */,
 /* 468 */,
 /* 469 */,
-/* 470 */
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */,
+/* 491 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41626,7 +41647,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Copyright (C) 2016 Encapsule.io
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/testsite/blog'.
+	  server scripts for input route '/test-range/headings'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -41651,7 +41672,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = snaprt;
 
 /***/ },
-/* 471 */
+/* 492 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -42371,17 +42392,17 @@ return /******/ (function(modules) { // webpackBootstrap
 			]
 		},
 		"page": {
-			"primaryRouteHash": "587cc689",
-			"primaryRoute": "/testsite/blog",
-			"title": "Blog",
-			"description": "Encapsule.io web development blog.",
-			"tooltip": "Encapsule.io blog...",
+			"primaryRouteHash": "cefa9ed3",
+			"primaryRoute": "/test-range/headings",
+			"title": "headings",
+			"description": "A test of <SnapHeader> theme component.",
+			"tooltip": "View <SnapHeader> test page...",
 			"rank": 0,
 			"children": [],
 			"ts": {
-				"i": 32,
+				"i": 6,
 				"d": 2,
-				"o": 33,
+				"o": 7,
 				"w": 0
 			},
 			"context": {}
@@ -42441,55 +42462,71 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 472 */
+/* 493 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var ARCCORE = __webpack_require__(3);
-	var React = __webpack_require__(27);
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var rootComponent = React.createClass({
-	        displayName: 'rootComponent',
+	var snaprt = __webpack_require__(491);
+	var React = snaprt.react;
+	var theme = snaprt.reactTheme;
+	var SnapHeader = theme.SnapHeader;
 
-	        render: function render() {
-	                var timestring = new Date().getTime();
-	                var datestring = new Date().toString();
-	                var irut = ARCCORE.identifier.irut.fromReference(timestring).result;
-	                return React.createElement(
-	                        'div',
-	                        null,
-	                        React.createElement(
-	                                'h2',
-	                                null,
-	                                irut
-	                        ),
-	                        React.createElement(
-	                                'p',
-	                                null,
-	                                'It\'s now ',
-	                                datestring
-	                        ),
-	                        React.createElement(
-	                                'h3',
-	                                null,
-	                                'Blog Placeholder'
-	                        ),
-	                        React.createElement(
-	                                'p',
-	                                null,
-	                                'This is just some HTML content that I\'m writing into the content.jsx component.'
-	                        ),
-	                        React.createElement(
-	                                'p',
-	                                null,
-	                                'In the short term, the blog feature will be implemented as a custom index over appropriately tagged pages. More on this later...'
-	                        )
-	                );
-	        }
+	module.exports = React.createClass({
+	  displayName: 'exports',
+
+	  render: function render() {
+
+	    return React.createElement(
+	      'span',
+	      null,
+	      React.createElement(
+	        'pre',
+	        null,
+	        '<SnapHeader {...this.props} heading="string" size="number(1-6)" />'
+	      ),
+	      React.createElement(SnapHeader, _extends({}, this.props, { heading: '<SnapHeader size="1" /> Headings', size: '1' })),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec ligula a dui ullamcorper facilisis. Maecenas cursus enim lorem, at facilisis augue pulvinar vitae. Proin id tortor sit amet nunc finibus fringilla sollicitudin vitae justo. Maecenas ornare a elit ac finibus. Nam ullamcorper mauris eu magna facilisis dapibus. Donec eget feugiat risus. Pellentesque auctor leo et orci vulputate iaculis. Vestibulum convallis lectus at fringilla laoreet. Mauris nunc elit, accumsan sed dui quis, euismod laoreet ipsum. Cras congue quam magna, a tincidunt leo molestie in. Pellentesque imperdiet quam a neque pretium facilisis. Phasellus sed lobortis dolor. Pellentesque ullamcorper odio dignissim euismod porta. Praesent nec lorem vitae ex ornare dignissim.'
+	      ),
+	      React.createElement(SnapHeader, _extends({}, this.props, { heading: '<SnapHeader size="2" /> Headings', size: '2' })),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Phasellus accumsan venenatis fringilla. Nunc tristique ullamcorper ligula a eleifend. Donec dapibus urna orci, id vulputate dolor dapibus in. Nam magna felis, commodo nec enim nec, sollicitudin commodo risus. Proin sed sagittis enim, id facilisis velit. Suspendisse tincidunt imperdiet libero, sed vulputate erat. Duis ut leo a ex congue sodales quis eu felis. Cras aliquet est tincidunt tellus iaculis iaculis. Donec quam velit, aliquet gravida elit elementum, convallis finibus leo. Nam vel sagittis massa. Interdum et malesuada fames ac ante ipsum primis in faucibus.'
+	      ),
+	      React.createElement(SnapHeader, _extends({}, this.props, { heading: '<SnapHeader size="3" /> Headings', size: '3' })),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Etiam quis erat finibus, sollicitudin nulla ac, iaculis nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer semper turpis sed varius rutrum. Proin vulputate eros ut magna facilisis ultrices. Vestibulum mi justo, pulvinar quis interdum sit amet, commodo a lectus. Praesent pulvinar sed ex at dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi eu molestie velit. Integer ac quam tristique lacus blandit lacinia sit amet eu ligula.'
+	      ),
+	      React.createElement(SnapHeader, _extends({}, this.props, { heading: '<SnapHeader size="4" /> Headings', size: '4' })),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce viverra orci nulla, non congue erat luctus vel. Vestibulum laoreet, est eget tristique gravida, metus leo lobortis nisl, non rutrum dui ligula at libero. Vivamus at urna ut tellus elementum aliquam. Proin nisl justo, egestas non dui vel, condimentum suscipit nunc. Maecenas placerat est justo, ac pretium dui tristique nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin tempor convallis nisl ut faucibus. Curabitur in faucibus orci, pellentesque volutpat libero.'
+	      ),
+	      React.createElement(SnapHeader, _extends({}, this.props, { heading: '<SnapHeader size="5" /> Headings', size: '5' })),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Sed vulputate turpis nec sapien porttitor ultrices. Sed tempor massa sem, nec aliquam ex volutpat vitae. Aliquam id sem aliquam, pellentesque ligula sed, tempor odio. Quisque gravida a lorem at vestibulum. Pellentesque blandit malesuada mollis. Nulla accumsan euismod nulla, vel hendrerit lorem lobortis eu. Duis ultricies urna non viverra aliquet. Nulla faucibus semper urna ut facilisis. Vivamus vel feugiat mi.'
+	      ),
+	      React.createElement(SnapHeader, _extends({}, this.props, { heading: '<SnapHeader size="6" /> Headings', size: '6' })),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus pulvinar metus lectus, ut molestie tellus auctor in. Vestibulum vitae auctor mauris. Nunc dui metus, molestie non condimentum in, finibus accumsan turpis. Nulla non rhoncus felis, eget suscipit elit. Mauris sagittis enim eu semper molestie. Sed et libero porttitor, ullamcorper enim non, euismod nibh. Proin semper dapibus lectus quis pretium. Curabitur sagittis feugiat rutrum. Duis tincidunt ullamcorper libero at vestibulum. Aliquam interdum mauris sit amet rutrum rutrum. Ut accumsan felis ligula, dictum venenatis ex cursus sed. Maecenas sodales enim eu varius blandit. Donec hendrerit dolor urna, eu volutpat sapien ullamcorper vel. Proin et consequat nulla. Praesent dolor turpis, lacinia at ultricies ac, ultrices non libero.'
+	      )
+	    );
+	  }
+
 	});
-
-	module.exports = rootComponent;
 
 /***/ }
 /******/ ])

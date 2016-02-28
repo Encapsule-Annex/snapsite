@@ -62,9 +62,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for snapsite snapsite route '587cc689'.
+	  Main client entry point for snapsite snapsite route '5d87245d'.
 	  This script will be called when the HTML5 document published at
-	  URL 'http://github.com/Encapsule/snapsite/testsite/blog' loads in your browser.
+	  URL 'http://github.com/Encapsule/snapsite/test-range/swipey-thing' loads in your browser.
 
 	  Produced by Encapsule/snapsite v0.0.8 Sun Feb 28 2016 13:15:42 GMT-0800 (PST)
 	  Site build instance: [1456694142980 b-OhLcGWQCKRn04_amH3CQ]
@@ -72,7 +72,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(470);
+	var SNAPRT = __webpack_require__(473);
 
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
@@ -80,7 +80,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ReactDOM = SNAPRT.reactDOM;
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(471);
+	var reactContextData = __webpack_require__(474);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -90,8 +90,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Replace the serialized digraph model with a runtime DirectedGraph container.
 	reactContextData.pagesGraph = factoryResponse.result;
 
-	console.log("snapsite client app initializing on route '/testsite/blog'...");
-	console.log("Page [snapsite :: Blog] (587cc689) Copyright (C) 2016 Encapsule.io");
+	console.log("snapsite client app initializing on route '/test-range/swipey-thing'...");
+	console.log("Page [snapsite :: Swipey Thing] (5d87245d) Copyright (C) 2016 Encapsule.io");
 	console.log("Powered by Encapsule/snapsite v0.0.8 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
@@ -99,7 +99,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
 
-	var reactContentComponent = __webpack_require__(472);
+	var reactContentComponent = __webpack_require__(475);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -41614,7 +41614,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 467 */,
 /* 468 */,
 /* 469 */,
-/* 470 */
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41626,7 +41629,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Copyright (C) 2016 Encapsule.io
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/testsite/blog'.
+	  server scripts for input route '/test-range/swipey-thing'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -41651,7 +41654,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = snaprt;
 
 /***/ },
-/* 471 */
+/* 474 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -42371,17 +42374,17 @@ return /******/ (function(modules) { // webpackBootstrap
 			]
 		},
 		"page": {
-			"primaryRouteHash": "587cc689",
-			"primaryRoute": "/testsite/blog",
-			"title": "Blog",
-			"description": "Encapsule.io web development blog.",
-			"tooltip": "Encapsule.io blog...",
+			"primaryRouteHash": "5d87245d",
+			"primaryRoute": "/test-range/swipey-thing",
+			"title": "Swipey Thing",
+			"description": "A test page to experiment with swipey things.",
+			"tooltip": "Check out the swipey thing...",
 			"rank": 0,
 			"children": [],
 			"ts": {
-				"i": 32,
+				"i": 8,
 				"d": 2,
-				"o": 33,
+				"o": 9,
 				"w": 0
 			},
 			"context": {}
@@ -42441,55 +42444,75 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 472 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
-	var ARCCORE = __webpack_require__(3);
-	var React = __webpack_require__(27);
+	var snaprt = __webpack_require__(473);
+	var React = snaprt.react;
+	var theme = snaprt.reactTheme;
+	var ReactBootstrap = theme.ReactBootstrap;
+	var Button = ReactBootstrap.Button;
 
-	var rootComponent = React.createClass({
-	        displayName: 'rootComponent',
+	var LUT = {
+	    0: "image0",
+	    1: "image1"
+	};
 
-	        render: function render() {
-	                var timestring = new Date().getTime();
-	                var datestring = new Date().toString();
-	                var irut = ARCCORE.identifier.irut.fromReference(timestring).result;
-	                return React.createElement(
-	                        'div',
-	                        null,
-	                        React.createElement(
-	                                'h2',
-	                                null,
-	                                irut
-	                        ),
-	                        React.createElement(
-	                                'p',
-	                                null,
-	                                'It\'s now ',
-	                                datestring
-	                        ),
-	                        React.createElement(
-	                                'h3',
-	                                null,
-	                                'Blog Placeholder'
-	                        ),
-	                        React.createElement(
-	                                'p',
-	                                null,
-	                                'This is just some HTML content that I\'m writing into the content.jsx component.'
-	                        ),
-	                        React.createElement(
-	                                'p',
-	                                null,
-	                                'In the short term, the blog feature will be implemented as a custom index over appropriately tagged pages. More on this later...'
-	                        )
-	                );
-	        }
+	module.exports = React.createClass({
+	    displayName: "exports",
+
+	    className: "SwipeyThing",
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            item: 0
+	        };
+	    },
+
+	    onClickBack: function onClickBack() {
+	        this.setState({ item: this.state.item - 1 });
+	        console.log(this.state.item);
+	    },
+
+	    onClickForward: function onClickForward() {
+	        this.setState({ item: this.state.item + 1 });
+	        console.log(this.state.item);
+	    },
+
+	    render: function render() {
+
+	        return React.createElement(
+	            "div",
+	            null,
+	            React.createElement(
+	                "p",
+	                null,
+	                "The current item to display is # ",
+	                this.state.item
+	            ),
+	            React.createElement(
+	                "p",
+	                null,
+	                "If this was real, then we would display image ",
+	                LUT[this.state.item]
+	            ),
+	            React.createElement(
+	                Button,
+	                { onClick: this.onClickBack },
+	                "Back"
+	            ),
+	            " ",
+	            React.createElement(
+	                Button,
+	                { onClick: this.onClickForward },
+	                "Forward"
+	            )
+	        );
+	    }
+
 	});
-
-	module.exports = rootComponent;
 
 /***/ }
 /******/ ])

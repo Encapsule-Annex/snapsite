@@ -62,9 +62,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for snapsite snapsite route '587cc689'.
+	  Main client entry point for snapsite snapsite route '37db97ea'.
 	  This script will be called when the HTML5 document published at
-	  URL 'http://github.com/Encapsule/snapsite/testsite/blog' loads in your browser.
+	  URL 'http://github.com/Encapsule/snapsite/testsite/about/directions/test1/test4/baz' loads in your browser.
 
 	  Produced by Encapsule/snapsite v0.0.8 Sun Feb 28 2016 13:15:42 GMT-0800 (PST)
 	  Site build instance: [1456694142980 b-OhLcGWQCKRn04_amH3CQ]
@@ -72,7 +72,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(470);
+	var SNAPRT = __webpack_require__(451);
 
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
@@ -80,7 +80,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ReactDOM = SNAPRT.reactDOM;
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(471);
+	var reactContextData = __webpack_require__(452);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -90,8 +90,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Replace the serialized digraph model with a runtime DirectedGraph container.
 	reactContextData.pagesGraph = factoryResponse.result;
 
-	console.log("snapsite client app initializing on route '/testsite/blog'...");
-	console.log("Page [snapsite :: Blog] (587cc689) Copyright (C) 2016 Encapsule.io");
+	console.log("snapsite client app initializing on route '/testsite/about/directions/test1/test4/baz'...");
+	console.log("Page [snapsite :: directions] (37db97ea) Copyright (C) 2016 Encapsule.io");
 	console.log("Powered by Encapsule/snapsite v0.0.8 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
@@ -99,7 +99,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
 
-	var reactContentComponent = __webpack_require__(472);
+	var reactContentComponent = SNAPRT.reactTheme.MissingContentRender;
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -41595,26 +41595,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 448 */,
 /* 449 */,
 /* 450 */,
-/* 451 */,
-/* 452 */,
-/* 453 */,
-/* 454 */,
-/* 455 */,
-/* 456 */,
-/* 457 */,
-/* 458 */,
-/* 459 */,
-/* 460 */,
-/* 461 */,
-/* 462 */,
-/* 463 */,
-/* 464 */,
-/* 465 */,
-/* 466 */,
-/* 467 */,
-/* 468 */,
-/* 469 */,
-/* 470 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41626,7 +41607,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Copyright (C) 2016 Encapsule.io
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/testsite/blog'.
+	  server scripts for input route '/testsite/about/directions/test1/test4/baz'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -41651,7 +41632,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = snaprt;
 
 /***/ },
-/* 471 */
+/* 452 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -42371,17 +42352,17 @@ return /******/ (function(modules) { // webpackBootstrap
 			]
 		},
 		"page": {
-			"primaryRouteHash": "587cc689",
-			"primaryRoute": "/testsite/blog",
-			"title": "Blog",
-			"description": "Encapsule.io web development blog.",
-			"tooltip": "Encapsule.io blog...",
+			"primaryRouteHash": "37db97ea",
+			"primaryRoute": "/testsite/about/directions/test1/test4/baz",
+			"title": "directions",
+			"description": "Blah blah blah blah",
+			"tooltip": "blah blah blah...",
 			"rank": 0,
 			"children": [],
 			"ts": {
-				"i": 32,
-				"d": 2,
-				"o": 33,
+				"i": 22,
+				"d": 6,
+				"o": 23,
 				"w": 0
 			},
 			"context": {}
@@ -42439,57 +42420,6 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}
 	};
-
-/***/ },
-/* 472 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var ARCCORE = __webpack_require__(3);
-	var React = __webpack_require__(27);
-
-	var rootComponent = React.createClass({
-	        displayName: 'rootComponent',
-
-	        render: function render() {
-	                var timestring = new Date().getTime();
-	                var datestring = new Date().toString();
-	                var irut = ARCCORE.identifier.irut.fromReference(timestring).result;
-	                return React.createElement(
-	                        'div',
-	                        null,
-	                        React.createElement(
-	                                'h2',
-	                                null,
-	                                irut
-	                        ),
-	                        React.createElement(
-	                                'p',
-	                                null,
-	                                'It\'s now ',
-	                                datestring
-	                        ),
-	                        React.createElement(
-	                                'h3',
-	                                null,
-	                                'Blog Placeholder'
-	                        ),
-	                        React.createElement(
-	                                'p',
-	                                null,
-	                                'This is just some HTML content that I\'m writing into the content.jsx component.'
-	                        ),
-	                        React.createElement(
-	                                'p',
-	                                null,
-	                                'In the short term, the blog feature will be implemented as a custom index over appropriately tagged pages. More on this later...'
-	                        )
-	                );
-	        }
-	});
-
-	module.exports = rootComponent;
 
 /***/ }
 /******/ ])
