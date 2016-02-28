@@ -75,7 +75,11 @@ module.exports = React.createClass({
         var baseStyles = {
             margin: '0px',
             padding: '0.2em',
-            boxShadow: '1px 1px 1px 1px #999'
+            boxShadow: '1px 1px 1px 1px #999',
+            fontFamily: 'Courier',
+            fontSize: '10pt',
+            width: '150px',
+            textAlign: 'center'
         };
 
         const outOpacity = '0.8';
@@ -92,7 +96,7 @@ module.exports = React.createClass({
                 },
                 clicked: {
                     border: '1px solid #CCC',
-                    backgroundColor: '#FF0'
+                    backgroundColor: '#F0F'
                 }
             },
             selected: {
@@ -104,11 +108,12 @@ module.exports = React.createClass({
                 },
                 over: {
                     border: '1px solid #CCC',
-                    backgroundColor: '#FC0',
+                    backgroundColor: '#FFC',
                     boxShadow: '1px 1px 1px 1px #999 inset'
                 },
                 clicked: {
                     border: '1px solid #CCC',
+                    backgroundColor: "#F0F",
                     boxShadow: '1px 1px 1px 1px #999 inset'
                 }
             },
@@ -121,11 +126,12 @@ module.exports = React.createClass({
                 },
                 over: {
                     border: '1px solid #DDD',
+                    backgroundColor: "#FFC",
                     boxShadow: '1px 1px 1px 1px #777 inset'
                 },
                 clicked: {
                     border: '1px solid #DDD',
-                    backgroundColor: '#FF0',
+                    backgroundColor: '#F0F',
                     boxShadow: '1px 1px 1px 1px #777 inset'
                 }
             }
@@ -137,9 +143,33 @@ module.exports = React.createClass({
             baseStyles[name] = modeStyles[mode][mouseMode][name];
         }
 
-        var targetUrl = './' + targetRouteProps.primaryRouteHash + '.html';
 
-        return (<span onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} onClick={this.onClick}><a href={targetUrl} title={this.props.page.tooltip} style={baseStyles}>{tsiTarget}.{tsdTarget}.{tsoTarget}.{tswTarget} <strong>{targetRouteProps.title}</strong></a></span>);
+        var targetUrl;
+        var targetTooltip;
+        var linkText;
+        var targetUrlStrategy = 'target';
+
+        if (mode === 'selected') {
+            if (this.props.pagesGraph.inDegree(targetRouteProps.primaryRouteHash)) {
+                targetUrlStrategy = 'parent';
+            }
+        }
+
+        if (targetUrlStrategy === 'target') {
+            targetUrl = './' + targetRouteProps.primaryRouteHash + '.html';
+            targetTooltip = "[snapmenu:" + ([tsiTarget, tsdTarget, tsoTarget, tswTarget]).join('.') + "]>> " + targetRouteProps.tooltip;
+        } else {
+            var parentRouteProps = this.props.pagesGraph.getVertexProperty(this.props.pagesGraph.inEdges(targetRouteProps.primaryRouteHash)[0].u);
+            targetUrl = './' + parentRouteProps.primaryRouteHash + '.html';
+            targetTooltip = "[snapmenu:" + ([tsiTarget, tsdTarget, tsoTarget, tswTarget]).join('.') + "]>> Close " + targetRouteProps.title + " and return to " + parentRouteProps.title + "...";
+        }
+
+        linkText = targetRouteProps.title;
+        if (tswTarget) {
+            linkText += " (" + (tswTarget) + ")";
+        }
+
+        return (<span onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} onClick={this.onClick}><a href={targetUrl} title={targetTooltip} style={baseStyles}>{linkText}</a></span>);
     }
 });
 
