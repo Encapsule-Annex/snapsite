@@ -63,7 +63,7 @@ module.exports = React.createClass({
             boxShadow: '0px 1px 1px #CCC inset',
             padding: '0.5em',
             paddingRight: '1em',
-            textAlign: 'left'
+            textAlign: 'right'
         };
 
         return (<div style={styles}>{childMenuItems}</div>);

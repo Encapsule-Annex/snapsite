@@ -58,8 +58,7 @@ module.exports = React.createClass({
         var tsiTarget = targetRouteProps.ts.i;
         var tsoTarget = targetRouteProps.ts.o;
         var tsdTarget = targetRouteProps.ts.d;
-        var tsr = tsoTarget - tsiTarget;
-        var tswTarget = (tsr - 1) / 2;
+        var tswTarget = targetRouteProps.ts.w;
         var tsiSelected = selectedRouteProps.ts.i;
 
         var mode;
@@ -75,7 +74,8 @@ module.exports = React.createClass({
 
         var baseStyles = {
             margin: '0px',
-            padding: '0.2em'
+            padding: '0.2em',
+            boxShadow: '1px 1px 1px 1px #999'
         };
 
         const outOpacity = '0.8';
@@ -84,7 +84,8 @@ module.exports = React.createClass({
             inactive: {
                 out: {
                     opacity: outOpacity,
-                    border: '1px solid #CCC'
+                    border: '1px solid #CCC',
+                    cornerShape: 'round 1em'
                 },
                 over: {
                     border: '1px solid #CCC'
@@ -98,28 +99,34 @@ module.exports = React.createClass({
                 out: {
                     border: '1px solid #CCC',
                     backgroundColor: "#FF0",
-                    opacity: outOpacity
+                    opacity: outOpacity,
+                    boxShadow: '1px 1px 1px 1px #999 inset'
                 },
                 over: {
                     border: '1px solid #CCC',
-                    backgroundColor: '#FC0'
+                    backgroundColor: '#FC0',
+                    boxShadow: '1px 1px 1px 1px #999 inset'
                 },
                 clicked: {
-                    border: '1px solid #CCC'
+                    border: '1px solid #CCC',
+                    boxShadow: '1px 1px 1px 1px #999 inset'
                 }
             },
             active: {
                 out: {
                     border: '1px solid #DDD',
                     backgroundColor: 'rgba(0,0,0,0.1)',
-                    opacity: outOpacity
+                    opacity: outOpacity,
+                    boxShadow: '1px 1px 1px 1px #777 inset'
                 },
                 over: {
-                    border: '1px solid #DDD'
+                    border: '1px solid #DDD',
+                    boxShadow: '1px 1px 1px 1px #777 inset'
                 },
                 clicked: {
                     border: '1px solid #DDD',
-                   backgroundColor: '#FF0'
+                    backgroundColor: '#FF0',
+                    boxShadow: '1px 1px 1px 1px #777 inset'
                 }
             }
         };
@@ -132,7 +139,7 @@ module.exports = React.createClass({
 
         var targetUrl = './' + targetRouteProps.primaryRouteHash + '.html';
 
-        return (<span style={baseStyles} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} onClick={this.onClick}>{tsiTarget}.{tsdTarget}.{tsoTarget}.{tswTarget}:<a href={targetUrl} title={this.props.page.tooltip} style={baseStyles}>{targetRouteProps.title}</a></span>);
+        return (<span onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} onClick={this.onClick}><a href={targetUrl} title={this.props.page.tooltip} style={baseStyles}>{tsiTarget}.{tsdTarget}.{tsoTarget}.{tswTarget} <strong>{targetRouteProps.title}</strong></a></span>);
     }
 });
 

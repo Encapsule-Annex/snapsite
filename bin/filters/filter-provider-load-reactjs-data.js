@@ -87,7 +87,6 @@ var factoryResponse = ARCCORE.filter.create({
                     tooltip: thisRouteConfig.tooltip,
                     rank: thisRouteConfig.rank,
                     children: childrenFinal,
-                    ts: thisRouteDescriptor.ts
                 };
                 pagesGraph.addVertex({ u: routeHash, p: pageContext });
                 pagesContext[routeHash] = thisRouteConfig.providers.ReactJS;
@@ -107,6 +106,31 @@ var factoryResponse = ARCCORE.filter.create({
                 }
             }
 
+            // Topological sort the pages graph.
+            var snapcount = 0;
+            var traversalResponse = ARCCORE.graph.directed.depthFirstTraverse({
+                digraph: pagesGraph,
+                visitor: {
+                    discoverVertex: function(gcb_) {
+                        var props = gcb_.g.getVertexProperty(gcb_.u);
+                        var d = 0;
+                        if (gcb_.g.inDegree(gcb_.u)) {
+                            d = gcb_.g.getVertexProperty(gcb_.g.inEdges(gcb_.u)[0].u).ts.d + 1;
+                        };
+                        props.ts = { i: snapcount++, d: d };
+                        gcb_.g.setVertexProperty({u:gcb_.u, props});
+                        return true;
+                    },
+                    finishVertex: function(gcb_) {
+                        var props = gcb_.g.getVertexProperty(gcb_.u);
+                        props.ts.o = snapcount++;
+                        props.ts.w = (props.ts.o - props.ts.i - 1) / 2;
+                        gcb_.g.setVertexProperty({u:gcb_.u, props});
+                        return true;
+                    }
+                }
+            });
+
             if (errors.length) {
                 break;
             }
@@ -117,6 +141,10 @@ var factoryResponse = ARCCORE.filter.create({
                 pagesGraph: pagesGraph,
                 pagesContext: pagesContext
             };
+
+            console.log("THE COMPLETE PAGES GRAPH USED TO GENERATE EACH PAGES DATA CONTEXT:");
+            console.log(routeHashGraph.stringify(undefined,4));
+
             break;
         }
         if (errors.length) {
