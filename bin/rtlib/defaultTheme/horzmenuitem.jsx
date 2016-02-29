@@ -35,7 +35,6 @@ module.exports = React.createClass({
     },
     render: function() {
 
-
         var content = [];
 
         var keyIndex = 0;
@@ -74,66 +73,92 @@ module.exports = React.createClass({
 
         var baseStyles = {
             margin: '0px',
+            marginRight: '0.5em',
             padding: '0.2em',
-            boxShadow: '1px 1px 1px 1px #999',
+            paddingLeft: '0.5em',
+            paddingRight: '0.5em',
+            boxShadow: '1px 1px 10px 0px #CCC',
             fontFamily: 'Courier',
             fontSize: '10pt',
-            width: '150px',
-            textAlign: 'center'
+            textAlign: 'center',
+            borderRadius: '0.5em',
+            opacity: '1.0'
         };
 
-        const outOpacity = '0.8';
+        const outOpacity = '0.7';
 
-        var modeStyles = {
+        const modeStyles = {
             inactive: {
                 out: {
                     opacity: outOpacity,
-                    border: '1px solid #CCC',
-                    cornerShape: 'round 1em'
+                    border: '1px solid #CCC'
                 },
                 over: {
-                    border: '1px solid #CCC'
+                    border: '1px solid #CCC',
+                    boxShadow: '1px 1px 8px 0px #CCC inset',
+                    fontWeight: 'bold'
                 },
                 clicked: {
                     border: '1px solid #CCC',
-                    backgroundColor: '#F0F'
+                    boxShadow: '1px 1px 8px 0px #999 inset',
+                    backgroundColor: '#CDE',
+                    fontWeight: 'bold'
                 }
             },
             selected: {
                 out: {
                     border: '1px solid #CCC',
-                    backgroundColor: "#FF0",
-                    opacity: outOpacity,
-                    boxShadow: '1px 1px 1px 1px #999 inset'
+                    backgroundColor: "#DEF",
+                    boxShadow: '1px 1px 8px 0px #CCC inset',
+                    fontWeight: 'bold'
                 },
                 over: {
                     border: '1px solid #CCC',
-                    backgroundColor: '#FFC',
-                    boxShadow: '1px 1px 1px 1px #999 inset'
+                    backgroundColor: "#DEF",
+                    fontWeight: 'normal'
                 },
                 clicked: {
-                    border: '1px solid #CCC',
-                    backgroundColor: "#F0F",
-                    boxShadow: '1px 1px 1px 1px #999 inset'
+                    border: '1px solid #EEE',
+                    fontWeight: 'normal'
                 }
             },
             active: {
                 out: {
                     border: '1px solid #DDD',
-                    backgroundColor: 'rgba(0,0,0,0.1)',
-                    opacity: outOpacity,
-                    boxShadow: '1px 1px 1px 1px #777 inset'
+                    backgroundColor: '#CDE',
+                    boxShadow: '1px 1px 8px 0px #CCC inset',
+                    fontWeight: 'bold'
                 },
                 over: {
                     border: '1px solid #DDD',
-                    backgroundColor: "#FFC",
-                    boxShadow: '1px 1px 1px 1px #777 inset'
+                    backgroundColor: "#DEF",
+                    boxShadow: '1px 1px 8px 0px #CCC inset',
+                    fontWeight: 'bold'
                 },
                 clicked: {
-                    border: '1px solid #DDD',
-                    backgroundColor: '#F0F',
-                    boxShadow: '1px 1px 1px 1px #777 inset'
+                    border: '1px solid #EEE',
+                    boxShadow: '1px 1px 8px 0px #999 inset',
+                    backgroundColor: '#DEF',
+                    fontWeight: 'bold'
                 }
+            }
+        };
+
+        const modeLinkTextPrefix = {
+            inactive: {
+                out: '+',
+                over: '+',
+                clicked: '-'
+            },
+            selected: {
+                out: '-',
+                over: '-',
+                clicked: '+'
+            },
+            active: {
+                out: '-',
+                over: '-',
+                clicked: '-'
             }
         };
 
@@ -142,7 +167,6 @@ module.exports = React.createClass({
         for (var name in modeStyles[mode][mouseMode]) {
             baseStyles[name] = modeStyles[mode][mouseMode][name];
         }
-
 
         var targetUrl;
         var targetTooltip;
@@ -166,10 +190,10 @@ module.exports = React.createClass({
 
         linkText = targetRouteProps.title;
         if (tswTarget) {
-            linkText += " (" + (tswTarget) + ")";
+            linkText = modeLinkTextPrefix[mode][mouseMode] + " " + linkText + " (" + (tswTarget) + ")";
         }
 
-        return (<span onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} onClick={this.onClick}><a href={targetUrl} title={targetTooltip} style={baseStyles}>{linkText}</a></span>);
+        return (<span style={baseStyles}><a href={targetUrl} title={targetTooltip} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} onClick={this.onClick}>{linkText}</a></span>);
     }
 });
 

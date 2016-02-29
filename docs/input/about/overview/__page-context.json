@@ -25,30 +25,30 @@
                 },
                 "linkHover": {
                     "textDecoration": "none",
-                    "color": "#090",
-                    "borderBottom": "1px solid #090"
+                    "color": "#F90",
+                    "borderBottom": "1px solid #F90"
                 },
                 "linkLoading": {
                     "textDecoration": "none",
-                    "color": "#F0F",
-                    "borderBottom": "1px solid #F0F",
-                    "textShadow": "0px 0px 16px #666"
+                    "color": "#00F",
+                    "borderBottom": "1px solid #00F",
+                    "textShadow": "0px 0px 16px #9CF"
                 },
                 "xlink": {
                     "textDecoration": "none",
-                    "color": "#090",
+                    "color": "#09C",
                     "borderBottom": "1px solid #F0F0F0"
                 },
                 "xlinkHover": {
                     "textDecoration": "none",
-                    "color": "#06C",
-                    "borderBottom": "1px solid #06C"
+                    "color": "#F90",
+                    "borderBottom": "1px solid #F90"
                 },
                 "xlinkLoading": {
                     "textDecoration": "none",
-                    "color": "#F0F",
-                    "borderBottom": "1px solid #F0F",
-                    "textShadow": "0px 0px 16px #666"
+                    "color": "#00F",
+                    "borderBottom": "1px solid #00F",
+                    "textShadow": "0px 0px 16px #9CF"
                 },
                 "header1": {
                     "fontSize": "22pt",
@@ -146,13 +146,13 @@
     },
     "generator": {
         "build": {
-            "time": 1456694142980,
-            "date": "Sun Feb 28 2016 13:15:42 GMT-0800 (PST)",
-            "hash": "b-OhLcGWQCKRn04_amH3CQ"
+            "time": 1456754662884,
+            "date": "Mon Feb 29 2016 06:04:22 GMT-0800 (PST)",
+            "hash": "EtCUHzT-Q1ugC2TmeFnP_Q"
         },
         "agent": {
             "name": "snapsite",
-            "version": "0.0.8"
+            "version": "0.0.9"
         }
     },
     "pagesGraph": {

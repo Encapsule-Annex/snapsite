@@ -59,7 +59,15 @@ var SnapPage = React.createClass({
 
         // Do we need to render menu bars to reach the page routes above this page in the tree?
         var horizontalMenuBars = [];
-        var menuRowsToRender = this.props.page.ts.d;
+
+        var maxRowsToRender = 4;
+
+        if (this.props.page.children.length) {
+            maxRowsToRender--;
+        }
+
+        var menuRowsToRender = Math.min(this.props.page.ts.d, maxRowsToRender);
+        console.log("Going to try to render " + menuRowsToRender + " menu bars...");
         var currentRouteHash = this.props.page.primaryRouteHash;
         while (menuRowsToRender) {
             var parentRouteHash = this.props.pagesGraph.inEdges(currentRouteHash)[0].u;
@@ -68,7 +76,7 @@ var SnapPage = React.createClass({
             currentRouteHash = parentRouteHash;
         }
 
-        if (this.props.pagesGraph.outDegree(this.props.page.primaryRouteHash)) {
+        if (this.props.page.children.length) {
             horizontalMenuBars.push(<HorizontalMenuBar {...this.props} parentRoute={this.props.page.primaryRoute} selectedRouteHash={this.props.page.primaryRouteHash} key={makeKey()}/>);
         }
 

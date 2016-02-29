@@ -1,7 +1,10 @@
 // 'default' theme.
 
 module.exports = {
+    // defaultTheme dependencies
+    Color: require('color'),
     ReactBootstrap: require('react-bootstrap'),
+
     SnapPage: require('./snapsitepage.jsx'),
     Breadcrumbs: require('./breadcrumbs.jsx'),
 
@@ -20,5 +23,4 @@ module.exports = {
     SnapBug: require('./snapsitebug.jsx'),
 
     MissingContentRender: require('./missing-content-render.jsx')
-
 };

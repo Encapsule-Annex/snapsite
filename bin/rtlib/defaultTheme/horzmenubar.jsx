@@ -39,7 +39,11 @@ module.exports = React.createClass({
             return (<div>HorizontalMenuBar invalid selected route hash '{this.props.selectedRouteHash}' has no addressable page defined.</div>);
         }
 
-        var childRouteHashes = parentRouteProps.children;
+        if (this.props.parentRoute !== undefined) {
+            var childRouteHashes = parentRouteProps.children;
+        } else {
+            var childRouteHashes = [ this.props.pagesGraph.getRootVertices()[0] ];
+        }
 
         if (!childRouteHashes.length) {
             return(<div>Empty menu bar probably should not be rendered...</div>);
@@ -52,18 +56,21 @@ module.exports = React.createClass({
         }
 
         var depth = parentRouteProps.ts.d + 1;
-        var shadeFactor = depth * 5;
-        var component = 255 - shadeFactor;
-        var color = '#' + ((component << 16) + (component << 8) + component).toString(16);
-
-        console.log("Color string we calculated was " + color);
+        var shadeFactor1 = depth * 5;
+        var component1 = 255 - shadeFactor1;
+        var color1 = '#' + ((component1 << 16) + (component1 << 8) + component1).toString(16);
+        var shadeFactor2 = depth * 6.5;
+        var component2 = 255 - shadeFactor2;
+        var color2 = '#' + ((component2 << 16) + (component2 << 8) + component2).toString(16);
 
         var styles = {
-            backgroundColor: color,
-            boxShadow: '0px 1px 1px #CCC inset',
-            padding: '0.5em',
+            backgroundColor: color1,
+            boxShadow: '0px 8px 16px 0px ' + color2 + ' inset',
+            padding: '0.3em',
+            paddingBottom: '0.4em',
             paddingRight: '1em',
-            textAlign: 'right'
+            textAlign: 'right',
+            verticalAlign: 'center'
         };
 
         return (<div style={styles}>{childMenuItems}</div>);

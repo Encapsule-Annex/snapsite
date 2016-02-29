@@ -41,34 +41,34 @@ module.exports = {
                 // Default style for internal A:hover (simulated)
                 linkHover: {
                     textDecoration: 'none',
-                    color: '#090',
-                    borderBottom: '1px solid #090'
+                    color: '#F90',
+                    borderBottom: '1px solid #F90'
                 },
                 // Default style for internal A:active (simulated)
                 linkLoading: {
                     textDecoration: 'none',
-                    color: '#F0F',
-                    borderBottom: '1px solid #F0F',
-                    textShadow: '0px 0px 16px #666'
+                    color: '#00F',
+                    borderBottom: '1px solid #00F',
+                    textShadow: '0px 0px 16px #9CF'
                 },
                 // Default style of external A tags
                 xlink: {
                     textDecoration: 'none',
-                    color: '#090',
+                    color: '#09C',
                     borderBottom: '1px solid #F0F0F0'
                 },
                 // Default style for external A:hover (simulated)
                 xlinkHover: {
                     textDecoration: 'none',
-                    color: '#06C',
-                    borderBottom: '1px solid #06C'
+                    color: '#F90',
+                    borderBottom: '1px solid #F90'
                 },
                 // Default style for external A:active (simulated)
                 xlinkLoading: {
                     textDecoration: 'none',
-                    color: '#F0F',
-                    borderBottom: '1px solid #F0F',
-                    textShadow: '0px 0px 16px #666'
+                    color: '#00F',
+                    borderBottom: '1px solid #00F',
+                    textShadow: '0px 0px 16px #9CF'
                 },
                 header1: {
                     fontSize: '22pt',
