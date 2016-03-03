@@ -9,6 +9,7 @@ const ARCTOOLS = require('arctools');
 const ARCCORE = ARCTOOLS.arccore;
 
 const PATH = require('path');
+const PROCESS = require('process');
 const MKDIRP = require('mkdirp');
 const React = require('react');
 
@@ -114,11 +115,17 @@ if (writerResponse.error) {
 console.log(clistyle.infoBody("... wrote ") + clistyle.fileOutput(providersConfigPath));
 
 
-
 // ==========================================================================
 // BUILD THE ROUTE RESOURCES (via each route's registered provider(s))
 
 console.log(clistyle.processStepHeader("> Building routes..."));
+
+var invokedFromWorkingDirectory = PROCESS.cwd();
+try {
+    PROCESS.chdir(__dirname);
+} catch (error_) {
+    throw new Error(error_.toString());
+}
 
 var providerBuilderResponse = filters.build.routeProviders.request({
     projectManifest: projectManifest,
