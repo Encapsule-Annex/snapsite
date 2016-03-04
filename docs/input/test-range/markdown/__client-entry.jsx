@@ -4,9 +4,9 @@
 
   Copyright (C) 2016 Encapsule.io
 
-  Main client entry point for snapsite snapsite route 'f243d161'.
+  Main client entry point for snapsite snapsite route 'cc7bc34d'.
   This script will be called when the HTML5 document published at
-  URL 'http://github.com/Encapsule/snapsite/testsite/about' loads in your browser.
+  URL 'http://github.com/Encapsule/snapsite/test-range/markdown' loads in your browser.
 
   Produced by Encapsule/snapsite v0.0.11 Fri Mar 04 2016 15:16:40 GMT-0800 (PST)
   Site build instance: [1457133400448 SqliiziPR_ekYuqPj3PG4A]
@@ -32,8 +32,8 @@ if (factoryResponse.error) {
 // Replace the serialized digraph model with a runtime DirectedGraph container.
 reactContextData.pagesGraph = factoryResponse.result;
 
-console.log("snapsite client app initializing on route '/testsite/about'...");
-console.log("Page [snapsite :: About] (f243d161) Copyright (C) 2016 Encapsule.io");
+console.log("snapsite client app initializing on route '/test-range/markdown'...");
+console.log("Page [snapsite :: markdown] (cc7bc34d) Copyright (C) 2016 Encapsule.io");
 console.log("Powered by Encapsule/snapsite v0.0.11 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);

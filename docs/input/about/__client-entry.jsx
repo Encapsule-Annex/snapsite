@@ -8,8 +8,8 @@
   This script will be called when the HTML5 document published at
   URL 'http://github.com/Encapsule/snapsite/about' loads in your browser.
 
-  Produced by Encapsule/snapsite v0.0.9 Mon Feb 29 2016 06:04:22 GMT-0800 (PST)
-  Site build instance: [1456754662884 EtCUHzT-Q1ugC2TmeFnP_Q]
+  Produced by Encapsule/snapsite v0.0.11 Fri Mar 04 2016 15:16:40 GMT-0800 (PST)
+  Site build instance: [1457133400448 SqliiziPR_ekYuqPj3PG4A]
 */
 // ======================================================================
 
@@ -34,7 +34,7 @@ reactContextData.pagesGraph = factoryResponse.result;
 
 console.log("snapsite client app initializing on route '/about'...");
 console.log("Page [snapsite :: about] (bbaf163f) Copyright (C) 2016 Encapsule.io");
-console.log("Powered by Encapsule/snapsite v0.0.9 // " +
+console.log("Powered by Encapsule/snapsite v0.0.11 // " +
             "Encapsule/ARC v" + ARCCORE.__meta.version + " // " +
             "Facebook/react v"+ React.version);
 console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");

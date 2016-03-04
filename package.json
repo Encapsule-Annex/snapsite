@@ -1,7 +1,7 @@
 {
   "name": "snapsite",
-  "version": "0.0.10",
-  "description": "Node.js command line tools for rendering ReactJS websites in a snap.",
+  "version": "0.0.11",
+  "description": "Website compiler and code generator tool for building React JS-powered Node.js apps.",
   "bin": {
     "snapsite": "./bin/snapsite.js",
     "snap": "./bin/snapsite.js"
@@ -52,9 +52,11 @@
     "json-loader": "^0.5.4",
     "mkdirp": "^0.5.1",
     "node-loader": "^0.5.0",
+    "raw-loader": "^0.5.1",
     "react": "^0.14.6",
     "react-bootstrap": "^0.28.3",
     "react-dom": "^0.14.6",
+    "react-remarkable": "^1.1.1",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.11",

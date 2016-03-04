@@ -146,13 +146,13 @@
     },
     "generator": {
         "build": {
-            "time": 1456754662884,
-            "date": "Mon Feb 29 2016 06:04:22 GMT-0800 (PST)",
-            "hash": "EtCUHzT-Q1ugC2TmeFnP_Q"
+            "time": 1457133400448,
+            "date": "Fri Mar 04 2016 15:16:40 GMT-0800 (PST)",
+            "hash": "SqliiziPR_ekYuqPj3PG4A"
         },
         "agent": {
             "name": "snapsite",
-            "version": "0.0.9"
+            "version": "0.0.11"
         }
     },
     "pagesGraph": {
@@ -176,8 +176,8 @@
                     "ts": {
                         "i": 0,
                         "d": 0,
-                        "o": 43,
-                        "w": 21
+                        "o": 45,
+                        "w": 22
                     }
                 }
             },
@@ -212,13 +212,14 @@
                     "rank": 0,
                     "children": [
                         "cefa9ed3",
+                        "cc7bc34d",
                         "5d87245d"
                     ],
                     "ts": {
                         "i": 5,
                         "d": 1,
-                        "o": 10,
-                        "w": 2
+                        "o": 12,
+                        "w": 3
                     }
                 }
             },
@@ -240,9 +241,9 @@
                         "7d516a9c"
                     ],
                     "ts": {
-                        "i": 11,
+                        "i": 13,
                         "d": 1,
-                        "o": 42,
+                        "o": 44,
                         "w": 15
                     }
                 }
@@ -284,6 +285,24 @@
                 }
             },
             {
+                "u": "cc7bc34d",
+                "p": {
+                    "primaryRouteHash": "cc7bc34d",
+                    "primaryRoute": "/test-range/markdown",
+                    "title": "markdown",
+                    "description": "Render content as markdown.",
+                    "tooltip": "Jump to markdown render test page...",
+                    "rank": 0,
+                    "children": [],
+                    "ts": {
+                        "i": 8,
+                        "d": 2,
+                        "o": 9,
+                        "w": 0
+                    }
+                }
+            },
+            {
                 "u": "5d87245d",
                 "p": {
                     "primaryRouteHash": "5d87245d",
@@ -294,9 +313,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 8,
+                        "i": 10,
                         "d": 2,
-                        "o": 9,
+                        "o": 11,
                         "w": 0
                     }
                 }
@@ -315,9 +334,9 @@
                         "487a72fa"
                     ],
                     "ts": {
-                        "i": 12,
+                        "i": 14,
                         "d": 2,
-                        "o": 31,
+                        "o": 33,
                         "w": 9
                     }
                 }
@@ -333,9 +352,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 32,
+                        "i": 34,
                         "d": 2,
-                        "o": 33,
+                        "o": 35,
                         "w": 0
                     }
                 }
@@ -351,9 +370,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 34,
+                        "i": 36,
                         "d": 2,
-                        "o": 35,
+                        "o": 37,
                         "w": 0
                     }
                 }
@@ -369,9 +388,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 36,
+                        "i": 38,
                         "d": 2,
-                        "o": 37,
+                        "o": 39,
                         "w": 0
                     }
                 }
@@ -387,9 +406,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 38,
+                        "i": 40,
                         "d": 2,
-                        "o": 39,
+                        "o": 41,
                         "w": 0
                     }
                 }
@@ -405,9 +424,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 40,
+                        "i": 42,
                         "d": 2,
-                        "o": 41,
+                        "o": 43,
                         "w": 0
                     }
                 }
@@ -423,9 +442,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 13,
+                        "i": 15,
                         "d": 3,
-                        "o": 14,
+                        "o": 16,
                         "w": 0
                     }
                 }
@@ -444,9 +463,9 @@
                         "1f7c9b78"
                     ],
                     "ts": {
-                        "i": 15,
+                        "i": 17,
                         "d": 3,
-                        "o": 30,
+                        "o": 32,
                         "w": 7
                     }
                 }
@@ -465,9 +484,9 @@
                         "3e668e9e"
                     ],
                     "ts": {
-                        "i": 16,
+                        "i": 18,
                         "d": 4,
-                        "o": 27,
+                        "o": 29,
                         "w": 5
                     }
                 }
@@ -483,9 +502,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 28,
+                        "i": 30,
                         "d": 4,
-                        "o": 29,
+                        "o": 31,
                         "w": 0
                     }
                 }
@@ -501,9 +520,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 17,
+                        "i": 19,
                         "d": 5,
-                        "o": 18,
+                        "o": 20,
                         "w": 0
                     }
                 }
@@ -523,9 +542,9 @@
                         "83f6fa72"
                     ],
                     "ts": {
-                        "i": 19,
+                        "i": 21,
                         "d": 5,
-                        "o": 26,
+                        "o": 28,
                         "w": 3
                     }
                 }
@@ -541,9 +560,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 20,
+                        "i": 22,
                         "d": 6,
-                        "o": 21,
+                        "o": 23,
                         "w": 0
                     }
                 }
@@ -559,9 +578,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 22,
+                        "i": 24,
                         "d": 6,
-                        "o": 23,
+                        "o": 25,
                         "w": 0
                     }
                 }
@@ -577,9 +596,9 @@
                     "rank": 0,
                     "children": [],
                     "ts": {
-                        "i": 24,
+                        "i": 26,
                         "d": 6,
-                        "o": 25,
+                        "o": 27,
                         "w": 0
                     }
                 }
@@ -614,6 +633,12 @@
                 "e": {
                     "u": "78f0037c",
                     "v": "cefa9ed3"
+                }
+            },
+            {
+                "e": {
+                    "u": "78f0037c",
+                    "v": "cc7bc34d"
                 }
             },
             {
@@ -723,9 +748,9 @@
         "rank": 0,
         "children": [],
         "ts": {
-            "i": 36,
+            "i": 38,
             "d": 2,
-            "o": 37,
+            "o": 39,
             "w": 0
         },
         "context": {}
@@ -738,6 +763,7 @@
             "556295b3": "/testsite",
             "fd8a3bfd": "/about/overview",
             "cefa9ed3": "/test-range/headings",
+            "cc7bc34d": "/test-range/markdown",
             "5d87245d": "/test-range/swipey-thing",
             "f243d161": "/testsite/about",
             "587cc689": "/testsite/blog",
@@ -763,6 +789,7 @@
             "/testsite": "556295b3",
             "/about/overview": "fd8a3bfd",
             "/test-range/headings": "cefa9ed3",
+            "/test-range/markdown": "cc7bc34d",
             "/test-range/swipey-thing": "5d87245d",
             "/testsite/about": "f243d161",
             "/testsite/blog": "587cc689",

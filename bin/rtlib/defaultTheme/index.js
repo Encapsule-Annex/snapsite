@@ -4,6 +4,7 @@ module.exports = {
     // defaultTheme dependencies
     Color: require('color'),
     ReactBootstrap: require('react-bootstrap'),
+    Markdown: require('react-remarkable'),
 
     SnapPage: require('./snapsitepage.jsx'),
     Breadcrumbs: require('./breadcrumbs.jsx'),
