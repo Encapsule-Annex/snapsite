@@ -122,7 +122,12 @@ console.log(clistyle.processStepHeader("> Building routes..."));
 
 var invokedFromWorkingDirectory = PROCESS.cwd();
 try {
+    console.log("======================================================================");
+    console.log("Debug:");
+    console.log("snapsite working directory '" + PROCESS.cwd() + "'");
+    console.log("snapsite bin directory '" + __dirname + "'");
     PROCESS.chdir(__dirname);
+    console.log("... changed this process' working directory to '" + __dirname + "'");
 } catch (error_) {
     throw new Error(error_.toString());
 }
