@@ -37,4 +37,6 @@ node_modules
 
 # snapsite
 docs/output
+__*.jsx
+__*.json
 
