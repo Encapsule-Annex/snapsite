@@ -62,9 +62,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Copyright (C) 2016 Encapsule.io
 
-	  Main client entry point for snapsite snapsite route 'bbaf163f'.
+	  Main client entry point for snapsite snapsite route 'cc7bc34d'.
 	  This script will be called when the HTML5 document published at
-	  URL 'http://github.com/Encapsule/snapsite/about' loads in your browser.
+	  URL 'http://github.com/Encapsule/snapsite/test-range/markdown' loads in your browser.
 
 	  Produced by Encapsule/snapsite v0.0.11 Fri Mar 04 2016 22:08:09 GMT-0800 (PST)
 	  Site build instance: [1457158089579 xRC7Qf2eTwWoBtFOYJ59Qg]
@@ -72,7 +72,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// ======================================================================
 
 	// Load the snapsite runtime library.
-	var SNAPRT = __webpack_require__(555);
+	var SNAPRT = __webpack_require__(558);
 
 	// Alias submodules.
 	var ARCCORE = SNAPRT.arccore;
@@ -80,7 +80,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var ReactDOM = SNAPRT.reactDOM;
 
 	// Load the React data context prepared by snapsite.
-	var reactContextData = __webpack_require__(556);
+	var reactContextData = __webpack_require__(559);
 
 	// Convert the serialized pages digraph model into an in-memory graph DB.
 	var factoryResponse = ARCCORE.graph.directed.create(reactContextData.pagesGraph);
@@ -90,8 +90,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	// Replace the serialized digraph model with a runtime DirectedGraph container.
 	reactContextData.pagesGraph = factoryResponse.result;
 
-	console.log("snapsite client app initializing on route '/about'...");
-	console.log("Page [snapsite :: about] (bbaf163f) Copyright (C) 2016 Encapsule.io");
+	console.log("snapsite client app initializing on route '/test-range/markdown'...");
+	console.log("Page [snapsite :: markdown] (cc7bc34d) Copyright (C) 2016 Encapsule.io");
 	console.log("Powered by Encapsule/snapsite v0.0.11 // " + "Encapsule/ARC v" + ARCCORE.__meta.version + " // " + "Facebook/react v" + React.version);
 	console.log("Please follow @Encapsule on Twitter for snapsite news & updates. https://twitter.com/Encapsule");
 
@@ -99,7 +99,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// page-specific content from (a) the React data context (b) user input
 	// (c) local storage (d) communication with remote servers.
 
-	var reactContentComponent = __webpack_require__(557);
+	var reactContentComponent = __webpack_require__(560);
 
 	// Specialize the content rendering behavior of <SnapPage>.
 	reactContextData.renderContent = reactContentComponent;
@@ -53754,7 +53754,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 552 */,
 /* 553 */,
 /* 554 */,
-/* 555 */
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -53766,7 +53769,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Copyright (C) 2016 Encapsule.io
 
 	  Shared runtime dependencies of snapsite client and
-	  server scripts for input route '/about'.
+	  server scripts for input route '/test-range/markdown'.
 
 	  JSX authors should require __snaprt into scope in order to gain
 	  access to theme bindings (array of named function points to React
@@ -53791,7 +53794,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = snaprt;
 
 /***/ },
-/* 556 */
+/* 559 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -54536,20 +54539,18 @@ return /******/ (function(modules) { // webpackBootstrap
 			]
 		},
 		"page": {
-			"primaryRouteHash": "bbaf163f",
-			"primaryRoute": "/about",
-			"title": "about",
-			"description": "snapsite homepage build info & runtime dependencies",
-			"tooltip": "Review snapsite build and dependencies...",
-			"rank": 100,
-			"children": [
-				"fd8a3bfd"
-			],
+			"primaryRouteHash": "cc7bc34d",
+			"primaryRoute": "/test-range/markdown",
+			"title": "markdown",
+			"description": "Render content as markdown.",
+			"tooltip": "Jump to markdown render test page...",
+			"rank": 0,
+			"children": [],
 			"ts": {
-				"i": 1,
-				"d": 1,
-				"o": 4,
-				"w": 1
+				"i": 8,
+				"d": 2,
+				"o": 9,
+				"w": 0
 			},
 			"context": {}
 		},
@@ -54610,71 +54611,40 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 557 */
+/* 560 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
-	var snaprt = __webpack_require__(555);
-	var ARCcore = snaprt.arccore;
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var snaprt = __webpack_require__(558);
 	var React = snaprt.react;
+	var theme = snaprt.reactTheme;
+	var Markdown = theme.Markdown;
+	var Heading = theme.SnapHeader;
 
-	var AboutSnapsite = React.createClass({
-	    displayName: "AboutSnapsite",
+	// Pull in snapsite's README.md as a test.
+	var mds = __webpack_require__(561);
 
-	    className: "AboutSnapsite",
+	module.exports = React.createClass({
+	    displayName: 'exports',
+
 	    render: function render() {
-	        var generator = this.props.generator;
 	        return React.createElement(
-	            "div",
+	            'div',
 	            null,
-	            React.createElement(
-	                "h2",
-	                null,
-	                "site details"
-	            ),
-	            React.createElement(
-	                "p",
-	                null,
-	                this.props.pagesGraph.verticesCount(),
-	                " pages generated on ",
-	                generator.build.date,
-	                ".",
-	                React.createElement("br", null),
-	                "Timestamp: ",
-	                generator.build.time,
-	                " ",
-	                "//",
-	                " ID: ",
-	                generator.build.hash,
-	                React.createElement("br", null)
-	            ),
-	            React.createElement(
-	                "h2",
-	                null,
-	                "generator"
-	            ),
-	            React.createElement(
-	                "p",
-	                null,
-	                "Encapsule/",
-	                generator.agent.name,
-	                " v",
-	                generator.agent.version,
-	                React.createElement("br", null),
-	                "Encapsule/",
-	                ARCcore.__meta.name,
-	                " v",
-	                ARCcore.__meta.version,
-	                React.createElement("br", null),
-	                "Facebook/react v",
-	                React.version
-	            )
+	            React.createElement(Heading, _extends({}, this.props, { heading: 'snapsite README.md render test', size: '1' })),
+	            React.createElement(Markdown, { source: mds })
 	        );
 	    }
 	});
 
-	module.exports = AboutSnapsite;
+/***/ },
+/* 561 */
+/***/ function(module, exports) {
+
+	module.exports = "![Encapsule.io](https://encapsule.io/images/blue-burst-encapsule.io-logo-251x64.png \"Encapsule.io\")\n\n# snapsite (prerelease)\n\n## Summary\n\n[Encapsule/snapsite](https://github.com/Encapsule/snapsite) is an experimental command line tool for compiling React JS websites from configuration files that's being developed to reduce the time/effort required to build sophisticated documentation portals for technical projects.\n\n## Status\n\nThis project is under active development and is likely to change substantially before I make any effort to publicize its feature set and encourage others to try for themselves on their own projects. Please follow [@Encapsule.io](https://twitter.com/Encapsule) for update notifications.\n\n## Test Output\n\nIt's still very crude (mostly disposable test pages linked into a simple site), but you can view a small static website (with client-side dynamism powered by React JS) that's been published to [this project's GitHub Project Page](http://encapsule.github.io/snapsite). To view the generated client source code (not yet optimized through webpack), view the gh-pages branch of the the [Encapsule/snapsite](https://github.com/Encapsule/snapsite) repository.\n\n## Design Goals\n\n- Leverage Facebook's React JS framework for rendering HTML, managing re-usable rendering components.\n- Leverage webpack, babel, etc. to provide automated compilation of required server and client-side render functions.\n- Synthesize all boilerplate client and server side glue logic required to integrate routing and site navigation at build-time.\n- Pre-calculate static per-route \"views\" over site meta-data constructed during the site build and compilation process and get this context delivered to all the right places without the developer having to comprehend the routing model (not at all trivial in the general case).\n- Provide a well-reasoned separation of concerns and extensible interface for theming snapsite-generated websites.\n- Provide a well-reasoned and extensible model for building up re-usable libraries of React JS components, and **data models** that can be used pervasively throughout your application to automate error-prone and costly operations (e.g. resource location, state management, validation, normalization, observation...).\n- Design for full-blown custom Node.js server deployment w/graceful path for exporting static builds to GitHub pages, CDN...\n- Plug-in API for defining functional add-ons. (e.g. static blog similar to Jekyll but more powerful and extensible).\n\n\n\n"
 
 /***/ }
 /******/ ])
