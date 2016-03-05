@@ -1,6 +1,6 @@
 {
   "name": "snapsite",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Website compiler and code generator tool for building React JS-powered Node.js apps.",
   "bin": {
     "snapsite": "./bin/snapsite.js",
