@@ -13,14 +13,15 @@ var filterFactory = ARCCORE.filter.create({
         ____types: "jsObject",
         ____defaultValue: {},
 
-        body: {
+        pageContent: {
             ____label: "Body Styles",
             ____description: "Styles to apply to each page's BODY tag.",
-            ____accept: "jsObject",
+            ____types: "jsObject",
             ____defaultValue: {
                 margin: '0px',
                 padding: '0px',
-                margin: 'none'
+                margin: 'none',
+                backgroundColor: "red"
             }
         },
 

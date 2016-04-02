@@ -90,7 +90,10 @@ var SnapPage = React.createClass({
         content.push(<Copyright {...this.props} key={makeKey()} style={theme.copyrightBlock} />);
         content.push(<SnapBug {...this.props} key={makeKey()} />);
 
-        return (<div style={theme.pageBlock}>{content}<br /></div>);
+        return (<div id="snapsiteReactPage" style={theme.page}>{content}<br />
+
+               <pre>{JSON.stringify(theme,undefined,4)}</pre>
+</div>);
 
     }
 });
