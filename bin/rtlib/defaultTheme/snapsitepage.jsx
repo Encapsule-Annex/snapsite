@@ -34,8 +34,34 @@ var SnapPage = React.createClass({
 
         var content = [];
 
-        var isRootPage = (this.props.pagesGraph.inDegree(this.props.page.primaryRouteHash) === 0);
+        // BREADCRUMBS
+        content.push(<Breadcrumbs {...this.props} key={makeKey()} />);
 
+        // HORIZONTAL MENU BARS
+        var hmenu = [];
+        var maxRowsToRender = 10;
+        if (this.props.page.children.length) {
+            maxRowsToRender--;
+        }
+        var menuRowsToRender = Math.min(this.props.page.ts.d, maxRowsToRender);
+        console.log("Going to try to render " + menuRowsToRender + " menu bars...");
+        var currentRouteHash = this.props.page.primaryRouteHash;
+        while (menuRowsToRender) {
+            var parentRouteHash = this.props.pagesGraph.inEdges(currentRouteHash)[0].u;
+            var parentRoute = this.props.pagesGraph.getVertexProperty(parentRouteHash).primaryRoute;
+            hmenu.unshift(<HorizontalMenuBar {...this.props} parentRoute={parentRoute} selectedRouteHash={this.props.page.primaryRouteHash} key={"menubar"+menuRowsToRender--} key={makeKey()} />);
+            currentRouteHash = parentRouteHash;
+        }
+
+        if (this.props.page.children.length) {
+            hmenu.push(<HorizontalMenuBar {...this.props} parentRoute={this.props.page.primaryRoute} selectedRouteHash={this.props.page.primaryRouteHash} key={makeKey()}/>);
+        }
+        hmenu.forEach(function(menuBar_) {
+            content.push(menuBar_);
+        });
+
+        // TITLE
+        var isRootPage = (this.props.pagesGraph.inDegree(this.props.page.primaryRouteHash) === 0);
         if (isRootPage) {
             // Title
             content.push(<div key={makeKey()} style={theme.titleBlock}>
@@ -45,8 +71,6 @@ var SnapPage = React.createClass({
                          {this.props.page.description}</span>
                          </div>);
         } else {
-            // Breadcrumbs
-            content.push(<Breadcrumbs {...this.props} key={makeKey()} />);
             // Title
             content.push(<div key={makeKey()} style={theme.titleBlock}>
                          <span style={theme.title}>{this.props.page.title}</span>
@@ -57,44 +81,19 @@ var SnapPage = React.createClass({
                          </div>);
         }
 
-        // Do we need to render menu bars to reach the page routes above this page in the tree?
-        var horizontalMenuBars = [];
-
-        var maxRowsToRender = 4;
-
-        if (this.props.page.children.length) {
-            maxRowsToRender--;
-        }
-
-        var menuRowsToRender = Math.min(this.props.page.ts.d, maxRowsToRender);
-        console.log("Going to try to render " + menuRowsToRender + " menu bars...");
-        var currentRouteHash = this.props.page.primaryRouteHash;
-        while (menuRowsToRender) {
-            var parentRouteHash = this.props.pagesGraph.inEdges(currentRouteHash)[0].u;
-            var parentRoute = this.props.pagesGraph.getVertexProperty(parentRouteHash).primaryRoute;
-            horizontalMenuBars.unshift(<HorizontalMenuBar {...this.props} parentRoute={parentRoute} selectedRouteHash={this.props.page.primaryRouteHash} key={"menubar"+menuRowsToRender--} key={makeKey()} />);
-            currentRouteHash = parentRouteHash;
-        }
-
-        if (this.props.page.children.length) {
-            horizontalMenuBars.push(<HorizontalMenuBar {...this.props} parentRoute={this.props.page.primaryRoute} selectedRouteHash={this.props.page.primaryRouteHash} key={makeKey()}/>);
-        }
-
-        horizontalMenuBars.forEach(function(menuBar_) {
-            content.push(menuBar_);
-        });
-
+        // CONTENT
         var contentRendered = React.createElement(this.props.renderContent, this.props);
         content.push(<div key={makeKey()} style={theme.contentBlock}>{contentRendered}</div>);
 
+        // COPYRIGHT
         content.push(<Copyright {...this.props} key={makeKey()} style={theme.copyrightBlock} />);
+
+        // SNAPSITE
         content.push(<SnapBug {...this.props} key={makeKey()} />);
 
-        return (<div id="snapsiteReactPage" style={theme.page}>{content}<br />
-
-               <pre>{JSON.stringify(theme,undefined,4)}</pre>
-</div>);
-
+        return (<div id="snapsiteReactPage" style={theme.page}>
+                {content}
+                </div>);
     }
 });
 

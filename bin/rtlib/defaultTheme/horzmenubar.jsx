@@ -54,14 +54,17 @@ module.exports = React.createClass({
         for (var childRouteHash of childRouteHashes) {
             childMenuItems.push(<HorizontalMenuItem {...this.props} targetRouteHash={childRouteHash} selectedRouteHash={this.props.selectedRouteHash} key={makeKey()}/>);
         }
+        function round(value, decimals) {
+            return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+        }
 
         var depth = parentRouteProps.ts.d + 1;
-        var shadeFactor1 = depth * 5;
+        var shadeFactor1 = depth * 2;
         var component1 = 255 - shadeFactor1;
-        var color1 = '#' + ((component1 << 16) + (component1 << 8) + component1).toString(16);
-        var shadeFactor2 = depth * 6.5;
+        var color1 = '#' + round((component1/1.25 << 16)  + (component1/1.125 << 8) + component1, 0).toString(16);
+        var shadeFactor2 = depth * 3.5;
         var component2 = 255 - shadeFactor2;
-        var color2 = '#' + ((component2 << 16) + (component2 << 8) + component2).toString(16);
+        var color2 = '#' + round((component2/1.3 << 16) + (component2/1.14 << 8) + component2, 0).toString(16);
 
         var styles = {
             backgroundColor: color1,
